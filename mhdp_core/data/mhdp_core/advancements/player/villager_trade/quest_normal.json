@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:paper"
+          ],
+          "count": 1,
+          "nbt": "{MhdpQuest:1}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mhdp_core:player/advancements/villager_trade/quest_normal"
+  }
+}
