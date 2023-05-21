@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ranposu.animation.idle] run function zzz_ranposu_internal:animations/idle/tick

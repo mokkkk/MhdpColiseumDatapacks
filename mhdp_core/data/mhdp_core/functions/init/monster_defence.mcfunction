@@ -1,4 +1,4 @@
-#> mhdp_core:init/monster
+#> mhdp_core:init/monster_defence
 #
 # モンスター肉質データ初期化
 # 切断, 打撃, 射撃, 火, 水, 雷, 氷, 龍
@@ -36,3 +36,5 @@
         # data modify storage mh_dp:monster_data List[1] append value [45,5,25,25,5]
         # data modify storage mh_dp:monster_data List[1] append value [60,5,25,30,5]
         # data modify storage mh_dp:monster_data List[1] append value [80,5,15,35,5]
+
+say モンスター肉質データstorageを初期化しました

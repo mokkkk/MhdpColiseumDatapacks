@@ -2,6 +2,10 @@
 
 # モンスター追加時修正する共通処理
 
+# init処理
+## 肉質の設定
+    function mhdp_core:init/monster_defence
+
 # クエスト関連処理
 ## 召喚処理
     function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/summon

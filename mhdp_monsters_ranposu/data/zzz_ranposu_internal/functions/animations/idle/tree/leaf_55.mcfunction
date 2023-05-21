@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ranposu_internal:animations/idle/tree/leaf_55_as_bone

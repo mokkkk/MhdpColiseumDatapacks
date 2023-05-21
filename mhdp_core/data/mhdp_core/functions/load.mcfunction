@@ -95,4 +95,4 @@
     # function mhdp_core:init/quest_data
 
 # モンスター肉質初期化
-    function mhdp_core:init/monster
+    function mhdp_core:init/monster_defence

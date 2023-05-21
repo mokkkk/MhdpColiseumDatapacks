@@ -1,0 +1,1 @@
+kill @e[tag=aj.ranposu.rig_entity]
