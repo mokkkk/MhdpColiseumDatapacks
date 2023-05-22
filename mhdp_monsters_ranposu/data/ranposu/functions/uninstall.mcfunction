@@ -6,3 +6,4 @@ scoreboard objectives remove aj.life_time
 scoreboard objectives remove aj.ranposu.export_version
 scoreboard objectives remove aj.ranposu.rig_loaded
 scoreboard objectives remove aj.ranposu.animation.idle.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.idle.loop_mode

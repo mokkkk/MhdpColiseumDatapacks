@@ -1,3 +1,7 @@
+#> asa_animator:general/check_ground
+#
+# モンスターの共通処理
+# 接地用function
 
 summon marker ~ ~ ~ {Tags:["GroundPos"]}
 execute align y as @e[type=marker,tag=GroundPos] at @s run tp @s ~ ~ ~

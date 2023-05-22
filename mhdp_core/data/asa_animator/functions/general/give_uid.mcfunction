@@ -1,3 +1,7 @@
+#> asa_animator:general/give_uid
+#
+# モンスターの共通処理
+# uidを割り振る
 
 # UID割り振り
     scoreboard players add #mhdp_general_uid MhdpPartsUid 1

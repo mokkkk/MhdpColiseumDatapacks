@@ -19,3 +19,5 @@
     function asa_animator:general/damage
 ## モンスターメイン処理
     function mhdp_core:monster/
+## 攻撃ターゲットリセット処理
+    function asa_animator:general/reset_target

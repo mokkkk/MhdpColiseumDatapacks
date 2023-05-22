@@ -7,6 +7,12 @@
     data remove storage mh_dp:monster_data List
     data modify storage mh_dp:monster_data List set value []
 
+# 0：青鳥竜
+    # Head, Body
+    data modify storage mh_dp:monster_data List append value []
+        data modify storage mh_dp:monster_data List[0] append value [100, 100, 100, 100, 100, 100, 100, 100]
+        data modify storage mh_dp:monster_data List[0] append value [100, 100, 100, 100, 100, 100, 100, 100]
+
 # 火竜
     # Head, Body, Leg, Tail
     # data modify storage mh_dp:monster_data List append value []

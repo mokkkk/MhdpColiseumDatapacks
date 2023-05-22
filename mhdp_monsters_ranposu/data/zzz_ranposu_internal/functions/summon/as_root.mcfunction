@@ -6,12 +6,12 @@ scoreboard players set @s aj.ranposu.rig_loaded 1
 scoreboard players operation @s aj.ranposu.export_version = aj.ranposu.export_version aj.i
 execute store result score @s aj.id run scoreboard players add .aj.last_id aj.id 1
 tp @s ~ ~ ~ ~ ~
-execute at @s on passengers run function zzz_ranposu_internal:summon/as_bone
+execute at @s on passengers run function zzz_ranposu_internal:summon/as_rig_entities
 execute if score #variant aj.i = $aj.ranposu.variant.default aj.id run function zzz_ranposu_internal:apply_variant/default_as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.idle aj.id run function zzz_ranposu_internal:animations/idle/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.idle aj.id run scoreboard players operation @s aj.ranposu.animation.idle.local_anim_time = #frame aj.i
-execute at @s run function #ranposu:on_summon
+execute at @s run function #ranposu:on_summon_as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
 scoreboard players reset #variant aj.i
