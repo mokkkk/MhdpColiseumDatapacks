@@ -6,7 +6,7 @@
     execute positioned ~ ~ ~ run function ranposu:summon
 
 # 当たり判定召喚
-    execute positioned ~ ~-50 ~ run function ranposu:manager/0_init/3_general/health
+    execute positioned ~ ~ ~ run function ranposu:manager/0_init/3_general/health
 
 # HPセット
     function ranposu:manager/0_init/3_general/hp

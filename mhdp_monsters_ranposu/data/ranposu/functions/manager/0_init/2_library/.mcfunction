@@ -1,6 +1,13 @@
-#> asa_animator:ranposu/manager/0_init/2_library/
+#> ranposu:manager/0_init/2_library/
 #
 # 青鳥竜 TSBライブラリ用init処理
+
+# 処理簡略化用タグ付与
+    execute on passengers if entity @s[tag=aj.ranposu.bone.dummy0] run tag @s add Head0
+    execute on passengers if entity @s[tag=aj.ranposu.bone.dummy1] run tag @s add Body0
+    execute on passengers if entity @s[tag=aj.ranposu.bone.dummy2] run tag @s add Body1
+    execute on passengers if entity @s[tag=aj.ranposu.bone.dummy3] run tag @s add Tail0
+    execute on passengers if entity @s[tag=aj.ranposu.bone.dummy4] run tag @s add Tail1
 
 # tsb用init
     execute as @e[type=slime,tag=RanposuHealth] run function mob_manager:init/
@@ -9,3 +16,5 @@
     scoreboard players set @e[type=slime,tag=MonsterParts,tag=RanposuHealth] MhdpMonsterIndex 0
     scoreboard players set @e[type=slime,tag=MonsterParts,tag=RanposuHealth,tag=HeadParts] MhdpPartsIndex 0
     scoreboard players set @e[type=slime,tag=MonsterParts,tag=RanposuHealth,tag=BodyParts] MhdpPartsIndex 1
+
+say init ranposu
