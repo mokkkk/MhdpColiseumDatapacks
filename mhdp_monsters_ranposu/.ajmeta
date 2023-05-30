@@ -194,6 +194,16 @@
 				"data\\zzz_ranposu_internal\\functions\\summon\\as_bones.mcfunction",
 				"data\\zzz_ranposu_internal\\functions\\summon\\as_locators.mcfunction",
 				"data\\zzz_ranposu_internal\\functions\\summon\\as_cameras.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_body_1\\as_origin.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_body_1\\as_target.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_body_0\\as_origin.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_body_0\\as_target.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_head_0\\as_origin.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_head_0\\as_target.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_tail_0\\as_origin.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_tail_0\\as_target.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_tail_1\\as_origin.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_tail_1\\as_target.mcfunction",
 				"data\\zzz_ranposu_internal\\functions\\remove\\as_root.mcfunction"
 			]
 		}
