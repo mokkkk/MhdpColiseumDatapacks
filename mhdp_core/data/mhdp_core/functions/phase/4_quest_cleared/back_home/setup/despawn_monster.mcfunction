@@ -3,7 +3,7 @@
 # Phase4_クエストクリア モンスター消去処理
 
 # 青鳥竜
-    # execute if entity @s[tag=RanposuRoot] run function ranposu:manager/4_general/kill
+    execute if entity @s[tag=RanposuRoot] run function ranposu:manager/4_general/kill
 
 # 火竜
     # execute if entity @s[tag=ReusRoot] run function asa_animator:reus/manager/4_general/kill

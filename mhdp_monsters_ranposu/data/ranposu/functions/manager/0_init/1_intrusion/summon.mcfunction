@@ -6,7 +6,8 @@
     execute positioned ~ ~ ~ run function ranposu:summon
 
 # 召喚時アニメーション再生
-    tag @e[type=armor_stand,tag=RanposuRoot] add AnmSummon
+# TODO:登場アニメーションを再生する
+    # tag @e[type=armor_stand,tag=RanposuRoot] add AnmSummon
 
 # 当たり判定召喚
     execute positioned ~ ~ ~ run function ranposu:manager/0_init/3_general/health
