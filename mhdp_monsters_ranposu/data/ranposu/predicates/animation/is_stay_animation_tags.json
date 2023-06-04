@@ -7,14 +7,14 @@
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmJump\"]}"
+          "nbt": "{Tags:[\"AnmBite\"]}"
         }
       },
       {
         "condition": "minecraft:entity_properties",
         "entity": "this",
         "predicate": {
-          "nbt": "{Tags:[\"AnmMove\"]}"
+          "nbt": "{Tags:[\"AnmClaw\"]}"
         }
       },
       {

@@ -25,7 +25,7 @@
 
 ## 999：青鳥竜テスト用
 # ノーマル・大闘技場・[青鳥竜]・9999分・HP100%・報酬3Z・ムービー無
-    data modify storage mh_dp:quests List append value {Index:999,Level:0,Visible:1b,Started:0b,Cleared:0b,QuestRank:0,Field:1,Monsters:[{Name:"Ranposu",Condition:0,Target:-1}],MonsterCount:1,Timer:9999,HpMult:100,Reward:3,RewardItems:[{Name:"Ranposu",Count:8,Min:4}],Movie:0b,MovieId:-1,display:{Name:'[{"text":"青鳥竜","italic":false},{"interpret":true,"nbt":"Temp.Flag","storage":"mhdp_core:temp"}]',Lore:['{"text":"目標："}','{"text":"・青鳥竜の討伐","italic":false}']},NameNew:'{"text":"青鳥竜(NEW)","italic":false}',NameClear:'{"text":"青鳥竜(CLEAR)","italic":false}'}
+    data modify storage mh_dp:quests List append value {Index:999,Level:0,Visible:1b,Started:0b,Cleared:0b,QuestRank:0,Field:1,Monsters:[{Name:"Ranposu",Condition:0,Target:-1}],MonsterCount:1,Timer:9999,HpMult:100,Reward:3,RewardItems:[{Name:"Ranposu",Count:8,Min:4}],Movie:0b,MovieId:-1,display:{Name:'[{"text":"青鳥竜（テスト）","italic":false},{"interpret":true,"nbt":"Temp.Flag","storage":"mhdp_core:temp"}]',Lore:['{"text":"目標："}','{"text":"・青鳥竜の討伐","italic":false}']},NameNew:'{"text":"青鳥竜(NEW)","italic":false}',NameClear:'{"text":"青鳥竜(CLEAR)","italic":false}'}
 
 
 ## X：火竜

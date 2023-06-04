@@ -13,8 +13,8 @@
 # Player用処理
     execute as @a at @s run function mhdp_core:player/
 
-# Monster用処理(animated java側で処理する予定)
-    # execute as @e[tag=MonsterRoot] at @s run function mhdp_core:monster/
+# Monster用処理
+    execute as @e[type=item_display,tag=MonsterRoot] at @s run function mhdp_core:monster/
 
 # 攻撃用処理
     execute if entity @e[type=marker,tag=MonsterShot,limit=1] as @e[type=marker,tag=MonsterShot] at @s run function mhdp_core:monster/shot_marker

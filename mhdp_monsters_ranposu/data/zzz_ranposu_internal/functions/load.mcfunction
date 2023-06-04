@@ -20,6 +20,6 @@ scoreboard players set $aj.default_interpolation_duration aj.i 1
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.ranposu.export_version aj.i -1651805758
+scoreboard players set aj.ranposu.export_version aj.i -283352359
 scoreboard players reset * aj.ranposu.rig_loaded
 execute as @e[type=#ranposu:aj_root,tag=aj.ranposu.root] run function zzz_ranposu_internal:on_load
