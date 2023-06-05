@@ -1,0 +1,4 @@
+summon minecraft:item_display ~ ~ ~ {shadow_radius:1.2f,Tags:["aj.ranposu.locator_target","aj.ranposu.locator_target.shadow","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"ranposu\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorTarget\",\"color\":\"white\"},\"[\",{\"text\":\"shadow\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:item_display,tag=aj.ranposu.locator_target.shadow,tag=aj.new,limit=1,distance=..0.1] run function zzz_ranposu_internal:summon/locator_shadow/as_target
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner
