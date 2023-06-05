@@ -1,6 +1,6 @@
 #> mhdp_weapons:weapon/short_sword/16_upper/main
 #
-# 片手剣：ジャストラッシュ３
+# 片手剣：滅・昇竜撃
 
 # タイマー増加
     scoreboard players add @s MhdpWeaponTimer 1
@@ -22,7 +22,8 @@
     execute if entity @s[scores={MhdpWeaponTimer=13}] run function mhdp_weapons:weapon/short_sword/2_dash_attack/remove_tag
 
 # エフェクト付与
-    execute if entity @s[scores={MhdpWeaponTimer=11}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:25,Amplifier:66b,Duration:3,ShowParticles:0b}]}
+    execute if entity @s[scores={MhdpWeaponTimer=11}] run scoreboard players set $strength delta.api.launch 12000
+    execute if entity @s[scores={MhdpWeaponTimer=11}] at @s rotated ~ -90 run function delta:api/launch_looking
     execute if entity @s[scores={MhdpWeaponTimer=1..20}] run effect give @s slowness 1 6 true
 
 # 遷移

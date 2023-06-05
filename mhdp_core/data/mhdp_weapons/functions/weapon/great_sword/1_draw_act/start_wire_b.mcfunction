@@ -84,6 +84,7 @@
     function mhdp_weapons:sp_items/wirebug/reset
 
 # 跳ねる
-    summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:25,Amplifier:16b,Duration:4,ShowParticles:0b}]}
+    scoreboard players set $strength delta.api.launch 8000
+    execute rotated ~ -90 run function delta:api/launch_looking
 
 say 鉄蟲糸技：ハンティングエッジ

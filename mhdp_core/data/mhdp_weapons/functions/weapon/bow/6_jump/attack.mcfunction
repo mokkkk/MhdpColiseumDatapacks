@@ -22,7 +22,9 @@
     tag @e[type=marker,tag=PlyArrow,tag=Start,limit=1] add DrawAttack
 
 # 跳ねる
-    summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:25,Amplifier:35b,Duration:3,ShowParticles:0b}]}
+    tp @s @s
+    scoreboard players set $strength delta.api.launch 3000
+    execute rotated ~ -90 run function delta:api/launch_looking
 
 # 終了
     tag @e[type=marker,tag=PlyArrow,tag=Start] remove Start

@@ -16,8 +16,9 @@
     execute if entity @s[scores={MhdpWeaponTimer=3}] run function mhdp_weapons:weapon/short_sword/9_jump/attack
     execute if entity @s[scores={MhdpWeaponTimer=3..5}] run tp @s ~ ~ ~ ~ ~-4
 
-# 浮遊エフェクト付与
-    execute if entity @s[scores={MhdpWeaponTimer=1}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:25,Amplifier:40b,Duration:4,ShowParticles:0b}]}
+# ジャンプ
+    execute if entity @s[scores={MhdpWeaponTimer=3}] run scoreboard players set $strength delta.api.launch 12000
+    execute if entity @s[scores={MhdpWeaponTimer=3}] at @s rotated ~ -90 run function delta:api/launch_looking
 
 # 終了
     execute if entity @s[scores={MhdpWeaponTimer=30..}] run function mhdp_weapons:weapon/short_sword/9_jump/end

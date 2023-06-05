@@ -11,11 +11,11 @@
     execute if entity @s[scores={MhdpTItmWirebug=1..4}] run function mhdp_weapons:sp_items/wirebug/effect
 
 # 移動
-    execute if entity @s[scores={MhdpTItmWirebug=5}] run effect clear @s levitation
+    # execute if entity @s[scores={MhdpTItmWirebug=5}] run effect clear @s levitation
     execute if entity @s[scores={MhdpTItmWirebug=5}] run function mhdp_weapons:sp_items/wirebug/move
 
 # ノックバック用に出していたMobを片づける
-    execute if entity @s[scores={MhdpTItmWirebug=6}] run function mhdp_weapons:sp_items/wirebug/kill
+    # execute if entity @s[scores={MhdpTItmWirebug=6}] run function mhdp_weapons:sp_items/wirebug/kill
 
 # 終了
     execute if entity @s[tag=!PlyJumpping,scores={MhdpTItmWirebug=12..79}] run scoreboard players set @s MhdpTItmWirebug 80 
