@@ -31,7 +31,6 @@
         scoreboard players operation @e[type=marker,tag=SneakAvoidStand0,tag=Start] MhdpPlayerUid = @s MhdpPlayerUid
     # 開始地点
         function oh_my_dat:please
-        # execute as @e[type=marker,tag=SneakAvoidStand0,tag=Start] run data modify entity @s Pos set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Action.SneakPos0
         execute as @e[type=marker,tag=SneakAvoidStand0,tag=Start] run data modify entity @s Pos set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Pos.Pre
         execute as @e[type=marker,tag=SneakAvoidStand0,tag=Start] at @s run tp @s ~ ~ ~
     # 移動先
@@ -45,6 +44,11 @@
         data modify storage mhdp_core:temp Temp.Pos2[1] set value 0.0
         execute store success score #mhdp_temp_success MhdpCore as @e[type=marker,tag=SneakAvoidStand0,tag=Start] run data modify storage mhdp_core:temp Temp.Pos1 set from storage mhdp_core:temp Temp.Pos2
         execute unless score #mhdp_temp_success MhdpCore matches 1.. rotated ~ 0 as @e[type=marker,tag=SneakAvoidStand0,tag=Start] run tp @s ~ ~ ~ ~ ~
+
+# test
+    tp @s @s
+    scoreboard players set $strength delta.api.launch 13000
+    execute rotated as @e[type=marker,tag=SneakAvoidStand0,tag=Start] rotated ~ 0 run function delta:api/launch_looking
 
 # 移動速度リセット
     effect clear @s speed

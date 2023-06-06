@@ -84,7 +84,7 @@
 # 跳ねる
     tp @s @s
     scoreboard players set $strength delta.api.launch 8000
-    execute rotated ~ -90 run function mhdp_core:player/util/jump_to_move_vector
+    function mhdp_core:player/util/jump_to_move_vector
 # 射撃数初期化
     scoreboard players set @s MhdpWeaponCountBow 0
 # 最も近くのモンスターパーツを見る

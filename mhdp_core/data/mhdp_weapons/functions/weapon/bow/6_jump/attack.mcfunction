@@ -23,7 +23,7 @@
 
 # 跳ねる
     tp @s @s
-    scoreboard players set $strength delta.api.launch 3000
+    scoreboard players set $strength delta.api.launch 5000
     execute rotated ~ -90 run function delta:api/launch_looking
 
 # 終了
