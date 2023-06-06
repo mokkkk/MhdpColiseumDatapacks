@@ -37,8 +37,9 @@
     playsound item.armor.equip_iron master @a ~ ~ ~ 1 1
 
 # ジャンプ中に抜刀攻撃した場合，ちょっと跳ねる
-    execute if entity @s[tag=PlyJumpping] run scoreboard players set $strength delta.api.launch 8000
-    execute if entity @s[tag=PlyJumpping] rotated ~ -90 run function delta:api/launch_looking
+    execute if entity @s[tag=PlyJumpping] run tp @s @s
+    execute if entity @s[tag=PlyJumpping] run scoreboard players set $strength delta.api.launch 6000
+    execute if entity @s[tag=PlyJumpping] run function mhdp_core:player/util/jump_to_move_vector_without_y
 
 # 翔蟲使用中止
     function mhdp_weapons:sp_items/wirebug/reset

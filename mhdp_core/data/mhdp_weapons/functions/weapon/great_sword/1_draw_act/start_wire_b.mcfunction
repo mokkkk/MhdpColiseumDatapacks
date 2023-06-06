@@ -85,6 +85,6 @@
 
 # 跳ねる
     scoreboard players set $strength delta.api.launch 8000
-    execute rotated ~ -90 run function delta:api/launch_looking
+    function mhdp_core:player/util/jump_to_move_vector_without_y
 
 say 鉄蟲糸技：ハンティングエッジ
