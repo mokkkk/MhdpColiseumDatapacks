@@ -94,5 +94,8 @@
 # クエストデータ初期化
     # function mhdp_core:init/quest_data
 
+# TODO:以下のinitはいずれloadから削除する
 # モンスター肉質初期化
     function mhdp_core:init/monster_defence
+# モンスター攻撃力初期化
+    function mhdp_core:init/monster_attack

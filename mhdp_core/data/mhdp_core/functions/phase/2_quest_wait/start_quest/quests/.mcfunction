@@ -50,6 +50,9 @@
 # HP倍率
     execute store result score #mhdp_hp_multiply AsaMatrix run data get storage array_util: Array.HpMult
 
+# 攻撃力倍率
+    execute store result score #mhdp_atk_multiply MhdpCore run data get storage array_util: Array.AtkMult
+
 # 終了
     scoreboard players reset #mhdp_temp_emerald
     function array_util:api/force_delete_cache
