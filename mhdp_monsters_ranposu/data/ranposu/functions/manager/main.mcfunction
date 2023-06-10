@@ -9,7 +9,7 @@
     execute if entity @s[tag=ChangeAnm] run function ranposu:manager/1_change/
 
 # アニメーション処理
-    function ranposu:manager/5_animation/
+    execute at @s run function ranposu:manager/5_animation/
 
 # 当たり判定処理
     # execute as @e[type=slime,tag=ReusParts] run function asa_animator:reus/manager/2_health/

@@ -8,12 +8,13 @@
 
 # 0：青鳥竜
     data modify storage mh_dp:monster_data AttackList append value []
-        # 噛みつき：4ダメージ，ノックバック小，ガード可能，無属性，怒り補正1.2倍
+        # 0_噛みつき：4ダメージ，ノックバック小，ガード可能，無属性，怒り補正1.2倍
         data modify storage mh_dp:monster_data AttackList[0] append value {Damage:4.0f,Knockback:1,Guard:2,Type:0,Blight:0b,Anger:4.8f}
-        # ひっかき：2ダメージ，ノックバック小，ガード可能，無属性，怒り補正1.2倍
+        # 1_ひっかき：2ダメージ，ノックバック小，ガード可能，無属性，怒り補正1.2倍
         data modify storage mh_dp:monster_data AttackList[0] append value {Damage:2.0f,Knockback:1,Guard:2,Type:0,Blight:0b,Anger:2.2f}
-        # 尻尾なぎはらい：6ダメージ，ノックバック中，ガード可能，無属性，怒り補正1.2倍
+        # 2_尻尾なぎはらい：6ダメージ，ノックバック中，ガード可能，無属性，怒り補正1.2倍
         data modify storage mh_dp:monster_data AttackList[0] append value {Damage:6.0f,Knockback:2,Guard:2,Type:0,Blight:0b,Anger:7.2f}
-
+        # 3_前進ひっかき：7ダメージ，ノックバック中，ガード可能，無属性，怒り補正1.2倍
+        data modify storage mh_dp:monster_data AttackList[0] append value {Damage:7.0f,Knockback:2,Guard:2,Type:0,Blight:0b,Anger:8.4f}
 
 say モンスター攻撃力データstorageを初期化しました

@@ -13,7 +13,7 @@
 
 # 移動
     execute if score @s aj.ranposu.animation.tail_right.local_anim_time matches 3..15 run tp @s ^-0.05 ^ ^ ~-2 0
-    execute if score @s aj.ranposu.animation.tail_right.local_anim_time matches 20..31 run tp @s ^0.2 ^ ^ ~12 0
+    execute if score @s aj.ranposu.animation.tail_right.local_anim_time matches 20..31 run tp @s ^0.2 ^ ^-0.1 ~14 0
     execute if score @s aj.ranposu.animation.tail_right.local_anim_time matches 32..38 run tp @s ^0.05 ^ ^ ~0.8 0
 
 # 攻撃

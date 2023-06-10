@@ -14,3 +14,6 @@
 ## 尻尾なぎはらい
     execute if entity @s[tag=aj.ranposu.animation.tail_right] run function ranposu:manager/5_animation/tail_right/
     execute if entity @s[tag=aj.ranposu.animation.tail_left] run function ranposu:manager/5_animation/tail_left/
+
+## 前進ひっかき
+    execute if entity @s[tag=aj.ranposu.animation.move_claw] run function ranposu:manager/5_animation/move_claw/

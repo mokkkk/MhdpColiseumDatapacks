@@ -1,0 +1,1 @@
+function zzz_ranposu_internal:animations/move_claw/tick_animation
