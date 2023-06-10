@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..55 run function zzz_ranposu_internal:animations/move_claw/tree/branch_0_55
+execute if score @s aj.anim_time matches 0..60 run function zzz_ranposu_internal:animations/move_claw/tree/branch_0_60
