@@ -1,0 +1,1 @@
+function zzz_ranposu_internal:animations/tail_right/tick_animation

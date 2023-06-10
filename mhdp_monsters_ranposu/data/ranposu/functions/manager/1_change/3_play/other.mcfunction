@@ -10,5 +10,11 @@
     execute if entity @s[tag=AnmClaw] run function ranposu:animations/claw/play
     tag @s remove AnmClaw
 
+# 尻尾なぎはらい
+    execute if entity @s[tag=AnmTailR] run function ranposu:animations/tail_right/play
+    tag @s remove AnmTailR
+    execute if entity @s[tag=AnmTailL] run function ranposu:animations/tail_left/play
+    tag @s remove AnmTailL
+
 # 終了
     tag @s add AppliedAnm

@@ -15,6 +15,10 @@ execute if score #animation aj.i = $aj.ranposu.animation.bite aj.id run function
 execute if score #animation aj.i = $aj.ranposu.animation.bite aj.id run scoreboard players operation @s aj.ranposu.animation.bite.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.claw aj.id run function zzz_ranposu_internal:animations/claw/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.claw aj.id run scoreboard players operation @s aj.ranposu.animation.claw.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.tail_right aj.id run function zzz_ranposu_internal:animations/tail_right/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.tail_right aj.id run scoreboard players operation @s aj.ranposu.animation.tail_right.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.tail_left aj.id run function zzz_ranposu_internal:animations/tail_left/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.tail_left aj.id run scoreboard players operation @s aj.ranposu.animation.tail_left.local_anim_time = #frame aj.i
 execute at @s run function #ranposu:on_summon_as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

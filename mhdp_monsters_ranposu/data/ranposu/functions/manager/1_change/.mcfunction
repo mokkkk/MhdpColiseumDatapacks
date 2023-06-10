@@ -9,10 +9,10 @@
     # scoreboard players add #mhdp_reus_actcount_phase AsaMatrix 1
 
 # ターゲットリセット
-    # function ranposu:manager/1_change/target
+    function ranposu:manager/1_change/target
 
 # 強制
-    tag @s add AnmBite
+    tag @s add AnmTailL
     # function asa_animator:reus/manager/1_change/1_animations/fbreath
 
 # 行動
