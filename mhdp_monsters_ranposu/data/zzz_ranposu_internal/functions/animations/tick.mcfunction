@@ -4,3 +4,4 @@ execute if entity @s[tag=aj.ranposu.animation.claw] run function zzz_ranposu_int
 execute if entity @s[tag=aj.ranposu.animation.tail_right] run function zzz_ranposu_internal:animations/tail_right/tick
 execute if entity @s[tag=aj.ranposu.animation.tail_left] run function zzz_ranposu_internal:animations/tail_left/tick
 execute if entity @s[tag=aj.ranposu.animation.move_claw] run function zzz_ranposu_internal:animations/move_claw/tick
+execute if entity @s[tag=aj.ranposu.animation.jump] run function zzz_ranposu_internal:animations/jump/tick

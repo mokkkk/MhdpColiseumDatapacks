@@ -12,7 +12,7 @@
     function ranposu:manager/1_change/target
 
 # 強制
-    tag @s add AnmMoveClaw
+    tag @s add AnmJump
     # function asa_animator:reus/manager/1_change/1_animations/fbreath
 
 # 行動

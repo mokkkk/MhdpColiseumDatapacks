@@ -11,24 +11,27 @@ scoreboard objectives add aj.ranposu.animation.claw.local_anim_time dummy
 scoreboard objectives add aj.ranposu.animation.tail_right.local_anim_time dummy
 scoreboard objectives add aj.ranposu.animation.tail_left.local_anim_time dummy
 scoreboard objectives add aj.ranposu.animation.move_claw.local_anim_time dummy
+scoreboard objectives add aj.ranposu.animation.jump.local_anim_time dummy
 scoreboard objectives add aj.ranposu.animation.idle.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.bite.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.claw.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.tail_right.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.tail_left.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.move_claw.loop_mode dummy
+scoreboard objectives add aj.ranposu.animation.jump.loop_mode dummy
 scoreboard players set $aj.ranposu.animation.idle aj.id 0
 scoreboard players set $aj.ranposu.animation.bite aj.id 1
 scoreboard players set $aj.ranposu.animation.claw aj.id 2
 scoreboard players set $aj.ranposu.animation.tail_right aj.id 3
 scoreboard players set $aj.ranposu.animation.tail_left aj.id 4
 scoreboard players set $aj.ranposu.animation.move_claw aj.id 5
+scoreboard players set $aj.ranposu.animation.jump aj.id 6
 scoreboard players set $aj.ranposu.variant.default aj.id 0
 scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.default_interpolation_duration aj.i 1
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.ranposu.export_version aj.i -680261681
+scoreboard players set aj.ranposu.export_version aj.i -1685758960
 scoreboard players reset * aj.ranposu.rig_loaded
 execute as @e[type=#ranposu:aj_root,tag=aj.ranposu.root] run function zzz_ranposu_internal:on_load

@@ -17,3 +17,6 @@
 
 ## 前進ひっかき
     execute if entity @s[tag=aj.ranposu.animation.move_claw] run function ranposu:manager/5_animation/move_claw/
+
+## とびかかり
+    execute if entity @s[tag=aj.ranposu.animation.jump] run function ranposu:manager/5_animation/jump/

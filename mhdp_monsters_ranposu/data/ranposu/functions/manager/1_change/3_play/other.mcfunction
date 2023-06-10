@@ -20,5 +20,9 @@
     execute if entity @s[tag=AnmMoveClaw] run function ranposu:animations/move_claw/play
     tag @s remove AnmMoveClaw
 
+# とびかかり
+    execute if entity @s[tag=AnmJump] run function ranposu:animations/jump/play
+    tag @s remove AnmJump
+
 # 終了
     tag @s add AppliedAnm
