@@ -5,3 +5,6 @@ function zzz_ranposu_internal:animations/tail_right/pause
 function zzz_ranposu_internal:animations/tail_left/pause
 function zzz_ranposu_internal:animations/move_claw/pause
 function zzz_ranposu_internal:animations/jump/pause
+function zzz_ranposu_internal:animations/tackle/pause
+function zzz_ranposu_internal:animations/step_jump_right/pause
+function zzz_ranposu_internal:animations/step_jump_left/pause

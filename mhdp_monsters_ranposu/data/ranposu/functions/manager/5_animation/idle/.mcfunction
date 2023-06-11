@@ -10,4 +10,4 @@
     execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
     
 # 終了
-    execute if score @s aj.ranposu.animation.idle.local_anim_time matches 59.. run say end
+    # execute if score @s aj.ranposu.animation.idle.local_anim_time matches 59.. run say end

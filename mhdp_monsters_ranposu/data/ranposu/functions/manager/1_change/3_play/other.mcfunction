@@ -24,5 +24,15 @@
     execute if entity @s[tag=AnmJump] run function ranposu:animations/jump/play
     tag @s remove AnmJump
 
+# タックル
+    execute if entity @s[tag=AnmTackle] run function ranposu:animations/tackle/play
+    tag @s remove AnmTackle
+
+# ステップとびかかり
+    execute if entity @s[tag=AnmStepJumpL] run function ranposu:animations/step_jump_left/play
+    tag @s remove AnmStepJumpL
+    execute if entity @s[tag=AnmStepJumpR] run function ranposu:animations/step_jump_right/play
+    tag @s remove AnmStepJumpR
+
 # 終了
     tag @s add AppliedAnm

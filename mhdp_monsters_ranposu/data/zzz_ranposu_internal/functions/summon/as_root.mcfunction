@@ -23,6 +23,12 @@ execute if score #animation aj.i = $aj.ranposu.animation.move_claw aj.id run fun
 execute if score #animation aj.i = $aj.ranposu.animation.move_claw aj.id run scoreboard players operation @s aj.ranposu.animation.move_claw.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.jump aj.id run function zzz_ranposu_internal:animations/jump/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.jump aj.id run scoreboard players operation @s aj.ranposu.animation.jump.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.tackle aj.id run function zzz_ranposu_internal:animations/tackle/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.tackle aj.id run scoreboard players operation @s aj.ranposu.animation.tackle.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.step_jump_right aj.id run function zzz_ranposu_internal:animations/step_jump_right/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.step_jump_right aj.id run scoreboard players operation @s aj.ranposu.animation.step_jump_right.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.step_jump_left aj.id run function zzz_ranposu_internal:animations/step_jump_left/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.step_jump_left aj.id run scoreboard players operation @s aj.ranposu.animation.step_jump_left.local_anim_time = #frame aj.i
 execute at @s run function #ranposu:on_summon_as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

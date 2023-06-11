@@ -1,6 +1,6 @@
 execute if entity @s[tag=aj.ranposu.locator.body_1] at @s on origin run tp @s ^0 ^1.13292 ^-0.84637 ~0 ~27.5
 execute if entity @s[tag=aj.ranposu.locator.body_0] at @s on origin run tp @s ^-0.06903 ^0.08364 ^1.26768 ~-1.54649 ~13.80771
-execute if entity @s[tag=aj.ranposu.locator.head_0] at @s on origin run tp @s ^0.08751 ^0.42455 ^3.36177 ~-3.59161 ~0.16887
+execute if entity @s[tag=aj.ranposu.locator.head_0] at @s on origin run tp @s ^0.08751 ^0.42455 ^3.36177 ~-3.5916 ~0.16886
 execute if entity @s[tag=aj.ranposu.locator.tail_0] at @s on origin run tp @s ^0 ^1.46175 ^-2.01577 ~0 ~-1.40625
 execute if entity @s[tag=aj.ranposu.locator.tail_1] at @s on origin run tp @s ^0 ^1.36927 ^-3.08104 ~0 ~-7.34375
 execute if entity @s[tag=aj.ranposu.bone.tail_2] run data modify entity @s {} merge value {transformation:[-1.8f,2.817661658436936e-17f,2.1862821235170368e-16f,3.0436389871997356e-16f,0f,1.7852348326384484f,-0.23007953480127505f,1.9743527155030554f,-2.2043642384652358e-16f,-0.23007953480127505f,-1.7852348326384484f,-2.4853198402338013f,0f,0f,0f,1f],start_interpolation:0}

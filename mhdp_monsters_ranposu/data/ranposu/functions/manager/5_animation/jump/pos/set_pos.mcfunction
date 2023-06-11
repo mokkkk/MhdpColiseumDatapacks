@@ -20,7 +20,7 @@ execute store result score #ranposu_mine_z AsaMatrix run data get storage mhdp: 
 execute store result score #ranposu_height_target AsaMatrix run data get storage mhdp: PosTemp[2] 100
 scoreboard players operation #ranposu_mine_z AsaMatrix -= #ranposu_height_target AsaMatrix
 
-scoreboard players set #ranposu_height_target AsaMatrix 18
+scoreboard players set #ranposu_height_target AsaMatrix 16
 scoreboard players operation #ranposu_mine_x AsaMatrix /= #ranposu_height_target AsaMatrix
 scoreboard players operation #ranposu_mine_y AsaMatrix /= #ranposu_height_target AsaMatrix
 scoreboard players operation #ranposu_mine_z AsaMatrix /= #ranposu_height_target AsaMatrix

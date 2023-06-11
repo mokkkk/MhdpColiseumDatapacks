@@ -1,0 +1,1 @@
+function zzz_ranposu_internal:animations/step_jump_right/tick_animation

@@ -20,3 +20,6 @@
 
 ## とびかかり
     execute if entity @s[tag=aj.ranposu.animation.jump] run function ranposu:manager/5_animation/jump/
+
+## タックル
+    execute if entity @s[tag=aj.ranposu.animation.tackle] run function ranposu:manager/5_animation/tackle/
