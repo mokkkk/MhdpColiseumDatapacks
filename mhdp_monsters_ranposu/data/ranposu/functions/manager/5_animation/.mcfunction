@@ -23,3 +23,7 @@
 
 ## タックル
     execute if entity @s[tag=aj.ranposu.animation.tackle] run function ranposu:manager/5_animation/tackle/
+
+## ステップとびかかり
+    execute if entity @s[tag=aj.ranposu.animation.step_jump_right] run function ranposu:manager/5_animation/step_jump_right/
+    execute if entity @s[tag=aj.ranposu.animation.step_jump_left] run function ranposu:manager/5_animation/step_jump_left/
