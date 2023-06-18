@@ -2,6 +2,10 @@
 #
 # 青鳥竜 アニメーション遷移処理 再生開始 その他
 
+# 威嚇
+    execute if entity @s[tag=AnmVoice] run function ranposu:animations/voice/play
+    tag @s remove AnmVoice
+
 # 噛みつき
     execute if entity @s[tag=AnmBite] run function ranposu:animations/bite/play
     tag @s remove AnmBite

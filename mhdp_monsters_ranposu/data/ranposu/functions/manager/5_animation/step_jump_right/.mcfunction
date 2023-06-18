@@ -19,8 +19,8 @@
 
 # 移動
     execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 1..28 at @s run function ranposu:manager/4_general/rotate
-    execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 1..18 at @s run tp @s ^-0.6 ^ ^ ~ ~
-    execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 19..23 at @s run tp @s ^-0.1 ^ ^ ~ ~
+    execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 1..18 at @s run tp @s ^-0.8 ^ ^ ~ 0
+    execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 19..23 at @s run tp @s ^-0.1 ^ ^ ~ 0
     execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 25 at @s run function ranposu:manager/5_animation/step_jump_right/pos/set_pos
     execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 30..45 at @s run function ranposu:manager/5_animation/step_jump_right/pos/offset
     execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 46..48 at @s run tp @s ^ ^ ^0.1 ~ 0
@@ -29,11 +29,10 @@
     execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 32..45 run function ranposu:manager/5_animation/jump/damage
 
 # 接地
-    execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 1..29 at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:general/check_ground
-    execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 1..29 at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
+    execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 1..25 at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:general/check_ground
+    execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 1..25 at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
     execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 45.. at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:general/check_ground
     execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 45.. at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
-    
 
 # 終了
     execute if score @s aj.ranposu.animation.step_jump_right.local_anim_time matches 99.. run function ranposu:manager/5_animation/step_jump_right/end

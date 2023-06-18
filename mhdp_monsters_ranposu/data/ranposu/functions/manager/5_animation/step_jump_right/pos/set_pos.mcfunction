@@ -1,7 +1,8 @@
 
 # markerセット
 summon marker ^ ^ ^12 {Tags:["RanposuMovePos"]}
-execute rotated ~ 0 positioned as @e[tag=RanposuAttackTarget] positioned ^ ^ ^ run tp @e[type=marker,tag=RanposuMovePos] ~ ~ ~
+execute rotated ~ 0 positioned as @e[tag=RanposuAttackTarget] positioned ^ ^ ^-1 run tp @e[type=marker,tag=RanposuMovePos] ~ ~ ~
+execute as @e[type=marker,tag=RanposuMovePos] at @s if block ~ ~-0.3 ~ #asa_animator:no_collision run function asa_animator:general/check_ground
 
 # ポジション差分取得
 data merge storage mhdp: {PosTemp:[], MarkerPosTemp:[]}

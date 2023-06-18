@@ -5,6 +5,13 @@
 ## 待機
     execute if entity @s[tag=aj.ranposu.animation.idle] run function ranposu:manager/5_animation/idle/
 
+## 威嚇
+    execute if entity @s[tag=aj.ranposu.animation.voice] run function ranposu:manager/5_animation/voice/
+
+## 軸合わせ
+    execute if entity @s[tag=aj.ranposu.animation.turn_right] run function ranposu:manager/5_animation/turn_right/
+    execute if entity @s[tag=aj.ranposu.animation.turn_left] run function ranposu:manager/5_animation/turn_left/
+
 ## 嚙みつき
     execute if entity @s[tag=aj.ranposu.animation.bite] run function ranposu:manager/5_animation/bite/
 

@@ -6,6 +6,10 @@ scoreboard objectives remove aj.life_time
 scoreboard objectives remove aj.ranposu.export_version
 scoreboard objectives remove aj.ranposu.rig_loaded
 scoreboard objectives remove aj.ranposu.animation.idle.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.voice.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.turn_right.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.turn_left.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.move.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.bite.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.claw.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.tail_right.local_anim_time
@@ -16,6 +20,10 @@ scoreboard objectives remove aj.ranposu.animation.tackle.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.step_jump_right.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.step_jump_left.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.idle.loop_mode
+scoreboard objectives remove aj.ranposu.animation.voice.loop_mode
+scoreboard objectives remove aj.ranposu.animation.turn_right.loop_mode
+scoreboard objectives remove aj.ranposu.animation.turn_left.loop_mode
+scoreboard objectives remove aj.ranposu.animation.move.loop_mode
 scoreboard objectives remove aj.ranposu.animation.bite.loop_mode
 scoreboard objectives remove aj.ranposu.animation.claw.loop_mode
 scoreboard objectives remove aj.ranposu.animation.tail_right.loop_mode

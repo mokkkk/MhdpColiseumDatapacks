@@ -11,6 +11,14 @@ execute if score #variant aj.i = $aj.ranposu.variant.default aj.id run function 
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.idle aj.id run function zzz_ranposu_internal:animations/idle/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.idle aj.id run scoreboard players operation @s aj.ranposu.animation.idle.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.voice aj.id run function zzz_ranposu_internal:animations/voice/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.voice aj.id run scoreboard players operation @s aj.ranposu.animation.voice.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.turn_right aj.id run function zzz_ranposu_internal:animations/turn_right/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.turn_right aj.id run scoreboard players operation @s aj.ranposu.animation.turn_right.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.turn_left aj.id run function zzz_ranposu_internal:animations/turn_left/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.turn_left aj.id run scoreboard players operation @s aj.ranposu.animation.turn_left.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.move aj.id run function zzz_ranposu_internal:animations/move/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.move aj.id run scoreboard players operation @s aj.ranposu.animation.move.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.bite aj.id run function zzz_ranposu_internal:animations/bite/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.bite aj.id run scoreboard players operation @s aj.ranposu.animation.bite.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.claw aj.id run function zzz_ranposu_internal:animations/claw/apply_frame_as_root

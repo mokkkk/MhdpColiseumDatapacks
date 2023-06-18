@@ -1,4 +1,8 @@
 function zzz_ranposu_internal:animations/idle/pause
+function zzz_ranposu_internal:animations/voice/pause
+function zzz_ranposu_internal:animations/turn_right/pause
+function zzz_ranposu_internal:animations/turn_left/pause
+function zzz_ranposu_internal:animations/move/pause
 function zzz_ranposu_internal:animations/bite/pause
 function zzz_ranposu_internal:animations/claw/pause
 function zzz_ranposu_internal:animations/tail_right/pause
