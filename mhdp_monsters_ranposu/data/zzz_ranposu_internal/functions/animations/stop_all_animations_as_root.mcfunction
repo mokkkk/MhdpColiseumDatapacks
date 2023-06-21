@@ -1,7 +1,9 @@
 function zzz_ranposu_internal:animations/idle/pause
 function zzz_ranposu_internal:animations/voice/pause
+function zzz_ranposu_internal:animations/anger/pause
 function zzz_ranposu_internal:animations/turn_right/pause
 function zzz_ranposu_internal:animations/turn_left/pause
+function zzz_ranposu_internal:animations/step_back/pause
 function zzz_ranposu_internal:animations/move/pause
 function zzz_ranposu_internal:animations/bite/pause
 function zzz_ranposu_internal:animations/claw/pause
@@ -12,3 +14,7 @@ function zzz_ranposu_internal:animations/jump/pause
 function zzz_ranposu_internal:animations/tackle/pause
 function zzz_ranposu_internal:animations/step_jump_right/pause
 function zzz_ranposu_internal:animations/step_jump_left/pause
+function zzz_ranposu_internal:animations/damage/pause
+function zzz_ranposu_internal:animations/damage_down/pause
+function zzz_ranposu_internal:animations/down/pause
+function zzz_ranposu_internal:animations/down_end/pause

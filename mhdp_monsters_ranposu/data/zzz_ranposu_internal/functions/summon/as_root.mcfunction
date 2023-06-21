@@ -13,10 +13,14 @@ execute if score #animation aj.i = $aj.ranposu.animation.idle aj.id run function
 execute if score #animation aj.i = $aj.ranposu.animation.idle aj.id run scoreboard players operation @s aj.ranposu.animation.idle.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.voice aj.id run function zzz_ranposu_internal:animations/voice/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.voice aj.id run scoreboard players operation @s aj.ranposu.animation.voice.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.anger aj.id run function zzz_ranposu_internal:animations/anger/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.anger aj.id run scoreboard players operation @s aj.ranposu.animation.anger.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.turn_right aj.id run function zzz_ranposu_internal:animations/turn_right/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.turn_right aj.id run scoreboard players operation @s aj.ranposu.animation.turn_right.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.turn_left aj.id run function zzz_ranposu_internal:animations/turn_left/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.turn_left aj.id run scoreboard players operation @s aj.ranposu.animation.turn_left.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.step_back aj.id run function zzz_ranposu_internal:animations/step_back/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.step_back aj.id run scoreboard players operation @s aj.ranposu.animation.step_back.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.move aj.id run function zzz_ranposu_internal:animations/move/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.move aj.id run scoreboard players operation @s aj.ranposu.animation.move.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.bite aj.id run function zzz_ranposu_internal:animations/bite/apply_frame_as_root
@@ -37,6 +41,14 @@ execute if score #animation aj.i = $aj.ranposu.animation.step_jump_right aj.id r
 execute if score #animation aj.i = $aj.ranposu.animation.step_jump_right aj.id run scoreboard players operation @s aj.ranposu.animation.step_jump_right.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.step_jump_left aj.id run function zzz_ranposu_internal:animations/step_jump_left/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.step_jump_left aj.id run scoreboard players operation @s aj.ranposu.animation.step_jump_left.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.damage aj.id run function zzz_ranposu_internal:animations/damage/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.damage aj.id run scoreboard players operation @s aj.ranposu.animation.damage.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.damage_down aj.id run function zzz_ranposu_internal:animations/damage_down/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.damage_down aj.id run scoreboard players operation @s aj.ranposu.animation.damage_down.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.down aj.id run function zzz_ranposu_internal:animations/down/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.down aj.id run scoreboard players operation @s aj.ranposu.animation.down.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.down_end aj.id run function zzz_ranposu_internal:animations/down_end/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.down_end aj.id run scoreboard players operation @s aj.ranposu.animation.down_end.local_anim_time = #frame aj.i
 execute at @s run function #ranposu:on_summon_as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

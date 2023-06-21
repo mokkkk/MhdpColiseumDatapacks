@@ -7,8 +7,10 @@ scoreboard objectives remove aj.ranposu.export_version
 scoreboard objectives remove aj.ranposu.rig_loaded
 scoreboard objectives remove aj.ranposu.animation.idle.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.voice.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.anger.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.turn_right.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.turn_left.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.step_back.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.move.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.bite.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.claw.local_anim_time
@@ -19,10 +21,16 @@ scoreboard objectives remove aj.ranposu.animation.jump.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.tackle.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.step_jump_right.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.step_jump_left.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.damage.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.damage_down.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.down.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.down_end.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.idle.loop_mode
 scoreboard objectives remove aj.ranposu.animation.voice.loop_mode
+scoreboard objectives remove aj.ranposu.animation.anger.loop_mode
 scoreboard objectives remove aj.ranposu.animation.turn_right.loop_mode
 scoreboard objectives remove aj.ranposu.animation.turn_left.loop_mode
+scoreboard objectives remove aj.ranposu.animation.step_back.loop_mode
 scoreboard objectives remove aj.ranposu.animation.move.loop_mode
 scoreboard objectives remove aj.ranposu.animation.bite.loop_mode
 scoreboard objectives remove aj.ranposu.animation.claw.loop_mode
@@ -33,3 +41,7 @@ scoreboard objectives remove aj.ranposu.animation.jump.loop_mode
 scoreboard objectives remove aj.ranposu.animation.tackle.loop_mode
 scoreboard objectives remove aj.ranposu.animation.step_jump_right.loop_mode
 scoreboard objectives remove aj.ranposu.animation.step_jump_left.loop_mode
+scoreboard objectives remove aj.ranposu.animation.damage.loop_mode
+scoreboard objectives remove aj.ranposu.animation.damage_down.loop_mode
+scoreboard objectives remove aj.ranposu.animation.down.loop_mode
+scoreboard objectives remove aj.ranposu.animation.down_end.loop_mode

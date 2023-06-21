@@ -6,6 +6,10 @@
     execute if entity @s[tag=AnmVoice] run function ranposu:animations/voice/play
     tag @s remove AnmVoice
 
+# 怒り状態移行
+    execute if entity @s[tag=AnmAnger] run function ranposu:animations/anger/play
+    tag @s remove AnmAnger
+
 # 噛みつき
     execute if entity @s[tag=AnmBite] run function ranposu:animations/bite/play
     tag @s remove AnmBite

@@ -1,7 +1,9 @@
 execute if entity @s[tag=aj.ranposu.animation.idle] run function zzz_ranposu_internal:animations/idle/tick
 execute if entity @s[tag=aj.ranposu.animation.voice] run function zzz_ranposu_internal:animations/voice/tick
+execute if entity @s[tag=aj.ranposu.animation.anger] run function zzz_ranposu_internal:animations/anger/tick
 execute if entity @s[tag=aj.ranposu.animation.turn_right] run function zzz_ranposu_internal:animations/turn_right/tick
 execute if entity @s[tag=aj.ranposu.animation.turn_left] run function zzz_ranposu_internal:animations/turn_left/tick
+execute if entity @s[tag=aj.ranposu.animation.step_back] run function zzz_ranposu_internal:animations/step_back/tick
 execute if entity @s[tag=aj.ranposu.animation.move] run function zzz_ranposu_internal:animations/move/tick
 execute if entity @s[tag=aj.ranposu.animation.bite] run function zzz_ranposu_internal:animations/bite/tick
 execute if entity @s[tag=aj.ranposu.animation.claw] run function zzz_ranposu_internal:animations/claw/tick
@@ -12,3 +14,7 @@ execute if entity @s[tag=aj.ranposu.animation.jump] run function zzz_ranposu_int
 execute if entity @s[tag=aj.ranposu.animation.tackle] run function zzz_ranposu_internal:animations/tackle/tick
 execute if entity @s[tag=aj.ranposu.animation.step_jump_right] run function zzz_ranposu_internal:animations/step_jump_right/tick
 execute if entity @s[tag=aj.ranposu.animation.step_jump_left] run function zzz_ranposu_internal:animations/step_jump_left/tick
+execute if entity @s[tag=aj.ranposu.animation.damage] run function zzz_ranposu_internal:animations/damage/tick
+execute if entity @s[tag=aj.ranposu.animation.damage_down] run function zzz_ranposu_internal:animations/damage_down/tick
+execute if entity @s[tag=aj.ranposu.animation.down] run function zzz_ranposu_internal:animations/down/tick
+execute if entity @s[tag=aj.ranposu.animation.down_end] run function zzz_ranposu_internal:animations/down_end/tick
