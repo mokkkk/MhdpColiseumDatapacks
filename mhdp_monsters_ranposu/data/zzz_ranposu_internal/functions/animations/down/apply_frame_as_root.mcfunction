@@ -1,1 +1,1 @@
-execute if score @s aj.anim_time matches 0..37 run function zzz_ranposu_internal:animations/down/tree/branch_0_37
+execute if score @s aj.anim_time matches 0..35 run function zzz_ranposu_internal:animations/down/tree/branch_0_35

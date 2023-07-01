@@ -13,8 +13,8 @@
 
 # 強制
     # tag @s add AnmTurnL
-    tag @s add AnmStepJumpR
-    # function asa_animator:reus/manager/1_change/1_animations/fbreath
+    tag @s add AnmAnger
+    # function ranposu:manager/1_change/2_animations/tail
 
 # 行動
     # execute if entity @a[tag=ReusAttackTarget] run function asa_animator:reus/manager/1_change/act

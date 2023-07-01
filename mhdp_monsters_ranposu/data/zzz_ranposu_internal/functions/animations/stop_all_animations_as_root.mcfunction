@@ -18,3 +18,5 @@ function zzz_ranposu_internal:animations/damage/pause
 function zzz_ranposu_internal:animations/damage_down/pause
 function zzz_ranposu_internal:animations/down/pause
 function zzz_ranposu_internal:animations/down_end/pause
+function zzz_ranposu_internal:animations/down_flying/pause
+function zzz_ranposu_internal:animations/death/pause

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..140 run function zzz_ranposu_internal:animations/death/tree/branch_0_140

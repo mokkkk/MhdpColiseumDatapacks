@@ -25,6 +25,8 @@ scoreboard objectives remove aj.ranposu.animation.damage.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.damage_down.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.down.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.down_end.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.down_flying.local_anim_time
+scoreboard objectives remove aj.ranposu.animation.death.local_anim_time
 scoreboard objectives remove aj.ranposu.animation.idle.loop_mode
 scoreboard objectives remove aj.ranposu.animation.voice.loop_mode
 scoreboard objectives remove aj.ranposu.animation.anger.loop_mode
@@ -45,3 +47,5 @@ scoreboard objectives remove aj.ranposu.animation.damage.loop_mode
 scoreboard objectives remove aj.ranposu.animation.damage_down.loop_mode
 scoreboard objectives remove aj.ranposu.animation.down.loop_mode
 scoreboard objectives remove aj.ranposu.animation.down_end.loop_mode
+scoreboard objectives remove aj.ranposu.animation.down_flying.loop_mode
+scoreboard objectives remove aj.ranposu.animation.death.loop_mode
