@@ -19,3 +19,7 @@
     execute if entity @s[tag=aj.ranposu.animation.tackle] run function ranposu:animations/tackle/stop
     execute if entity @s[tag=aj.ranposu.animation.step_jump_right] run function ranposu:animations/step_jump_right/stop
     execute if entity @s[tag=aj.ranposu.animation.step_jump_left] run function ranposu:animations/step_jump_left/stop
+    execute if entity @s[tag=aj.ranposu.animation.damage] run function ranposu:animations/damage/stop
+    execute if entity @s[tag=aj.ranposu.animation.damage_down] run function ranposu:animations/damage_down/stop
+    execute if entity @s[tag=aj.ranposu.animation.down] run function ranposu:animations/down/stop
+    execute if entity @s[tag=aj.ranposu.animation.down_end] run function ranposu:animations/down_end/stop

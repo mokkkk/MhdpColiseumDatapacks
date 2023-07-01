@@ -1,1 +1,0 @@
-tag @s remove aj.ranposu.animation.down_flying

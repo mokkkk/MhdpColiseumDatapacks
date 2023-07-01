@@ -43,3 +43,18 @@
 ## ステップとびかかり
     execute if entity @s[tag=aj.ranposu.animation.step_jump_right] run function ranposu:manager/5_animation/step_jump_right/
     execute if entity @s[tag=aj.ranposu.animation.step_jump_left] run function ranposu:manager/5_animation/step_jump_left/
+
+## 怯み
+    execute if entity @s[tag=aj.ranposu.animation.damage] run function ranposu:manager/5_animation/damage/
+
+## 大怯み（ダウン）
+    execute if entity @s[tag=aj.ranposu.animation.damage_down] run function ranposu:manager/5_animation/damage_down/
+
+#TODO:空中怯み
+#TODO:特定モーションの特定タイミングに，StateIsFlyingタグを追加
+
+## ダウンもがき
+    execute if entity @s[tag=aj.ranposu.animation.down] run function ranposu:manager/5_animation/down/
+
+## ダウン終了
+    execute if entity @s[tag=aj.ranposu.animation.down_end] run function ranposu:manager/5_animation/down_end/

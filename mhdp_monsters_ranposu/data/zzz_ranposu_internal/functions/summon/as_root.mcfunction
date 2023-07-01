@@ -49,8 +49,8 @@ execute if score #animation aj.i = $aj.ranposu.animation.down aj.id run function
 execute if score #animation aj.i = $aj.ranposu.animation.down aj.id run scoreboard players operation @s aj.ranposu.animation.down.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.down_end aj.id run function zzz_ranposu_internal:animations/down_end/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.down_end aj.id run scoreboard players operation @s aj.ranposu.animation.down_end.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.ranposu.animation.down_flying aj.id run function zzz_ranposu_internal:animations/down_flying/apply_frame_as_root
-execute if score #animation aj.i = $aj.ranposu.animation.down_flying aj.id run scoreboard players operation @s aj.ranposu.animation.down_flying.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.ranposu.animation.damage_flying aj.id run function zzz_ranposu_internal:animations/damage_flying/apply_frame_as_root
+execute if score #animation aj.i = $aj.ranposu.animation.damage_flying aj.id run scoreboard players operation @s aj.ranposu.animation.damage_flying.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.ranposu.animation.death aj.id run function zzz_ranposu_internal:animations/death/apply_frame_as_root
 execute if score #animation aj.i = $aj.ranposu.animation.death aj.id run scoreboard players operation @s aj.ranposu.animation.death.local_anim_time = #frame aj.i
 execute at @s run function #ranposu:on_summon_as_root

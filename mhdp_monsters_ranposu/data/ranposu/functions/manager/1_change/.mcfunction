@@ -13,7 +13,7 @@
 
 # 強制
     # tag @s add AnmTurnL
-    tag @s add AnmMove
+    tag @s add AnmDamageDown
     # function ranposu:manager/1_change/2_animations/tail
 
 # 行動

@@ -18,5 +18,5 @@ execute if entity @s[tag=aj.ranposu.animation.damage] run function zzz_ranposu_i
 execute if entity @s[tag=aj.ranposu.animation.damage_down] run function zzz_ranposu_internal:animations/damage_down/tick
 execute if entity @s[tag=aj.ranposu.animation.down] run function zzz_ranposu_internal:animations/down/tick
 execute if entity @s[tag=aj.ranposu.animation.down_end] run function zzz_ranposu_internal:animations/down_end/tick
-execute if entity @s[tag=aj.ranposu.animation.down_flying] run function zzz_ranposu_internal:animations/down_flying/tick
+execute if entity @s[tag=aj.ranposu.animation.damage_flying] run function zzz_ranposu_internal:animations/damage_flying/tick
 execute if entity @s[tag=aj.ranposu.animation.death] run function zzz_ranposu_internal:animations/death/tick

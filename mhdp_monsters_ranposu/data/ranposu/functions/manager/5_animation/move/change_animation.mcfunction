@@ -4,6 +4,5 @@
     function ranposu:animations/idle/play
 
 # 終了
+    scoreboard players reset #mhdp_ranposu_move_count
     tag @s remove InitAnmMove
-
-    say a

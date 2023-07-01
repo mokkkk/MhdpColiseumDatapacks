@@ -25,7 +25,7 @@ scoreboard objectives add aj.ranposu.animation.damage.local_anim_time dummy
 scoreboard objectives add aj.ranposu.animation.damage_down.local_anim_time dummy
 scoreboard objectives add aj.ranposu.animation.down.local_anim_time dummy
 scoreboard objectives add aj.ranposu.animation.down_end.local_anim_time dummy
-scoreboard objectives add aj.ranposu.animation.down_flying.local_anim_time dummy
+scoreboard objectives add aj.ranposu.animation.damage_flying.local_anim_time dummy
 scoreboard objectives add aj.ranposu.animation.death.local_anim_time dummy
 scoreboard objectives add aj.ranposu.animation.idle.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.voice.loop_mode dummy
@@ -47,7 +47,7 @@ scoreboard objectives add aj.ranposu.animation.damage.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.damage_down.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.down.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.down_end.loop_mode dummy
-scoreboard objectives add aj.ranposu.animation.down_flying.loop_mode dummy
+scoreboard objectives add aj.ranposu.animation.damage_flying.loop_mode dummy
 scoreboard objectives add aj.ranposu.animation.death.loop_mode dummy
 scoreboard players set $aj.ranposu.animation.idle aj.id 0
 scoreboard players set $aj.ranposu.animation.voice aj.id 1
@@ -69,7 +69,7 @@ scoreboard players set $aj.ranposu.animation.damage aj.id 16
 scoreboard players set $aj.ranposu.animation.damage_down aj.id 17
 scoreboard players set $aj.ranposu.animation.down aj.id 18
 scoreboard players set $aj.ranposu.animation.down_end aj.id 19
-scoreboard players set $aj.ranposu.animation.down_flying aj.id 20
+scoreboard players set $aj.ranposu.animation.damage_flying aj.id 20
 scoreboard players set $aj.ranposu.animation.death aj.id 21
 scoreboard players set $aj.ranposu.variant.default aj.id 0
 scoreboard players add .aj.last_id aj.id 0
@@ -77,6 +77,6 @@ scoreboard players set $aj.default_interpolation_duration aj.i 1
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.ranposu.export_version aj.i -409722794
+scoreboard players set aj.ranposu.export_version aj.i 193099919
 scoreboard players reset * aj.ranposu.rig_loaded
 execute as @e[type=#ranposu:aj_root,tag=aj.ranposu.root] run function zzz_ranposu_internal:on_load

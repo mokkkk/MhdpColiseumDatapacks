@@ -9,6 +9,9 @@
     execute if score @s aj.ranposu.animation.anger.local_anim_time matches 16 run playsound block.grass.step master @a ~ ~ ~ 2 1
     execute if score @s aj.ranposu.animation.anger.local_anim_time matches 38 run playsound block.grass.step master @a ~ ~ ~ 2 1
 
+# まばたき
+    execute if score @s aj.ranposu.animation.anger.local_anim_time matches 1 run function ranposu:manager/7_model/head_blink_end
+    
 # 接地
     execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:general/check_ground
     execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

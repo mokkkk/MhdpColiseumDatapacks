@@ -50,5 +50,29 @@
     execute if entity @s[tag=AnmStepJumpR] run function ranposu:animations/step_jump_right/play
     tag @s remove AnmStepJumpR
 
+# 怯み
+    execute if entity @s[tag=AnmDamage] run function ranposu:animations/damage/play
+    tag @s remove AnmDamage
+    
+# 大怯み（ダウン）
+    execute if entity @s[tag=AnmDamageDown] run function ranposu:animations/damage_down/play
+    tag @s remove AnmDamageDown
+
+# 空中怯み
+    execute if entity @s[tag=AnmDamageFlying] run function ranposu:animations/damage_down/play
+    tag @s remove AnmDamageFlying
+
+# ダウン中もがき
+    execute if entity @s[tag=AnmDown] run function ranposu:animations/down/play
+    tag @s remove AnmDown
+
+# ダウン終了
+    execute if entity @s[tag=AnmDownEnd] run function ranposu:animations/down_end/play
+    tag @s remove AnmDownEnd
+    
+# 討伐
+    execute if entity @s[tag=AnmDeath] run function ranposu:animations/death/play
+    tag @s remove AnmDeath
+
 # 終了
     tag @s add AppliedAnm
