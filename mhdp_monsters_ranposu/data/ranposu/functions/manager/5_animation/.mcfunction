@@ -11,6 +11,12 @@
 ## 怒り状態移行
     execute if entity @s[tag=aj.ranposu.animation.anger] run function ranposu:manager/5_animation/anger/
 
+## バックステップ
+    execute if entity @s[tag=aj.ranposu.animation.step_back] run function ranposu:manager/5_animation/step_back/
+
+## 移動
+    execute if entity @s[tag=aj.ranposu.animation.move] run function ranposu:manager/5_animation/move/
+
 ## 軸合わせ
     execute if entity @s[tag=aj.ranposu.animation.turn_right] run function ranposu:manager/5_animation/turn_right/
     execute if entity @s[tag=aj.ranposu.animation.turn_left] run function ranposu:manager/5_animation/turn_left/

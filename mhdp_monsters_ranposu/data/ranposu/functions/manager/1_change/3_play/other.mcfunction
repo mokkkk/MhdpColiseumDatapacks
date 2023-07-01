@@ -10,6 +10,14 @@
     execute if entity @s[tag=AnmAnger] run function ranposu:animations/anger/play
     tag @s remove AnmAnger
 
+# バックステップ
+    execute if entity @s[tag=AnmStepBack] run function ranposu:animations/step_back/play
+    tag @s remove AnmStepBack
+
+# 移動
+    execute if entity @s[tag=AnmMove] run function ranposu:animations/move/play
+    tag @s remove AnmMove
+
 # 噛みつき
     execute if entity @s[tag=AnmBite] run function ranposu:animations/bite/play
     tag @s remove AnmBite

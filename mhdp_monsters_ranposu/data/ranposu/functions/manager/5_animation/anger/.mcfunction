@@ -3,7 +3,7 @@
 # 青鳥竜 アニメーションのイベントハンドラ 怒り開始
 
 # 効果音
-    execute if score @s aj.ranposu.animation.anger.local_anim_time matches 14 run playsound entity.phantom.bite master @a ~ ~ ~ 2 1.5
+    execute if score @s aj.ranposu.animation.anger.local_anim_time matches 14 run playsound entity.phantom.bite master @a ~ ~ ~ 2 1.3
     execute if score @s aj.ranposu.animation.anger.local_anim_time matches 14 run playsound entity.phantom.bite master @a ~ ~ ~ 2 1.1
     execute if score @s aj.ranposu.animation.anger.local_anim_time matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 1
     execute if score @s aj.ranposu.animation.anger.local_anim_time matches 16 run playsound block.grass.step master @a ~ ~ ~ 2 1
