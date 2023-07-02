@@ -4,6 +4,7 @@
 
 # 効果音
     execute if score @s aj.ranposu.animation.tackle.local_anim_time matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 1
+    execute if score @s aj.ranposu.animation.tackle.local_anim_time matches 18 run playsound entity.phantom.bite master @a ~ ~ ~ 2 1.5
     execute if score @s aj.ranposu.animation.tackle.local_anim_time matches 22 run particle block sandstone ~ ~ ~ 1 0.1 1 0 20 force
     execute if score @s aj.ranposu.animation.tackle.local_anim_time matches 22 run playsound block.grass.step master @a ~ ~ ~ 2 1
     execute if score @s aj.ranposu.animation.tackle.local_anim_time matches 39..41 run playsound block.grass.step master @a ~ ~ ~ 2 1

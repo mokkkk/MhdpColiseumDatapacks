@@ -2,6 +2,9 @@
 #
 # 青鳥竜 アニメーションのイベントハンドラ 尻尾なぎはらい
 
+# 初回読み込み
+    execute unless entity @s[tag=InitAnmTail] if score @s aj.ranposu.animation.tail_right.local_anim_time matches 1 run function ranposu:manager/5_animation/tail_right/init
+
 # 効果音
     execute if score @s aj.ranposu.animation.tail_right.local_anim_time matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 1
     execute if score @s aj.ranposu.animation.tail_right.local_anim_time matches 15 run playsound entity.goat.step master @a ~ ~ ~ 2 0.5
