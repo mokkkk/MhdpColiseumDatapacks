@@ -3,23 +3,20 @@
 # 青鳥竜 消去処理
 
 # タグ消去
-tag @e[tag=RanposuTarget] remove RanposuTarget
-tag @e[tag=RanposuAttackTarget] remove RanposuAttackTarget
+    tag @e[tag=RanposuTarget] remove RanposuTarget
+    tag @e[tag=RanposuAttackTarget] remove RanposuAttackTarget
 
-# marker消去
-# kill @e[type=marker,tag=RanposuBreathTarget]
-# kill @e[type=marker,tag=RanposuChargeFPos]
-# kill @e[type=marker,tag=RanposuChargeTarget]
-# kill @e[type=marker,tag=RanposuChargeAttack]
+# 処理用Marker消去
+    # Ignore
 
 # パーティクル
-# execute at @e[type=armor_stand,tag=RanposuParts] run particle poof ~ ~1 ~ 1 1 1 0 30
+    execute at @s run particle poof ~ ~1 ~ 2 1 2 0 30
 
 # 当たり判定削除
-function ranposu:manager/4_general/kill_health
+    function ranposu:manager/2_health/kill_health
 
 # ボスバー削除
-bossbar remove asa_animator:ranposu_health
+    bossbar remove asa_animator:ranposu_health
 
 # パーツ削除(animated java)
-function ranposu:remove/all
+    function ranposu:remove/all

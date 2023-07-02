@@ -49,7 +49,7 @@
     tag @a remove PlyWeaponDrawingSub
 
 # モンスター消去処理
-    execute as @e[type=item_display,tag=MonsterRoot] run function mhdp_core:phase/4_quest_cleared/back_home/setup/despawn_monster
+    execute as @e[type=item_display,tag=MonsterRoot] at @s run function mhdp_core:phase/4_quest_cleared/back_home/setup/despawn_monster
 
 # 報酬チェスト用意
     function mhdp_core:phase/4_quest_cleared/back_home/setup/reward

@@ -23,12 +23,15 @@
     # execute unless predicate asa_animator:reus/turn run function asa_animator:reus/manager/1_change/1_animations/turn
 
 # 怒りカウント
-    # execute if entity @s[tag=IsAnger] unless entity @a[tag=ReusAttackTarget] run scoreboard players add #mhdp_reus_anger_count AsaMatrix 1
-    # execute if entity @s[tag=IsAnger] if entity @a[tag=ReusAttackTarget] run scoreboard players add #mhdp_reus_anger_count AsaMatrix 2
-    # execute if entity @s[tag=IsAnger] if score #mhdp_reus_anger_count AsaMatrix matches 30.. run function asa_animator:reus/manager/3_damage/2_anger/end
+    # execute if entity @s[tag=StateIsAnger] unless entity @a[tag=ReusAttackTarget] run scoreboard players add #mhdp_reus_anger_count AsaMatrix 1
+    # execute if entity @s[tag=StateIsAnger] if entity @a[tag=ReusAttackTarget] run scoreboard players add #mhdp_reus_anger_count AsaMatrix 2
+    # execute if entity @s[tag=StateIsAnger] if score #mhdp_reus_anger_count AsaMatrix matches 30.. run function asa_animator:reus/manager/3_damage/2_anger/end
 
 # アニメーション再生開始
     function ranposu:manager/1_change/3_play/
+
+# 念のためStateタグを消去
+    tag @s remove StateIsStun
 
 # 終了
     tag @s remove ChangeAnm

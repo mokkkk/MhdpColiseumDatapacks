@@ -5,8 +5,8 @@
 # 効果音
     execute if score @s aj.ranposu.animation.death.local_anim_time matches 1 run playsound block.grass.step master @a ~ ~ ~ 2 1
     execute if score @s aj.ranposu.animation.death.local_anim_time matches 74 run playsound block.grass.step master @a ~ ~ ~ 2 1
-    execute if score @s aj.ranposu.animation.death.local_anim_time matches 35 run playsound entity.phantom.bite master @a ~ ~ ~ 2 1.3
-    execute if score @s aj.ranposu.animation.death.local_anim_time matches 35 run playsound entity.phantom.bite master @a ~ ~ ~ 2 1.5
+    execute if score @s aj.ranposu.animation.death.local_anim_time matches 35 run playsound entity.phantom.bite master @a ~ ~ ~ 1 0.9
+    execute if score @s aj.ranposu.animation.death.local_anim_time matches 35 run playsound entity.phantom.bite master @a ~ ~ ~ 1 0.7
     execute if score @s aj.ranposu.animation.death.local_anim_time matches 89 run particle block sandstone ~ ~ ~ 1 0.1 1 0 20 force
     execute if score @s aj.ranposu.animation.death.local_anim_time matches 89 run playsound block.grass.step master @a ~ ~ ~ 2 1
     execute if score @s aj.ranposu.animation.death.local_anim_time matches 89 run playsound entity.hoglin.step master @a ~ ~ ~ 1 1

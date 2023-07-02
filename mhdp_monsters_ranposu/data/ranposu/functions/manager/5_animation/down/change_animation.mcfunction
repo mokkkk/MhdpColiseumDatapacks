@@ -6,3 +6,4 @@
 # 終了
     scoreboard players reset #mhdp_ranposu_down_count
     tag @s remove InitAnmMove
+    tag @s remove StateIsStun

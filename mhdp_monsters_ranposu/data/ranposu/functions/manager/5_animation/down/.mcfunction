@@ -10,6 +10,9 @@
     execute if score @s aj.ranposu.animation.down.local_anim_time matches 5 run playsound block.grass.step master @a ~ ~ ~ 2 1
     execute if score @s aj.ranposu.animation.down.local_anim_time matches 5 run particle block sandstone ~ ~ ~ 1 0.1 1 0 3 force
 
+# 演出
+    execute if entity @s[tag=StateIsStun] run particle crit ^ ^1 ^-3 0.5 0.1 0.5 0.1 3
+
 # 接地
     execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:general/check_ground
     execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~

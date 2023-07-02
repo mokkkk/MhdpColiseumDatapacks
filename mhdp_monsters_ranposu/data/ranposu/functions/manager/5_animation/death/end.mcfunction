@@ -1,5 +1,3 @@
 
-# 待機再生
-    function ranposu:animations/idle/play
-# アニメーション変更
-    # tag @s add ChangeAnm
+# 討伐
+    function ranposu:manager/4_general/kill

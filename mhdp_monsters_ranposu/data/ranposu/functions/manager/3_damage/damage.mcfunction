@@ -10,30 +10,20 @@
 # 効果音など
     playsound minecraft:entity.player.hurt master @a ~ ~ ~ 2 1
 
-# 部位ダメージ適用
-    # execute if entity @s[tag=HeadParts] run scoreboard players operation #mhdp_ranposu_head_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
-    # execute if entity @s[tag=BodyParts] run scoreboard players operation #mhdp_ranposu_body_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
-    # execute if entity @s[tag=TailParts] run scoreboard players operation #mhdp_ranposu_tail_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
-    # execute if entity @s[tag=LegParts] run scoreboard players operation #mhdp_ranposu_leg_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
-    # execute if entity @s[tag=HeadParts] if score #mhdp_ranposu_head_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=RanposuRoot,distance=0..15,tag=!AnmDLegL,tag=!AnmDLegR,tag=!AnmDStun,tag=!AnmFStun] run function asa_animator:ranposu/manager/3_damage/0_animation/damage_head
-    # execute if entity @s[tag=BodyParts] if score #mhdp_ranposu_body_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=RanposuRoot,distance=0..15,tag=!AnmDLegL,tag=!AnmDLegR,tag=!AnmDStun,tag=!AnmFStun] run function asa_animator:ranposu/manager/3_damage/0_animation/damage_body
-    # execute if entity @s[tag=TailParts] if data storage mhdp_core:temp Temp.WeaponDamage{Type:1} if score #mhdp_ranposu_tail_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=RanposuRoot,distance=0..15,tag=!AnmDLegL,tag=!AnmDLegR,tag=!AnmDStun,tag=!AnmFStun] run function asa_animator:ranposu/manager/3_damage/0_animation/damage_tail
-    # execute if entity @s[tag=LegParts] if score #mhdp_ranposu_leg_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=RanposuRoot,distance=0..15,tag=!AnmDLegL,tag=!AnmDLegR,tag=!AnmDStun,tag=!AnmFStun] run function asa_animator:ranposu/manager/3_damage/0_animation/damage_leg
+# 部位・スタン・怒りダメージ適用
+    # 部位ダメージ
+        execute if entity @s[tag=HeadParts] if entity @e[type=item_display,tag=RanposuRoot,tag=!aj.ranposu.animation.down] run scoreboard players operation #mhdp_ranposu_head_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
+        execute if entity @s[tag=BodyParts] if entity @e[type=item_display,tag=RanposuRoot,tag=!aj.ranposu.animation.down] run scoreboard players operation #mhdp_ranposu_body_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
+    # 怒り値増加
+        execute as @e[type=item_display,tag=RanposuRoot,tag=!StateIsAnger] run scoreboard players operation #mhdp_ranposu_anger_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
+    # スタン値増加
+        execute if entity @s[tag=HeadParts] if entity @e[type=item_display,tag=RanposuRoot,tag=!aj.ranposu.animation.down] if data storage mhdp_core:temp Temp.WeaponDamage{Type:2} run scoreboard players operation #mhdp_ranposu_stun_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
 
-# スタンダメージ適用
-    # execute if entity @s[tag=HeadParts] if data storage mhdp_core:temp Temp.WeaponDamage{Type:2} run scoreboard players operation #mhdp_ranposu_stun_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
-    # execute if entity @s[tag=HeadParts] if data storage mhdp_core:temp Temp.WeaponDamage{Type:2} if score #mhdp_ranposu_stun_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=RanposuRoot,distance=0..15,tag=!AnmDStun,tag=!AnmFStun] run function asa_animator:ranposu/manager/3_damage/0_animation/damage_stun
-
-# 怒り遷移
-    # execute if entity @e[type=armor_stand,tag=RanposuRoot,tag=!IsAnger] run scoreboard players operation #mhdp_ranposu_anger_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
-    # execute if score #mhdp_ranposu_anger_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=RanposuRoot] if entity @s[tag=!IsAnger,tag=!AnmDLegL,tag=!AnmDLegR,tag=!AnmDStun] run function asa_animator:ranposu/manager/3_damage/0_animation/anger
-
-# 飛行時怯み処理
-    # execute as @e[type=armor_stand,tag=RanposuRoot,distance=0..15] if entity @s[tag=IsFlying] run scoreboard players operation #mhdp_ranposu_flying_damage AsaMatrix += #mhdp_ranposu_damage AsaMatrix
-    # execute if score #mhdp_ranposu_flying_damage AsaMatrix matches ..0 as @e[type=armor_stand,tag=RanposuRoot,distance=0..15] at @s run function asa_animator:ranposu/manager/3_damage/0_animation/damage_flying
+# 怯み適用
+    execute as @e[type=item_display,tag=RanposuRoot] if entity @e[type=item_display,tag=RanposuRoot,tag=!aj.ranposu.animation.damage,tag=!aj.ranposu.animation.damage_down,tag=!aj.ranposu.animation.damage_flying,tag=!aj.ranposu.animation.down,tag=!aj.ranposu.animation.down_end] run function ranposu:manager/3_damage/damage_parts
 
 # 死亡時，アニメーション設定
-    # execute if score #mhdp_ranposu_health AsaMatrix matches ..0 as @e[type=armor_stand,tag=RanposuRoot] run function asa_animator:ranposu/manager/3_damage/0_animation/death
+    execute if score #mhdp_ranposu_health AsaMatrix matches ..0 as @e[type=item_display,tag=RanposuRoot] run function ranposu:manager/6_damage_animation/0_animation/death
 
 # 体力半分時処理
     execute as @e[tag=RanposuRoot] if entity @s[tag=!HpHalf] if score #mhdp_ranposu_health_half AsaMatrix matches ..0 run function mhdp_core:phase/3_quest/check/hp_half
