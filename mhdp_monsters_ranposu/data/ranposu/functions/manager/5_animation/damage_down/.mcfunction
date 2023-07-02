@@ -1,6 +1,6 @@
 #> ranposu:manager/5_animation/damage_down/
 #
-# 青鳥竜 アニメーションのイベントハンドラ バックステップ
+# 青鳥竜 アニメーションのイベントハンドラ 大怯み
 
 # 効果音
     execute if score @s aj.ranposu.animation.damage_down.local_anim_time matches 1 run playsound entity.phantom.bite master @a ~ ~ ~ 2 1.3

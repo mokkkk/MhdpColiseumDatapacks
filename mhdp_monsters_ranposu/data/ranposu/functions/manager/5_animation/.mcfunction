@@ -50,11 +50,14 @@
 ## 大怯み（ダウン）
     execute if entity @s[tag=aj.ranposu.animation.damage_down] run function ranposu:manager/5_animation/damage_down/
 
-#TODO:空中怯み
-#TODO:特定モーションの特定タイミングに，StateIsFlyingタグを追加
+## 空中怯み
+    execute if entity @s[tag=aj.ranposu.animation.damage_flying] run function ranposu:manager/5_animation/damage_flying/
 
 ## ダウンもがき
     execute if entity @s[tag=aj.ranposu.animation.down] run function ranposu:manager/5_animation/down/
 
 ## ダウン終了
     execute if entity @s[tag=aj.ranposu.animation.down_end] run function ranposu:manager/5_animation/down_end/
+
+## 討伐
+    execute if entity @s[tag=aj.ranposu.animation.death] run function ranposu:manager/5_animation/death/

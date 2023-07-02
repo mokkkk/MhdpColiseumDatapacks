@@ -59,7 +59,7 @@
     tag @s remove AnmDamageDown
 
 # 空中怯み
-    execute if entity @s[tag=AnmDamageFlying] run function ranposu:animations/damage_down/play
+    execute if entity @s[tag=AnmDamageFlying] run function ranposu:animations/damage_flying/play
     tag @s remove AnmDamageFlying
 
 # ダウン中もがき

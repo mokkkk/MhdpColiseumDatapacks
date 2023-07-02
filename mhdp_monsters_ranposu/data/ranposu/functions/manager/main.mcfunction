@@ -16,6 +16,3 @@
 
 # 怒り時パーティクル
     # execute if entity @s[tag=IsAnger] at @e[type=armor_stand,tag=ReusParts,tag=HeadU] run particle smoke ^ ^1.3 ^0.7 0.3 0.3 0.3 0.01 1
-
-
-function ranposu:manager/99_test/check_temp_tag

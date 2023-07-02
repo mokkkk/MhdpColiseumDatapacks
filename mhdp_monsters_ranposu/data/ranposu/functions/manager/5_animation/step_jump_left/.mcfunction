@@ -24,6 +24,8 @@
     execute if score @s aj.ranposu.animation.step_jump_left.local_anim_time matches 25 at @s run function ranposu:manager/5_animation/step_jump_right/pos/set_pos
     execute if score @s aj.ranposu.animation.step_jump_left.local_anim_time matches 30..45 at @s run function ranposu:manager/5_animation/step_jump_right/pos/offset
     execute if score @s aj.ranposu.animation.step_jump_left.local_anim_time matches 46..48 at @s run tp @s ^ ^ ^0.1 ~ 0
+    execute if score @s aj.ranposu.animation.step_jump_left.local_anim_time matches 30 run tag @s add StateIsFlying
+    execute if score @s aj.ranposu.animation.step_jump_left.local_anim_time matches 45 run tag @s remove StateIsFlying
 
 # 攻撃
     execute if score @s aj.ranposu.animation.step_jump_left.local_anim_time matches 32..45 run function ranposu:manager/5_animation/jump/damage
