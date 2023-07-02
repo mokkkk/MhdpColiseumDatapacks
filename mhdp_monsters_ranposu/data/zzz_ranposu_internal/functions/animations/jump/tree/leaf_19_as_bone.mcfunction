@@ -1,5 +1,6 @@
 execute if entity @s[tag=aj.ranposu.locator.body_1] at @s on origin run tp @s ^0 ^1.13292 ^-0.84637 ~0 ~27.5
 execute if entity @s[tag=aj.ranposu.locator.body_0] at @s on origin run tp @s ^-0.06903 ^0.08364 ^1.26768 ~-1.54649 ~13.80771
+execute if entity @s[tag=aj.ranposu.locator.pos_head] at @s on origin run tp @s ^0.10432 ^1.03857 ^3.36253 ~-3.5916 ~0.16886
 execute if entity @s[tag=aj.ranposu.locator.head_0] at @s on origin run tp @s ^0.08751 ^0.42455 ^3.36177 ~-3.5916 ~0.16886
 execute if entity @s[tag=aj.ranposu.locator.tail_0] at @s on origin run tp @s ^0 ^1.46175 ^-2.01577 ~0 ~-1.40625
 execute if entity @s[tag=aj.ranposu.locator.tail_1] at @s on origin run tp @s ^0 ^1.36927 ^-3.08104 ~0 ~-7.34375

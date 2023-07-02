@@ -3212,6 +3212,8 @@
 				"data\\zzz_ranposu_internal\\functions\\summon\\locator_body_1\\as_target.mcfunction",
 				"data\\zzz_ranposu_internal\\functions\\summon\\locator_body_0\\as_origin.mcfunction",
 				"data\\zzz_ranposu_internal\\functions\\summon\\locator_body_0\\as_target.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_pos_head\\as_origin.mcfunction",
+				"data\\zzz_ranposu_internal\\functions\\summon\\locator_pos_head\\as_target.mcfunction",
 				"data\\zzz_ranposu_internal\\functions\\summon\\locator_head_0\\as_origin.mcfunction",
 				"data\\zzz_ranposu_internal\\functions\\summon\\locator_head_0\\as_target.mcfunction",
 				"data\\zzz_ranposu_internal\\functions\\summon\\locator_tail_0\\as_origin.mcfunction",

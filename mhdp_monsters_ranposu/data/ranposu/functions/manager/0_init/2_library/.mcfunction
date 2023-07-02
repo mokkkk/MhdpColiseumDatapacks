@@ -3,6 +3,8 @@
 # 青鳥竜 TSBライブラリ用init処理
 
 # 処理簡略化用タグ付与
+    execute on passengers if entity @s[tag=aj.ranposu.locator.pos_head] on origin run tag @s add LctPosHead
+
     execute on passengers if entity @s[tag=aj.ranposu.locator.head_0] on origin run tag @s add MonsterParts
     execute on passengers if entity @s[tag=aj.ranposu.locator.head_0] on origin run tag @s add RanposuHealth
     execute on passengers if entity @s[tag=aj.ranposu.locator.head_0] on origin run tag @s add Head0

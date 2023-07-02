@@ -11,7 +11,7 @@
     execute if score @s aj.ranposu.animation.down.local_anim_time matches 5 run particle block sandstone ~ ~ ~ 1 0.1 1 0 3 force
 
 # 演出
-    execute if entity @s[tag=StateIsStun] run particle crit ^ ^1 ^-3 0.5 0.1 0.5 0.1 3
+    execute if entity @s[tag=StateIsStun] at @e[type=marker,tag=LctPosHead] run particle crit ~ ~0.5 ~ 0.1 0.1 0.1 0.1 1
 
 # 接地
     execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:general/check_ground
