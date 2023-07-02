@@ -9,12 +9,10 @@
     # Ignore
 
 # ターゲットリセット
-    execute if entity @s[tag=!StateAfterMove] unless predicate ranposu:animation/is_stay_animation_tags run function ranposu:manager/1_change/target
+    execute if entity @s[tag=!StateAfterMove] run function ranposu:manager/1_change/target
 
 # 強制
-    # tag @s add AnmTurnL
     # tag @s add AnmClaw
-    # function ranposu:manager/1_change/2_animations/tail
 
 # 行動
     execute if entity @a[tag=RanposuAttackTarget] run function ranposu:manager/1_change/act

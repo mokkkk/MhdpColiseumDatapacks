@@ -2,6 +2,10 @@
 #
 # 青鳥竜 アニメーション遷移処理 再生開始 その他
 
+# 待機
+    execute if entity @s[tag=AnmIdle] run function ranposu:animations/idle/play
+    tag @s remove AnmIdle
+
 # 威嚇
     execute if entity @s[tag=AnmVoice] run function ranposu:animations/voice/play
     tag @s remove AnmVoice

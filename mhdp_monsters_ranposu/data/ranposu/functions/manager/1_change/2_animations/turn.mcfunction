@@ -9,7 +9,6 @@ execute unless entity @s[tag=NoRotate] facing entity @e[limit=1,tag=RanposuAttac
 
 execute unless entity @s[tag=NoRotate] if entity @s[tag=Right] run tag @s add AnmTurnR
 execute unless entity @s[tag=NoRotate] unless entity @s[tag=Right] run tag @s add AnmTurnL
-execute unless entity @s[tag=NoRotate] run tag @s add IsTurn
 
 execute positioned 0 0 0 run kill @e[distance=0..2,type=marker,tag=MhdpRotater]
 tag @s remove Right
