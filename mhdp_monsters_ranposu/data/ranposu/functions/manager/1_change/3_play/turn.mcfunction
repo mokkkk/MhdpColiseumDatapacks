@@ -11,4 +11,4 @@
     tag @s remove AnmTurnR
 
 # 終了
-    tag @s add AppliedAnm
+    tag @s add StateAppliedAnm

@@ -75,4 +75,4 @@
     tag @s remove AnmDeath
 
 # 終了
-    tag @s add AppliedAnm
+    tag @s add StateAppliedAnm

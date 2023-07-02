@@ -7,10 +7,10 @@
           "type": "minecraft:group",
           "children": [
             {
-              "##comment":"3連ブレス",
+              "##comment":"噛みつき",
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 6,
+              "weight": 3,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -19,7 +19,7 @@
               ]
             },
             {
-              "##comment":"地上強襲",
+              "##comment":"移動ひっかき",
               "type": "minecraft:item",
               "name": "minecraft:paper",
               "weight": 5,
@@ -31,26 +31,14 @@
               ]
             },
             {
-              "##comment":"回り込み着地",
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 5,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:3}"
-                }
-              ]
-            },
-            {
-              "##comment":"縦なぎ払い火炎放射",
+              "##comment":"タックル",
               "type": "minecraft:item",
               "name": "minecraft:paper",
               "weight": 6,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:4}"
+                "tag": "{ActPaper:1,Act:3}"
                 }
               ]
             }

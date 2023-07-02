@@ -24,3 +24,4 @@
     execute if entity @s[tag=aj.ranposu.animation.damage_flying] run function ranposu:animations/damage_flying/stop
     execute if entity @s[tag=aj.ranposu.animation.down] run function ranposu:animations/down/stop
     execute if entity @s[tag=aj.ranposu.animation.down_end] run function ranposu:animations/down_end/stop
+    execute if entity @s[tag=aj.ranposu.animation.death] run function ranposu:animations/death/stop
