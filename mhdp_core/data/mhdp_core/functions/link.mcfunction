@@ -7,6 +7,8 @@
     function mhdp_core:init/monster_defence
 
 # クエスト関連処理
+## データパック読み込み処理
+    function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/load
 ## 召喚処理
     function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/summon
 ## 乱入処理

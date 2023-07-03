@@ -1,16 +1,16 @@
-#> mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/0
+#> mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/2
 #
-# Phase1_クエスト受注 クエスト開始処理 モンスター召喚 １匹目
+# Phase1_クエスト受注 クエスト開始処理 モンスター召喚 3匹目
 
 # データ退避
-    data modify storage mhdp_core:temp Temp set from storage mh_dp:status GameStatus.Quest.Monsters[0]
+    data modify storage mhdp_core:temp Temp set from storage mh_dp:status GameStatus.Quest.Monsters[2]
 
 # ID決定
-    scoreboard players set #mhdp_id_temp MhdpCore 1
+    scoreboard players set #mhdp_id_temp MhdpCore 3
 
 # 読み込み
     function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/load
-
+    
 # 召喚
     execute if data storage mhdp_core:temp Temp{Condition:0} run function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/summon
 
