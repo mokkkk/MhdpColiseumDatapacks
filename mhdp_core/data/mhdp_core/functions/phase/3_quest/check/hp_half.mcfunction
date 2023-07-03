@@ -12,6 +12,14 @@
 
     execute store result score #mhdp_target_temp MhdpCore run data get storage mh_dp:status GameStatus.Quest.Monsters[2].Target
     execute if score #mhdp_target_temp MhdpCore = #mhdp_id_temp MhdpCore run function mhdp_core:phase/3_quest/check/hp_half/2
+    scoreboard players reset #mhdp_target_temp
+
+    execute store result score #mhdp_target_temp MhdpCore run data get storage mh_dp:status GameStatus.Quest.Monsters[3].Target
+    execute if score #mhdp_target_temp MhdpCore = #mhdp_id_temp MhdpCore run function mhdp_core:phase/3_quest/check/hp_half/3
+    scoreboard players reset #mhdp_target_temp
+
+    execute store result score #mhdp_target_temp MhdpCore run data get storage mh_dp:status GameStatus.Quest.Monsters[4].Target
+    execute if score #mhdp_target_temp MhdpCore = #mhdp_id_temp MhdpCore run function mhdp_core:phase/3_quest/check/hp_half/4
 
 # 終了
     tag @s add HpHalf
