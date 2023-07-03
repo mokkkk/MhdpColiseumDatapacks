@@ -9,6 +9,7 @@
 # クエスト関連処理
 ## データパック読み込み処理
     function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/load
+    function mhdp_core:phase/4_quest_cleared/back_home/setup/disable_datapack/disable
 ## 召喚処理
     function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/summon
 ## 乱入処理

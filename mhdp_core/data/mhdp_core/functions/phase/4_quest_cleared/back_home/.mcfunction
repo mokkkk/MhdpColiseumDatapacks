@@ -8,13 +8,6 @@
 # 訓練終了処理
     execute if score #mhdp_quest_id MhdpCore matches 0 run function mhdp_core:phase/4_quest_cleared/back_home/setup/tutorial
 
-# クエストデータ初期化
-    data remove storage mh_dp:status GameStatus.Quest
-    scoreboard players reset #mhdp_quest_id
-    scoreboard players reset #mhdp_quest_monster_count
-    scoreboard players reset #mhdp_quest_death_count
-    scoreboard players reset #mhdp_quest_timer
-
 # Phase変更
     data modify storage mh_dp:status GameStatus.Phase set value 0
 
@@ -61,3 +54,10 @@
 
 # 村人再配置
     function mhdp_core:phase/0_village/villager/
+
+# クエストデータ解放
+    data remove storage mh_dp:status GameStatus.Quest
+    scoreboard players reset #mhdp_quest_id
+    scoreboard players reset #mhdp_quest_monster_count
+    scoreboard players reset #mhdp_quest_death_count
+    scoreboard players reset #mhdp_quest_timer
