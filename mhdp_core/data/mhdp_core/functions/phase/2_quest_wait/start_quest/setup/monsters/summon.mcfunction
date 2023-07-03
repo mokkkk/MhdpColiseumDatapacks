@@ -3,6 +3,7 @@
 # Phase1_クエスト受注 クエスト開始処理 モンスター召喚 分岐
 
 # 青鳥竜
+    execute if data storage mhdp_core:temp Temp{Name:"Ranposu"} run datapack enable "file/mhdp_monsters_ranposu"
     execute if data storage mhdp_core:temp Temp{Name:"Ranposu"} run function ranposu:manager/0_init/0_summon/
 
 # 火竜

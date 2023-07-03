@@ -26,6 +26,9 @@
 # プレイヤーの特殊装具をstickからcarrot_on_a_stickに変更(TO DO)
     # function ...
 
+# モンスターを配置
+    function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/
+
 # マップ処理
     # 大闘技場
         execute if data storage mh_dp:status GameStatus.Quest{Field:1} run function mhdp_core:phase/2_quest_wait/start_quest/setup/map/coliseum
@@ -58,9 +61,6 @@
 # ノックバック用ID初期化
     scoreboard players set #mhdp_global_knockback_id MhdpCore 0
     scoreboard players set #mhdp_global_knockback_kill_id MhdpCore 0
-
-# モンスターを配置
-    function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/
 
 # クエスト状態を受注済みに変更
     function mhdp_core:phase/2_quest_wait/start_quest/setup/quest_start
