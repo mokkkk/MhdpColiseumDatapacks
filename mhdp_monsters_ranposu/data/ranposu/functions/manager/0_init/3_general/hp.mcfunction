@@ -58,31 +58,5 @@
     scoreboard players operation #mhdp_ranposu_anger_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
     execute store result score #mhdp_ranposu_anger_damage_max AsaMatrix run scoreboard players operation #mhdp_ranposu_anger_damage AsaMatrix /= #asam_const_100 AsaMatrix
 
-# デバッグ用
-    # scoreboard players set #mhdp_const_temp AsaMatrix 1
-    # scoreboard players operation #mhdp_ranposu_head_damage AsaMatrix = #mhdp_ranposu_health AsaMatrix
-    # scoreboard players operation #mhdp_ranposu_head_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
-    # execute store result score #mhdp_ranposu_head_damage_max AsaMatrix run scoreboard players operation #mhdp_ranposu_head_damage AsaMatrix /= #asam_const_100 AsaMatrix
-    # scoreboard players set #mhdp_const_temp AsaMatrix 1
-    # scoreboard players operation #mhdp_ranposu_body_damage AsaMatrix = #mhdp_ranposu_health AsaMatrix
-    # scoreboard players operation #mhdp_ranposu_body_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
-    # execute store result score #mhdp_ranposu_body_damage_max AsaMatrix run scoreboard players operation #mhdp_ranposu_body_damage AsaMatrix /= #asam_const_100 AsaMatrix
-    # scoreboard players set #mhdp_const_temp AsaMatrix 1
-    # scoreboard players operation #mhdp_ranposu_tail_damage AsaMatrix = #mhdp_ranposu_health AsaMatrix
-    # scoreboard players operation #mhdp_ranposu_tail_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
-    # execute store result score #mhdp_ranposu_tail_damage_max AsaMatrix run scoreboard players operation #mhdp_ranposu_tail_damage AsaMatrix /= #asam_const_100 AsaMatrix
-    # scoreboard players set #mhdp_const_temp AsaMatrix 1
-    # scoreboard players operation #mhdp_ranposu_leg_damage AsaMatrix = #mhdp_ranposu_health AsaMatrix
-    # scoreboard players operation #mhdp_ranposu_leg_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
-    # execute store result score #mhdp_ranposu_leg_damage_max AsaMatrix run scoreboard players operation #mhdp_ranposu_leg_damage AsaMatrix /= #asam_const_100 AsaMatrix
-    # scoreboard players set #mhdp_const_temp AsaMatrix 1
-    # scoreboard players operation #mhdp_ranposu_stun_damage AsaMatrix = #mhdp_ranposu_health AsaMatrix
-    # scoreboard players operation #mhdp_ranposu_stun_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
-    # execute store result score #mhdp_ranposu_stun_damage_max AsaMatrix run scoreboard players operation #mhdp_ranposu_stun_damage AsaMatrix /= #asam_const_100 AsaMatrix
-    # scoreboard players set #mhdp_const_temp AsaMatrix 1
-    # scoreboard players operation #mhdp_ranposu_flying_damage AsaMatrix = #mhdp_ranposu_health AsaMatrix
-    # scoreboard players operation #mhdp_ranposu_flying_damage AsaMatrix *= #mhdp_const_temp AsaMatrix
-    # execute store result score #mhdp_ranposu_flying_damage_max AsaMatrix run scoreboard players operation #mhdp_ranposu_flying_damage AsaMatrix /= #asam_const_100 AsaMatrix
-
 # 終了
     scoreboard players reset #mhdp_const_temp

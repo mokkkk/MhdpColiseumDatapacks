@@ -3,6 +3,7 @@
 # 青鳥竜 ターゲットリセット処理
 
 # ターゲットリセット
+# 傾向：ターゲット変更頻度高
     scoreboard players add #mhdp_ranposu_targetcount AsaMatrix 1
     execute if score #mhdp_ranposu_targetcount AsaMatrix matches 3.. run tag @s add ChangeTarget
     execute if score #mhdp_ranposu_targetcount AsaMatrix matches 3.. run scoreboard players set #mhdp_ranposu_targetcount AsaMatrix 0

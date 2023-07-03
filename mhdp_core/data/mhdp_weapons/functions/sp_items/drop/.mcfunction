@@ -9,5 +9,7 @@
     execute if data storage mhdp_core:temp Temp.ItemData.Item.tag{MhdpSpItem:1b} run function mhdp_weapons:sp_items/drop/give
 
 # 投げた特殊装具を削除
-    kill @e[type=item,nbt={Item:{tag:{MhdpSpItem:1b}}}]
+    kill @e[type=item,nbt={Item:{tag:{MhdpSpItem:1b}}},limit=1,sort=nearest]
     data remove storage mhdp_core:temp Temp
+
+say アイテム投げ捨て

@@ -15,6 +15,9 @@
 # 当たり判定削除
     function ranposu:manager/2_health/kill_health
 
+# スコアホルダー解放
+    function ranposu:manager/4_general/reset_scoreholder
+
 # ボスバー削除
     bossbar remove asa_animator:ranposu_health
 
