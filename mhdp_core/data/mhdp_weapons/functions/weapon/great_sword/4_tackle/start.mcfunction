@@ -16,15 +16,10 @@
 # ハイパーアーマー開始
     tag @s add PlyArmorHyper
 
-# ステップ回避処理開始
-    # 処理用Marker召喚
-        summon marker ~ ~ ~ {Tags:["SneakAvoidStand0","Start"]}
-    # 処理用MarkerにUidコピー
-        scoreboard players operation @e[type=marker,tag=SneakAvoidStand0,tag=Start] MhdpPlayerUid = @s MhdpPlayerUid
-    # 移動方向決定
-        execute as @e[type=marker,tag=SneakAvoidStand0,tag=Start] run data modify entity @s Pos set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Pos.Pre
-        execute rotated ~ 0 as @e[type=marker,tag=SneakAvoidStand0,tag=Start] positioned as @s run tp @s ~ ~ ~ ~ ~
-        execute positioned as @e[type=marker,tag=SneakAvoidStand0,tag=Start,limit=1] run tp @s ~ ~ ~ ~ ~ 
+# 移動処理
+    tp @s @s
+    scoreboard players set $strength delta.api.launch 3000
+    execute rotated ~ 0 run function delta:api/launch_looking
 
 # 移動速度リセット
     effect clear @s speed

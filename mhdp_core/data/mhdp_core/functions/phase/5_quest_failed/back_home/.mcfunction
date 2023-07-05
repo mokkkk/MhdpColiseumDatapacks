@@ -5,13 +5,6 @@
 # 訓練終了処理
     execute if score #mhdp_quest_id MhdpCore matches 0 run function mhdp_core:phase/4_quest_cleared/back_home/setup/tutorial
     
-# クエストデータ初期化
-    data remove storage mh_dp:status GameStatus.Quest
-    scoreboard players reset #mhdp_quest_id
-    scoreboard players reset #mhdp_quest_monster_count
-    scoreboard players reset #mhdp_quest_death_count
-    scoreboard players reset #mhdp_quest_timer
-
 # Phase変更
     data modify storage mh_dp:status GameStatus.Phase set value 0
 
@@ -46,7 +39,7 @@
     tag @a remove PlyWeaponDrawingSub
 
 # モンスター消去処理
-    execute as @e[type=armor_stand,tag=MonsterRoot] run function mhdp_core:phase/4_quest_cleared/back_home/setup/despawn_monster
+    execute as @e[type=item_display,tag=MonsterRoot] run function mhdp_core:phase/4_quest_cleared/back_home/setup/despawn_monster
 
 # 死亡復活処理
     execute as @a[tag=PlyDeathAnimation] run function mhdp_core:player/death/animation/end
@@ -58,3 +51,13 @@
 
 # 村人再配置
     function mhdp_core:phase/0_village/villager/
+
+# データパック解放
+    function mhdp_core:phase/4_quest_cleared/back_home/setup/disable_datapack/
+
+# クエストデータ初期化
+    data remove storage mh_dp:status GameStatus.Quest
+    scoreboard players reset #mhdp_quest_id
+    scoreboard players reset #mhdp_quest_monster_count
+    scoreboard players reset #mhdp_quest_death_count
+    scoreboard players reset #mhdp_quest_timer

@@ -15,7 +15,7 @@
     execute if entity @s[scores={MhdpWeaponTimer=6}] run function mhdp_weapons:weapon/bow/5_charge_step/animation_1
 
 # 移動
-    execute rotated as @e[type=marker,tag=SneakAvoidStand0,tag=Rotator] rotated ~ 0 run function mhdp_weapons:weapon/bow/5_charge_step/move
+    # execute rotated as @e[type=marker,tag=SneakAvoidStand0,tag=Rotator] rotated ~ 0 run function mhdp_weapons:weapon/bow/5_charge_step/move
 
 # 演出
     execute if entity @s[scores={MhdpWeaponTimer=1}] at @s run summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:2,Amplifier:3b,Duration:11,ShowParticles:0b}]}

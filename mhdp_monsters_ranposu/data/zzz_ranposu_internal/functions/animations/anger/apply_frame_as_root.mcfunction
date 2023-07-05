@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..55 run function zzz_ranposu_internal:animations/anger/tree/branch_0_55

@@ -16,7 +16,6 @@
     execute if entity @s[scores={MhdpWeaponTimer=8}] run function mhdp_weapons:weapon/short_sword/2_dash_attack/animation_2
 
 # 移動
-    execute if entity @s[scores={MhdpWeaponTimer=1}] run tp @s ~ ~ ~ ~ ~-5
     execute if entity @s[scores={MhdpWeaponTimer=..7}] rotated as @e[type=marker,tag=SneakAvoidStand0,tag=Rotator] rotated ~ 0 run function mhdp_core:player/sneak/avoid/main_move
     execute if entity @s[scores={MhdpWeaponTimer=4..6}] at @s run tp @s ~ ~ ~ ~ ~2
     execute if entity @s[scores={MhdpWeaponTimer=7..9}] at @s run tp @s ~ ~ ~ ~ ~-1

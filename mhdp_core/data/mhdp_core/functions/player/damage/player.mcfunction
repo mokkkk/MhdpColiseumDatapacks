@@ -4,6 +4,8 @@
 
 # ダメージ取得
     execute store result score #mhdp_temp_damage MhdpCore run data get storage mhdp_core:temp Temp.Damage.Damage 100
+    scoreboard players operation #mhdp_temp_damage MhdpCore *= #mhdp_atk_multiply MhdpCore
+    scoreboard players operation #mhdp_temp_damage MhdpCore /= $100 Const
 
 # score_damage用の引数用意
     data modify storage score_damage: Argument set value {Damage:1.0f, BypassArmor:1b}

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..30 run function zzz_ranposu_internal:animations/damage_down/tree/branch_0_30

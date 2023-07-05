@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..26 run function zzz_ranposu_internal:animations/step_back/tree/branch_0_26

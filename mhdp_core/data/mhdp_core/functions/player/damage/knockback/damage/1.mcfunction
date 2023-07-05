@@ -3,16 +3,18 @@
 # プレイヤーノックバック開始処理
 
 # ノックバック位置保存
-    execute if entity @e[type=marker,tag=MhdpKnockbackPos] run tp @e[type=marker,tag=MhdpKnockbackPos] ~ ~ ~
-    execute unless entity @e[type=marker,tag=MhdpKnockbackPos] run summon marker ~ ~ ~ {Tags:["MhdpKnockbackPos"]}
+    # execute if entity @e[type=marker,tag=MhdpKnockbackPos] run tp @e[type=marker,tag=MhdpKnockbackPos] ~ ~ ~
+    # execute unless entity @e[type=marker,tag=MhdpKnockbackPos] run summon marker ~ ~ ~ {Tags:["MhdpKnockbackPos"]}
 
 # 浮遊エフェクト付与
     tp @s @s
-    execute at @s run summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:25,Amplifier:10b,Duration:4,ShowParticles:0b}]}
+    # execute at @s run summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:25,Amplifier:10b,Duration:4,ShowParticles:0b}]}
+    scoreboard players set $strength delta.api.launch 10000
+    execute facing entity @s feet rotated ~ -25 run function delta:api/launch_looking
 
 # ノックバック中タグ・スコア付与
     tag @s add MdhpKnockback
-    tag @s add MdhpKnockbackW
+    # tag @s add MdhpKnockbackW
     scoreboard players set @s MhdpTKnockback 3
 
 # 武器の行動中断処理

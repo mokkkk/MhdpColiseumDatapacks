@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ranposu_internal:animations/damage/tree/leaf_2_as_bone

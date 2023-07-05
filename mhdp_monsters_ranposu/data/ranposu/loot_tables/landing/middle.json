@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "##comment":"移動",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 6,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:1}"
+                }
+              ]
+            },
+            {
+              "##comment":"移動ひっかき",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 4,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:2}"
+                }
+              ]
+            },
+            {
+              "##comment":"飛び掛かり",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 6,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:3}"
+                }
+              ]
+            },
+            {
+              "##comment":"ステップ飛び掛かり（怒り中のみ）",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 6,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:4}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "ranposu:change_state/is_anger"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,6 +8,9 @@
 # ID決定
     scoreboard players set #mhdp_id_temp MhdpCore 1
 
+# 読み込み
+    function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/load
+
 # 召喚
     execute if data storage mhdp_core:temp Temp{Condition:0} run function mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/summon
 

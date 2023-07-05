@@ -1,3 +1,7 @@
+#> asa_animator:general/back
+#
+# モンスターの共通処理
+# 闘技場の壁に埋まったとき，最も間近にあるCenterPos方向へ移動する
 
 summon marker ~ ~ ~ {Tags:["BackPos"]}
 execute at @s align xyz as @e[type=marker,tag=BackPos] facing entity @e[type=marker,tag=CenterPos,limit=1,sort=nearest] feet run tp @s ~ ~ ~ ~ 0

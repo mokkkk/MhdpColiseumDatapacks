@@ -1,0 +1,1 @@
+execute as @e[type=#ranposu:aj_root,tag=aj.ranposu.root] run function zzz_ranposu_internal:tick_as_root

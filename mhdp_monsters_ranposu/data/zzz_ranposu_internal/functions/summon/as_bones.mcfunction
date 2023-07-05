@@ -1,0 +1,1 @@
+function #ranposu:on_summon_as_bones

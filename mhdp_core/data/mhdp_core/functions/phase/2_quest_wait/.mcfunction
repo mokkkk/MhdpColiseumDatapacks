@@ -15,6 +15,8 @@
 
 # 落とし物回収
     execute if score #mhdp_quest_timer MhdpCore matches 1 run function mhdp_core:phase/2_quest_wait/prepare/pick_item
+# forceload処理のみ実行
+    execute if score #mhdp_quest_timer MhdpCore matches 1 run function mhdp_core:phase/2_quest_wait/prepare/forceload
 
 # 出発ファンファーレを鳴らす
     execute if score #mhdp_quest_timer MhdpCore matches 10 as @a at @s run playsound minecraft:custom.departure master @s ~ ~ ~ 3 1

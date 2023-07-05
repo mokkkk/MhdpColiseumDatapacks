@@ -15,8 +15,8 @@
     execute if entity @s[scores={MhdpWeaponTimer=8}] run function mhdp_weapons:weapon/great_sword/4_tackle/animation_1
 
 # 移動
-    execute if entity @s[scores={MhdpWeaponTimer=..4}] rotated as @e[type=marker,tag=SneakAvoidStand0,tag=Rotator] rotated ~ 0 run function mhdp_weapons:weapon/great_sword/4_tackle/move_0
-    execute if entity @s[scores={MhdpWeaponTimer=5..8}] rotated as @e[type=marker,tag=SneakAvoidStand0,tag=Rotator] rotated ~ 0 run function mhdp_weapons:weapon/great_sword/4_tackle/move_1
+    # execute if entity @s[scores={MhdpWeaponTimer=..4}] rotated as @e[type=marker,tag=SneakAvoidStand0,tag=Rotator] rotated ~ 0 run function mhdp_weapons:weapon/great_sword/4_tackle/move_0
+    # execute if entity @s[scores={MhdpWeaponTimer=5..8}] rotated as @e[type=marker,tag=SneakAvoidStand0,tag=Rotator] rotated ~ 0 run function mhdp_weapons:weapon/great_sword/4_tackle/move_1
 
 # 攻撃
     execute if entity @s[scores={MhdpWeaponTimer=2}] at @s run function mhdp_weapons:weapon/great_sword/4_tackle/attack

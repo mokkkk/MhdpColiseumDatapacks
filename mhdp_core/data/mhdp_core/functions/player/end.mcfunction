@@ -4,7 +4,7 @@
 
 # ニンジン棒クリックリセット
     scoreboard players set @s MhdpUsedCoas 0
-    scoreboard players set @s MhdpDropCoas 1
+    scoreboard players set @s MhdpDropCoas 0
     execute if entity @s[tag=PlyDroppedCoas] run tag @s remove PlyDroppedCoas
     execute if entity @s[tag=PlyUsedCoas] run tag @s remove PlyUsedCoas
 

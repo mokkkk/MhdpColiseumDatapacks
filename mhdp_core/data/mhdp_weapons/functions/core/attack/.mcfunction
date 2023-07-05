@@ -7,7 +7,7 @@
     execute as @e[type=#lib:living,type=!player,tag=AttackedEntity,distance=..150] if score @s AttackedEntity = @a[tag=this,limit=1] AttackedEntity run tag @s add Victim
 
 # Mhdp武器の場合
-    execute if entity @s[tag=PlyWeaponDrawing] run function mhdp_weapons:core/attack/attack_by_mhdpweapon
+    execute if entity @s[tag=PlyWeaponDrawing] if entity @e[type=slime,tag=Victim] run function mhdp_weapons:core/attack/attack_by_mhdpweapon
 
 # 汎用武器の場合
     # execute if entity @s[tag=!PlyWeaponDrawing] run function mhdp_weapons:core/attack/attack_by_sword

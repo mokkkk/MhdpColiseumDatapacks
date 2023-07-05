@@ -84,6 +84,7 @@
     function mhdp_weapons:sp_items/wirebug/reset
 
 # 跳ねる
-    summon area_effect_cloud ~ ~ ~ {Duration:6,Age:4,Effects:[{Id:25,Amplifier:16b,Duration:4,ShowParticles:0b}]}
+    scoreboard players set $strength delta.api.launch 8000
+    function mhdp_core:player/util/jump_to_move_vector_without_y
 
 say 鉄蟲糸技：ハンティングエッジ
