@@ -23,6 +23,8 @@
 # プレイヤーの防具を外せなくする
     execute as @a run function mhdp_core:phase/2_quest_wait/start_quest/setup/armor
 
+# プレイヤーの
+
 # プレイヤーの特殊装具をstickからcarrot_on_a_stickに変更(TO DO)
     # function ...
 

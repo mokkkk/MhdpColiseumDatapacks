@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"回復薬\",\"color\":\"green\",\"italic\":false}',Lore:['{\"text\":\"[持ち込み制限：10個]\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}','{\"text\":\"体力を少量回復する薬．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"\",\"color\":\"white\",\"italic\":false}','{\"text\":\"\",\"color\":\"white\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}']},MhdpItem:1b,MhdpItemType:1,MhdpItemId:1,CustomModelData:1,HideFlags:34,CustomPotionColor:0,MhdpItemLimit:10}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:score",
+                "target": {
+                  "type": "minecraft:fixed",
+                  "name": "#mhdp_temp_item_count"
+                },
+                "score": "MhdpCore",
+                "scale": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

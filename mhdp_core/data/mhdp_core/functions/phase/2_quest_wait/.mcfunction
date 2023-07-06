@@ -13,6 +13,9 @@
     effect give @a instant_health 1 10 true
     scoreboard players set @a MhdpStamina 1000
 
+# 消費アイテムを意味のあるアイテムに切り替える
+    # TODO
+
 # 落とし物回収
     execute if score #mhdp_quest_timer MhdpCore matches 1 run function mhdp_core:phase/2_quest_wait/prepare/pick_item
 # forceload処理のみ実行
