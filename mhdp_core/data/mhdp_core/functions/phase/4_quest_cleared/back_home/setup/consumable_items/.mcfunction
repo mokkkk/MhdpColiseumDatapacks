@@ -6,5 +6,17 @@
     execute store result score #mhdp_temp_item_count MhdpCore run clear @s honey_bottle{MhdpItem:1b,MhdpItemId:1}
     execute if score #mhdp_temp_item_count MhdpCore matches 1.. run function mhdp_core:phase/4_quest_cleared/back_home/setup/consumable_items/1_heal
 
+# 回復薬グレート
+    execute store result score #mhdp_temp_item_count MhdpCore run clear @s honey_bottle{MhdpItem:1b,MhdpItemId:2}
+    execute if score #mhdp_temp_item_count MhdpCore matches 1.. run function mhdp_core:phase/4_quest_cleared/back_home/setup/consumable_items/2_head_great
+
+# 鬼人薬
+    execute store result score #mhdp_temp_item_count MhdpCore run clear @s honey_bottle{MhdpItem:1b,MhdpItemId:3}
+    execute if score #mhdp_temp_item_count MhdpCore matches 1.. run function mhdp_core:phase/4_quest_cleared/back_home/setup/consumable_items/3_demondrug
+
+# 硬化薬
+    execute store result score #mhdp_temp_item_count MhdpCore run clear @s honey_bottle{MhdpItem:1b,MhdpItemId:4}
+    execute if score #mhdp_temp_item_count MhdpCore matches 1.. run function mhdp_core:phase/4_quest_cleared/back_home/setup/consumable_items/4_armorskin
+
 # 終了
     clear @s glass_bottle
