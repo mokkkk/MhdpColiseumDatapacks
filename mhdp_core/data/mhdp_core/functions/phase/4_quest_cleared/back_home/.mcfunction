@@ -58,7 +58,10 @@
 # 村人再配置
     function mhdp_core:phase/0_village/villager/
 
-# クエストデータ解放
+# データパック解放
+    function mhdp_core:phase/4_quest_cleared/back_home/setup/disable_datapack/
+
+# クエストデータ初期化
     data remove storage mh_dp:status GameStatus.Quest
     scoreboard players reset #mhdp_quest_id
     scoreboard players reset #mhdp_quest_monster_count
