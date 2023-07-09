@@ -1,7 +1,7 @@
 #> mhdp_core:player/item/food/adamant_seed/move
 #
 # アイテム用メイン処理 
-# ５２：硬化の種 補充
+# ５２：忍耐の種 補充
 
 # アイテムを一時的に消去
     item replace entity @s weapon.mainhand with air

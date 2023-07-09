@@ -16,7 +16,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"忍耐の種\",\"color\":\"green\",\"italic\":false}',Lore:['{\"text\":\"[持ち込み制限：10個]\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}','{\"text\":\"食べると皮膚が硬化する種．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"一時的に防御力が上昇する．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"\",\"color\":\"white\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}']},MhdpItem:1b,MhdpItemType:3,MhdpItemId:52,CustomModelData:12342,HideFlags:34,MhdpItemLimit:10}"
+              "tag": "{display:{Name:'{\"text\":\"忍耐の種\",\"color\":\"green\",\"italic\":false}',Lore:['{\"text\":\"[持ち込み制限：10個]\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}','{\"text\":\"食べると皮膚が硬化する種．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"一時的に防御力が上昇する．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"\",\"color\":\"white\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}']},MhdpItem:1b,MhdpItemType:3,MhdpItemId:52,CustomModelData:52,HideFlags:34,MhdpItemLimit:10}"
             },
             {
               "function": "minecraft:set_count",
@@ -35,7 +35,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"忍耐の種\",\"color\":\"green\",\"italic\":false}',Lore:['{\"text\":\"[持ち込み制限：10個]\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}','{\"text\":\"食べると皮膚が硬化する種．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"一時的に防御力が上昇する．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"\",\"color\":\"white\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}']},MhdpItem:1b,MhdpItemType:3,MhdpItemId:52,CustomModelData:12342,HideFlags:34,MhdpItemLimit:10}"
+              "tag": "{display:{Name:'{\"text\":\"忍耐の種\",\"color\":\"green\",\"italic\":false}',Lore:['{\"text\":\"[持ち込み制限：10個]\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}','{\"text\":\"食べると皮膚が硬化する種．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"一時的に防御力が上昇する．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"\",\"color\":\"white\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}']},MhdpItem:1b,MhdpItemType:3,MhdpItemId:52,CustomModelData:52,HideFlags:34,MhdpItemLimit:10}"
             },
             {
               "function": "minecraft:set_count",

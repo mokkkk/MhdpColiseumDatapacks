@@ -1,7 +1,7 @@
 #> mhdp_core:player/item/food/adamant_seed/move_sc
 #
 # アイテム用メイン処理 
-# ５２：硬化の種 補充
+# ５２：忍耐の種 補充
 
 # プレイヤー特定
     scoreboard players operation #mhdp_temp_uid MhdpCore = @e[type=marker,tag=ItmSchAdamant,limit=1,sort=arbitrary] MhdpPlayerUid

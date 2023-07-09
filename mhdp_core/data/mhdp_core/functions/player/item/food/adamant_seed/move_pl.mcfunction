@@ -1,7 +1,7 @@
 #> mhdp_core:player/item/food/adamant_seed/move_pl
 #
 # アイテム用メイン処理 
-# ５２：硬化の種 補充
+# ５２：忍耐の種 補充
 
 # データ取得準備
     function oh_my_dat:please
@@ -12,7 +12,7 @@
 # メインハンドが空じゃない場合，メインハンドのアイテムを保存する
     execute if entity @s[tag=FlagA] run function mhdp_core:player/item/core/main_store
 # メインハンド置き換え
-    item replace entity @s weapon.mainhand with cookie{display:{Name:'{"text":"硬化の種","color":"green","italic":false}',Lore:['{"text":"[持ち込み制限：10個]","italic":false}','{"text":"--------------------","color":"dark_gray"}','{"text":"食べると皮膚が硬化する種．","color":"white","italic":false}','{"text":"一時的に防御力が上昇する．","color":"white","italic":false}','{"text":"","color":"white","italic":false}','{"text":"--------------------","color":"dark_gray"}']},MhdpItem:1b,MhdpItemType:3,MhdpItemId:52,CustomModelData:12342,HideFlags:34}
+    item replace entity @s weapon.mainhand with cookie{display:{Name:'{"text":"忍耐の種","color":"green","italic":false}',Lore:['{"text":"[持ち込み制限：10個]","italic":false}','{"text":"--------------------","color":"dark_gray"}','{"text":"食べると皮膚が硬化する種．","color":"white","italic":false}','{"text":"一時的に防御力が上昇する．","color":"white","italic":false}','{"text":"","color":"white","italic":false}','{"text":"--------------------","color":"dark_gray"}']},MhdpItem:1b,MhdpItemType:3,MhdpItemId:52,CustomModelData:12342,HideFlags:34}
     item modify entity @s weapon.mainhand mhdp_core:item/food_count
 
 # オフハンドのアイテムを回収する

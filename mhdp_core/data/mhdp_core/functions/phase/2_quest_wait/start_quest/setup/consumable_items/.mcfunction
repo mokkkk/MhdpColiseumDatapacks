@@ -24,7 +24,7 @@
 # 怪力の種
     execute store result score #mhdp_temp_item_count MhdpCore run clear @s paper{MhdpItem:1b,MhdpItemId:51}
     execute if score #mhdp_temp_item_count MhdpCore matches 1.. run function mhdp_core:phase/2_quest_wait/start_quest/setup/consumable_items/51_might_seed
-# 硬化の種
+# 忍耐の種
     execute store result score #mhdp_temp_item_count MhdpCore run clear @s paper{MhdpItem:1b,MhdpItemId:52}
     execute if score #mhdp_temp_item_count MhdpCore matches 1.. run function mhdp_core:phase/2_quest_wait/start_quest/setup/consumable_items/52_adamant_seed
 # 秘薬

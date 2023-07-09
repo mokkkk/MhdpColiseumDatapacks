@@ -1,6 +1,6 @@
 #> mhdp_core:phase/2_quest_wait/start_quest/setup/consumable_items/52_adamant_seed
 #
-# Phase4_クエストクリア 帰還処理 プレイヤー消費アイテムリセット 硬化の種
+# Phase4_クエストクリア 帰還処理 プレイヤー消費アイテムリセット 忍耐の種
 
 # 所持個数確認
     execute if score #mhdp_temp_item_count MhdpCore matches 11.. run tag @s add TmpLimitItemCount

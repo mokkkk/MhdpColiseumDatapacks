@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:'{\"text\":\"鬼人の種\",\"color\":\"green\",\"italic\":false}',Lore:['{\"text\":\"[持ち込み制限：10個]\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}','{\"text\":\"食べると力が得られる種．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"一時的に攻撃力が上昇する．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"\",\"color\":\"white\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}']},MhdpItem:1b,MhdpItemType:3,MhdpItemId:51,CustomModelData:12341,HideFlags:34,MhdpItemLimit:10}"
+              "tag": "{display:{Name:'{\"text\":\"怪力の種\",\"color\":\"green\",\"italic\":false}',Lore:['{\"text\":\"[持ち込み制限：10個]\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}','{\"text\":\"食べると力が得られる種．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"一時的に攻撃力が上昇する．\",\"color\":\"white\",\"italic\":false}','{\"text\":\"\",\"color\":\"white\",\"italic\":false}','{\"text\":\"--------------------\",\"color\":\"dark_gray\"}']},MhdpItem:1b,MhdpItemType:3,MhdpItemId:51,CustomModelData:51,HideFlags:34,MhdpItemLimit:10}"
             },
             {
               "function": "minecraft:set_count",
