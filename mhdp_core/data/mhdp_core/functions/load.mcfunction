@@ -86,6 +86,8 @@
             execute store result score $Random.Base Global run data get entity @e[tag=Random,limit=1] UUID[1]
             execute store result score $Random.Carry Global run data get entity @e[tag=Random,limit=1] UUID[3]
             kill @e[tag=Random,limit=1]
+    # 独自処理用
+        scoreboard players set $64 Const 64
 
 # item置き換え用
     forceload add -1 -1 1 1
