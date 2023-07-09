@@ -6,5 +6,3 @@
     scoreboard players operation #mhdp_temp_item_count_stack MhdpCore = #mhdp_temp_item_count MhdpCore
     scoreboard players operation #mhdp_temp_item_count MhdpCore %= $64 Const
     scoreboard players operation #mhdp_temp_item_count_stack MhdpCore /= $64 Const
-
-    tellraw @a ["",{"text":"stack:"},{"score":{"name":"#mhdp_temp_item_count_stack","objective":"MhdpCore"}},{"text":"  normal:"},{"score":{"name":"#mhdp_temp_item_count","objective":"MhdpCore"}}]
