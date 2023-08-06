@@ -1,3 +1,3 @@
 execute if score @s aj.ranposu.animation.tackle.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ranposu_internal:animations/tackle/end_loop
-execute if score @s aj.ranposu.animation.tackle.loop_mode = $aj.loop_mode.once aj.i run function ranposu:animations/tackle/stop
-execute if score @s aj.ranposu.animation.tackle.loop_mode = $aj.loop_mode.hold aj.i run function ranposu:animations/tackle/pause
+execute if score @s aj.ranposu.animation.tackle.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ranposu/animations/tackle/stop
+execute if score @s aj.ranposu.animation.tackle.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ranposu/animations/tackle/pause

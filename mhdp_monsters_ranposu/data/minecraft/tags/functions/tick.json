@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"zzz_ranposu_internal:tick"
+		"zzz_ranposu_internal:tick",
+		"animated_java:tick"
 	]
 }

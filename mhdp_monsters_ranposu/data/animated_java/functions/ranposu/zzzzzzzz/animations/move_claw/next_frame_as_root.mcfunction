@@ -1,0 +1,1 @@
+function animated_java:ranposu/zzzzzzzz/animations/move_claw/tick_animation

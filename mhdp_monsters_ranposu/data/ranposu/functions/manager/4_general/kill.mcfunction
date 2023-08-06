@@ -22,4 +22,4 @@
     bossbar remove asa_animator:ranposu_health
 
 # パーツ削除(animated java)
-    function ranposu:remove/all
+    function animated_java:ranposu/remove/all

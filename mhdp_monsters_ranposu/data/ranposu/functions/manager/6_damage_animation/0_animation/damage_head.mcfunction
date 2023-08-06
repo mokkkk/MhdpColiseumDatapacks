@@ -8,10 +8,10 @@
 # アニメーション遷移
     function ranposu:manager/1_change/0_stop/
     # 偶数回数の怯みの場合，大怯みを再生
-        execute if entity @s[tag=!StateIsFlying] if score #mhdp_ranposu_damage_count MhdpCore matches ..1 run function ranposu:animations/damage/play
-        execute if entity @s[tag=!StateIsFlying] if score #mhdp_ranposu_damage_count MhdpCore matches 2.. run function ranposu:animations/damage_down/play
+        execute if entity @s[tag=!StateIsFlying] if score #mhdp_ranposu_damage_count MhdpCore matches ..1 run function animated_java:ranposu/animations/damage/play
+        execute if entity @s[tag=!StateIsFlying] if score #mhdp_ranposu_damage_count MhdpCore matches 2.. run function animated_java:ranposu/animations/damage_down/play
         execute if score #mhdp_ranposu_damage_count MhdpCore matches 2.. run scoreboard players set #mhdp_ranposu_damage_count MhdpCore 0
-    execute if entity @s[tag=StateIsFlying] run function ranposu:animations/damage_flying/play
+    execute if entity @s[tag=StateIsFlying] run function animated_java:ranposu/animations/damage_flying/play
     tag @s remove StateIsFlying
 
 # 部位破壊処理
