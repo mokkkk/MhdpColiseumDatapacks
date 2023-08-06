@@ -1,7 +1,7 @@
 #> mhdp_core:player/item/food/adamant_seed/
 #
 # アイテム用メイン処理 
-# ５２：硬化の種
+# ５２：忍耐の種
 #declare tag ItmAdamantSeed 怪力の種使用中
 
 # アイテム消去

@@ -7,7 +7,7 @@
 
 # ５１：怪力の種
     execute if score #mhdp_temp_id MhdpCore matches 51 run function mhdp_core:player/item/food/might_seed/
-# ５２：硬化の種
+# ５２：忍耐の種
     execute if score #mhdp_temp_id MhdpCore matches 52 run function mhdp_core:player/item/food/adamant_seed/
 # ５３：秘薬
     execute if score #mhdp_temp_id MhdpCore matches 53 run function mhdp_core:player/item/food/max_potion/

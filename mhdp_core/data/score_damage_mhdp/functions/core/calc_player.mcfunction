@@ -8,7 +8,7 @@
 # アイテム処理
     # 硬化薬：+10
         execute if entity @s[tag=ItmArmorskin] run scoreboard players add $MhdpDef ScoreDamageCore 10
-    # 硬化の種：+20
+    # 忍耐の種：+20
         execute if entity @s[tag=ItmAdamantSeed] run scoreboard players add $MhdpDef ScoreDamageCore 20
 
 # 数値取得
