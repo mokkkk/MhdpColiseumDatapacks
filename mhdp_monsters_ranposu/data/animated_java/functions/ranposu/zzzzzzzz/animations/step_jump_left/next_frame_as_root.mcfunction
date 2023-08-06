@@ -1,0 +1,1 @@
+function animated_java:ranposu/zzzzzzzz/animations/step_jump_left/tick_animation

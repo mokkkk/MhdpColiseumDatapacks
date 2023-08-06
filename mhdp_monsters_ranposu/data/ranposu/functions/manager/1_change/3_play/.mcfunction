@@ -9,7 +9,7 @@
     execute if entity @s[tag=!StateAppliedAnm] unless predicate ranposu:animation/is_stay_animation_tags run function ranposu:manager/1_change/3_play/other
 
 # 待機
-    execute if entity @s[tag=!StateAppliedAnm] run function ranposu:animations/idle/play
+    execute if entity @s[tag=!StateAppliedAnm] run function animated_java:ranposu/animations/idle/play
 
 # 終了
     tag @s remove StateAppliedAnm

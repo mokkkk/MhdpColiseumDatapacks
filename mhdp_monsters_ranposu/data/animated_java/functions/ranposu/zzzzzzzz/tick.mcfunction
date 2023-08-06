@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ranposu.root] run function animated_java:ranposu/zzzzzzzz/tick_as_root

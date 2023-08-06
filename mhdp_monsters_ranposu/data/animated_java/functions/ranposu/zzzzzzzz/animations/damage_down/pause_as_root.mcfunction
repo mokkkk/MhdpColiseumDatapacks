@@ -1,0 +1,1 @@
+tag @s remove aj.ranposu.animation.damage_down

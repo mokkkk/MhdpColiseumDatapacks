@@ -1,0 +1,1 @@
+function animated_java:ranposu/zzzzzzzz/animations/death/tick_animation

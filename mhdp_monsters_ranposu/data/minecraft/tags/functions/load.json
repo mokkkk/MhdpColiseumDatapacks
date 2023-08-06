@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"zzz_ranposu_internal:load"
+		"zzz_ranposu_internal:load",
+		"animated_java:ranposu/zzzzzzzz/load"
 	]
 }

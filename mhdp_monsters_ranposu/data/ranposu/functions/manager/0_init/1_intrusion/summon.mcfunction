@@ -3,7 +3,7 @@
 # 青鳥竜 乱入処理
 
 # パーツ召喚(animated_java)
-    execute positioned ~ ~ ~ run function ranposu:summon
+    execute positioned ~ ~ ~ run function animated_java:ranposu/summon
 
 # 召喚時アニメーション再生
 # TODO:登場アニメーションを再生する

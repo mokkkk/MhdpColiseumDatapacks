@@ -1,0 +1,1 @@
+function animated_java:ranposu/zzzzzzzz/animations/voice/tick_animation

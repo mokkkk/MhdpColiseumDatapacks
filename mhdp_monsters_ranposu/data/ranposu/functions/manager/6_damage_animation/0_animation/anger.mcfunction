@@ -4,7 +4,7 @@
 
 # アニメーション遷移
     function ranposu:manager/1_change/0_stop/
-    function ranposu:animations/anger/play
+    function animated_java:ranposu/animations/anger/play
 
 # 怒り開始処理
     function ranposu:manager/6_damage_animation/2_anger/start

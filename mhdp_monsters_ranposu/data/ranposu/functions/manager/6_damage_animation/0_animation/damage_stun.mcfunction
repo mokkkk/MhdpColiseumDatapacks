@@ -5,8 +5,8 @@
 # アニメーション遷移
     scoreboard players set @s AsaMatrix 0
     function ranposu:manager/1_change/0_stop/
-    execute if entity @s[tag=!StateIsFlying] run function ranposu:animations/damage_down/play
-    execute if entity @s[tag=StateIsFlying] run function ranposu:animations/damage_flying/play
+    execute if entity @s[tag=!StateIsFlying] run function animated_java:ranposu/animations/damage_down/play
+    execute if entity @s[tag=StateIsFlying] run function animated_java:ranposu/animations/damage_flying/play
     tag @s remove StateIsFlying
 
 # スタン開始
