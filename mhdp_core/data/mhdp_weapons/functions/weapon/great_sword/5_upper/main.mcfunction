@@ -35,3 +35,8 @@
         execute if entity @s[tag=PlyUsingEyeCurrent,tag=!RClicked,scores={MhdpWeaponTimer=16..}] run function mhdp_weapons:weapon/great_sword/5_upper/change_charge
     # ジャンプ時，ステップ回避に移行
         # execute if entity @s[scores={MhdpJump=1..,MhdpWeaponTimer=16..}] run function mhdp_core:player/sneak/avoid/start_
+
+# テスト
+    execute if entity @s[tag=PlySheatheSucceed] run say 納刀した
+    execute if entity @s[tag=PlySheatheSucceed] run function mhdp_weapons:weapon/great_sword/5_upper/change_sweep
+    execute if entity @s[tag=PlySheatheSucceed] run tag @s remove PlySheatheSucceed

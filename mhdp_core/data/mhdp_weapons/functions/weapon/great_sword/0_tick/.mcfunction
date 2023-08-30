@@ -6,6 +6,12 @@
 # 抜刀中確認
     execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Item.MainHand.tag{MhdpWeapon:1b} run tag @s add IsDrawing
 
+# 納刀操作
+    # 斬り上げ中
+        execute if entity @s[tag=WpnGswordUpper,tag=PlySheatheSucceed] run tag @s add IsDrawing
+# 納刀操作成功時，特殊抜刀処理を行う
+    execute if entity @s[tag=IsDrawing,tag=PlySheatheSucceed] run function mhdp_weapons:weapon/great_sword/94_draw_in_sheathe/
+
 # スタミナ回復確認
     execute if entity @s[tag=!PlyStaminaNotRegen,tag=!WpnGswordTackle,tag=!WpnGswordGuard,scores={MhdpStamina=..999}] run tag @s add Regen
 
