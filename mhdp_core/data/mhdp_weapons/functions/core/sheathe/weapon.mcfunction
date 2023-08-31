@@ -19,3 +19,6 @@
 
 # 3：片手剣
     execute if entity @s[tag=PlyWpnSsword] run function mhdp_weapons:weapon/short_sword/98_sheathe/
+
+# 4：太刀
+    execute if entity @s[tag=PlyWpnLsword] run function mhdp_weapons:weapon/long_sword/98_sheathe/

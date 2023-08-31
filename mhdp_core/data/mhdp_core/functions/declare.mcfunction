@@ -26,9 +26,11 @@
         #declare tag PlyWpnBow 所持武器判定用タグ（弓）
         #declare tag PlyWpnGsword 所持武器判定用タグ（大剣）
         #declare tag PlyWpnSsword 所持武器判定用タグ（片手剣）
+        #declare tag PlyWpnLsword 所持武器判定用タグ（太刀）
         #declare tag PlyWeaponDrawing プレイヤー武器抜刀中
         #declare tag PlyWeaponDrawingSub プレイヤーサブ武器抜刀中
         #declare tag PlyDrawAttack プレイヤー抜刀攻撃中
+        #declare tag PlySheatheSucceed プレイヤーが通常納刀した（Fキーによる操作）
 
         #declare tag PlyArmorSuper スーパーアーマー中
         #declare tag PlyArmorHyper ハイパーアーマー中
