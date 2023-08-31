@@ -72,7 +72,7 @@
 # 武器の追加時修正する共通処理
 
 # クエスト開始時
-## 所持武器判別用タグを付与する
+## 所持武器判別用タグ付与・スコア初期化
     function mhdp_core:phase/2_quest_wait/start_quest/setup/weapon
 
 # クエスト中
