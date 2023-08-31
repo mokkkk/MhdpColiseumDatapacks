@@ -7,8 +7,10 @@
     data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"f","font":"ex/long_sword_color"}]'
 
 # 練気ゲージ色
-    data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"0","font":"ex/long_sword_color"}]'
-    # execute if score @s MhdpWeaponSpiritGaugeColorLsword matches ..10 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"0","font":"ex/long_sword_color"}]'
+    execute if score @s MhdpWeaponSpiritGaugeColorLsword matches ..10 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"0","font":"ex/long_sword_color"}]'
+    execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 11..6000 run function mhdp_weapons:ui/ex/long_sword_color_0
+    execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 6001..12000 run function mhdp_weapons:ui/ex/long_sword_color_1
+    execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 12001.. run function mhdp_weapons:ui/ex/long_sword_color_2
 
 # 練気ゲージ
     execute if score @s MhdpWeaponSpiritGaugeLsword matches ..10 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"0","font":"ex/long_sword_spirit"}]'
