@@ -1,6 +1,6 @@
-#> mhdp_weapons:weapon/short_sword/98_sheathe/
+#> mhdp_weapons:weapon/long_sword/98_sheathe/
 #
-# 大剣の納刀処理
+# 太刀の納刀処理
 
 # リセット処理
-     function mhdp_weapons:weapon/short_sword/99_reset/
+     function mhdp_weapons:weapon/long_sword/99_reset/

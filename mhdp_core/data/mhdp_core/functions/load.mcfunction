@@ -48,6 +48,9 @@
         scoreboard objectives add MhdpWeaponDeactivateTimer dummy
         scoreboard objectives add MhdpWeaponCountBow dummy
         scoreboard objectives add MhdpWeaponTimerSsword dummy
+        scoreboard objectives add MhdpWeaponTimerLsword dummy
+        scoreboard objectives add MhdpWeaponSpiritGaugeLsword dummy
+        scoreboard objectives add MhdpWeaponSpiritGaugeColorLsword dummy
 
     # 特殊装具処理用
         scoreboard objectives add MhdpDropCoas dropped:carrot_on_a_stick

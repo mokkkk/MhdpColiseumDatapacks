@@ -90,6 +90,8 @@
     function mhdp_weapons:core/attack/weapon
 ## (optional)武器の特殊UI表示
     function mhdp_weapons:ui/ex/
+## 武器の切れ味更新処理への分岐
+    function mhdp_weapons:core/attack/attack_by_mhdp_skill
 
 # クエスト終了時
 ## 所持武器判別用タグを消去する

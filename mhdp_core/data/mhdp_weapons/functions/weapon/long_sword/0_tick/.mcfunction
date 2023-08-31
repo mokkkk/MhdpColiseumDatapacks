@@ -1,6 +1,6 @@
-#> mhdp_weapons:weapon/short_sword/0_tick/
+#> mhdp_weapons:weapon/long_sword/0_tick/
 #
-# 片手剣：納刀時でも実行する処理
+# 太刀：納刀時でも実行する処理
 #
 
 # 抜刀中確認
@@ -18,12 +18,6 @@
 
 # 回復速度リセット
     execute if entity @s[tag=!Regen] run scoreboard players set @s MhdpStaminaSpeed 0
-
-# 直接攻撃タイマー設定
-    execute if entity @s[scores={MhdpWeaponTimerSsword=1..}] run scoreboard players remove @s MhdpWeaponTimerSsword 1
-
-# 盾攻撃と回転斬りの判定用
-    execute if entity @s[tag=PlySneakCurrent,scores={MhdpWeaponTimerSsword=1..}] run tag @s add IsSpin
 
 # 終了
     tag @s remove Regen

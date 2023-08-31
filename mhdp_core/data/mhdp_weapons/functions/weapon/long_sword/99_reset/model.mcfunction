@@ -1,6 +1,6 @@
-#> mhdp_weapons:weapon/short_sword/99_reset/model
+#> mhdp_weapons:weapon/long_sword/99_reset/model
 #
-# 片手剣のリセット処理 モデル・attributeリセット
+# 太刀のリセット処理 モデル・attributeリセット
 
 # 武器ステータス変更
     data modify storage mhdp_core:temp Temp set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Item.MainWeapon.tag
@@ -10,9 +10,7 @@
         execute store result storage mhdp_core:temp Temp.CustomModelData int 1 run scoreboard players get #mhdp_temp_cmd MhdpCore
     # Attribute削除
         data modify storage mhdp_core:temp Temp.AttributeModifiers set value []
-    item modify entity @s weapon.mainhand mhdp_core:const/short_sword/default
-# 抜刀中の場合はサブ武器もモデル変更
-    execute if entity @s[tag=PlyWeaponDrawing] run function mhdp_weapons:weapon/short_sword/99_reset/model_sub
+    item modify entity @s weapon.mainhand mhdp_core:const/long_sword/default
 
 # 終了
     scoreboard players reset #mhdp_temp_cmd

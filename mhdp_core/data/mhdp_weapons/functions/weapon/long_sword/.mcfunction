@@ -1,9 +1,9 @@
-#> mhdp_weapons:weapon/short_sword/
+#> mhdp_weapons:weapon/long_sword/
 #
-# 片手剣のメイン処理
+# 太刀のメイン処理
 #
 
 # 通常
-    function mhdp_weapons:weapon/short_sword/normal
+    function mhdp_weapons:weapon/long_sword/normal
     
 # 天ノ型
