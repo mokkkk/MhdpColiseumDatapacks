@@ -19,9 +19,14 @@
 # 回復速度リセット
     execute if entity @s[tag=!Regen] run scoreboard players set @s MhdpStaminaSpeed 0
 
+# 練気ゲージ減少
+    execute if score @s MhdpWeaponSpiritGaugeTimerLsword matches 1.. run scoreboard players remove @s MhdpWeaponSpiritGaugeTimerLsword 1
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 1.. unless score @s MhdpWeaponSpiritGaugeTimerLsword matches 1.. run scoreboard players remove @s MhdpWeaponSpiritGaugeLsword 1
+
 # 練気ゲージ色減少
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 1..6000 run scoreboard players remove @s MhdpWeaponSpiritGaugeColorLsword 1
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 6001..12000 run scoreboard players remove @s MhdpWeaponSpiritGaugeColorLsword 3
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 12001.. run scoreboard players remove @s MhdpWeaponSpiritGaugeColorLsword 5
+
 # 終了
     tag @s remove Regen

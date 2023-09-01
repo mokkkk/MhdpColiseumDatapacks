@@ -45,6 +45,7 @@
     # 4：太刀
         execute if data storage mhdp_core:temp Temp.Status{WeaponType:4} run tag @s add PlyWpnLsword
         execute if entity @s[tag=PlyWpnLsword] run scoreboard players set @s MhdpWeaponSpiritGaugeLsword 0
+        execute if entity @s[tag=PlyWpnLsword] run scoreboard players set @s MhdpWeaponSpiritGaugeTimerLsword 0
         execute if entity @s[tag=PlyWpnLsword] run scoreboard players set @s MhdpWeaponSpiritGaugeColorLsword 0
 
 # アイテム用

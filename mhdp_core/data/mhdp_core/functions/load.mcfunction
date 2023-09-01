@@ -50,6 +50,7 @@
         scoreboard objectives add MhdpWeaponTimerSsword dummy
         scoreboard objectives add MhdpWeaponTimerLsword dummy
         scoreboard objectives add MhdpWeaponSpiritGaugeLsword dummy
+        scoreboard objectives add MhdpWeaponSpiritGaugeTimerLsword dummy
         scoreboard objectives add MhdpWeaponSpiritGaugeColorLsword dummy
 
     # 特殊装具処理用

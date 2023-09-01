@@ -13,17 +13,17 @@
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 12001.. run function mhdp_weapons:ui/ex/long_sword_color_2
 
 # 練気ゲージ
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches ..10 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"0","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 11..20 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"1","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 21..30 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"2","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 31..40 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"3","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 41..50 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"4","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 51..60 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"5","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 61..70 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"6","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 71..80 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"7","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 81..90 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"8","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 91..99 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"9","font":"ex/long_sword_spirit"}]'
-    execute if score @s MhdpWeaponSpiritGaugeLsword matches 100.. run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"#","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches ..60 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"0","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 61..120 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"1","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 121..180 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"2","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 181..240 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"3","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 241..300 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"4","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 301..360 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"5","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 361..420 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"6","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 421..480 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"7","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 481..540 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"8","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 541..599 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"9","font":"ex/long_sword_spirit"}]'
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 600.. run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"#","font":"ex/long_sword_spirit"}]'
 
 # フレーム
     data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"f","font":"ex/long_sword_spirit"}]'

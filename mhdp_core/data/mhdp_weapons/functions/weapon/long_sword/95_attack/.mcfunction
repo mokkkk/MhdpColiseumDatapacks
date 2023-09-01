@@ -10,8 +10,9 @@
      data modify storage mhdp_core:temp Temp.WeaponDamage set value {Type:1,Offhand:0b}
 
 # 練気上昇
-     scoreboard players add @s MhdpWeaponSpiritGaugeLsword 15
-     execute if score @s MhdpWeaponSpiritGaugeLsword matches 101.. run scoreboard players set @s MhdpWeaponSpiritGaugeLsword 100
+     scoreboard players set @s MhdpWeaponSpiritGaugeTimerLsword 60
+     scoreboard players add @s MhdpWeaponSpiritGaugeLsword 35
+     execute if score @s MhdpWeaponSpiritGaugeLsword matches 601.. run scoreboard players set @s MhdpWeaponSpiritGaugeLsword 600
 
 # タイマー設定
      scoreboard players set @s MhdpWeaponTimerLsword 12
