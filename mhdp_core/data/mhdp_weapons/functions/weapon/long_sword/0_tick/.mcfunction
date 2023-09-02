@@ -20,6 +20,7 @@
     execute if entity @s[tag=!Regen] run scoreboard players set @s MhdpStaminaSpeed 0
 
 # 練気ゲージ減少
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 601.. run scoreboard players set @s MhdpWeaponSpiritGaugeLsword 600
     execute if score @s MhdpWeaponSpiritGaugeTimerLsword matches 1.. run scoreboard players remove @s MhdpWeaponSpiritGaugeTimerLsword 1
     execute if score @s MhdpWeaponSpiritGaugeLsword matches 1.. unless score @s MhdpWeaponSpiritGaugeTimerLsword matches 1.. run scoreboard players remove @s MhdpWeaponSpiritGaugeLsword 1
 

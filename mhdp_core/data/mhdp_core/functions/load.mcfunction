@@ -105,3 +105,5 @@
     function mhdp_core:init/monster_defence
 # モンスター攻撃力初期化
     function mhdp_core:init/monster_attack
+# プレイヤー攻撃力初期化
+    function mhdp_core:init/player_attack

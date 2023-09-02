@@ -71,6 +71,10 @@
 ################################################################################################
 # 武器の追加時修正する共通処理
 
+# init
+## 攻撃力
+    function mhdp_core:init/player_attack
+
 # クエスト開始時
 ## 所持武器判別用タグ付与・スコア初期化
     function mhdp_core:phase/2_quest_wait/start_quest/setup/weapon

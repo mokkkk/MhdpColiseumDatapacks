@@ -11,6 +11,12 @@
      scoreboard players set @s MhdpWeaponTimer 0
 
 # タグ消去
+     tag @s remove WpnLsword2Vertical
+     tag @s remove WpnLsword3Spirit1Miss
+     tag @s remove WpnLsword4Spirit1
+     tag @s remove WpnLsword5Spirit2
+     tag @s remove WpnLsword6Spirit3
+     tag @s remove WpnLsword7Moveslash
 
 # ステップ回避ロック解除
      tag @s remove PlySneakAvoidLock
