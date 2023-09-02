@@ -1,6 +1,6 @@
-#> mhdp_weapons:weapon/short_sword/1_draw_act/start_wire_b
+#> mhdp_weapons:weapon/long_sword/1_draw_act/start_wire_b
 #
-# 片手剣：抜刀攻撃（突進斬り） 実行 鉄蟲糸技
+# 太刀：抜刀攻撃（斬りおろし） 実行 鉄蟲糸技
 
 # 武器移動処理
     # shulker_boxに武器データをコピー
@@ -15,15 +15,15 @@
         item replace entity @s weapon.offhand with air
         data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].PlayerData.Item.OffHand
 
-# 片手剣抜刀処理
-    function mhdp_weapons:weapon/short_sword/97_draw/
+# 太刀抜刀処理
+    function mhdp_weapons:weapon/long_sword/97_draw/
     tag @s add PlyWeaponDrawing
 
 # 抜刀攻撃開始処理
     # アニメーションタイマーリセット
         scoreboard players set @s MhdpWeaponTimer 0
     # タグ更新
-        tag @s add WpnSsword15Wire
+        tag @s add WpnLsword8WireKick
     # ステップ回避ロック開始
         tag @s add PlySneakAvoidLock
     # 抜刀検知タグ追加
@@ -83,4 +83,4 @@
 # 翔蟲使用中止
     function mhdp_weapons:sp_items/wirebug/reset
 
-say 鉄蟲糸技：飛影
+say 鉄蟲糸技：飛翔蹴り
