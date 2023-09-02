@@ -38,7 +38,9 @@
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:65,ElementDamage:100,Type:1,Offhand:1b}
         # 9_気刃兜割_赤
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:85,ElementDamage:100,Type:1,Offhand:1b}
-
+        # 10_水月の構え
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:240,ElementDamage:100,Type:1,Offhand:1b}
+    
 # 3：弓
     data modify storage mh_dp:player_data AttackList append value []
         # 0_

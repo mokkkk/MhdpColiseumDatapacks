@@ -6,7 +6,7 @@
     scoreboard players set @s MhdpWeaponTimer 0
 
 # 練気ゲージ一時固定
-    scoreboard players set @s MhdpWeaponSpiritGaugeTimerLsword 100
+    scoreboard players set @s MhdpWeaponSpiritGaugeTimerLsword 200
 
 # ステップ回避ロック開始
     tag @s add WpnLsword11KabutoLand

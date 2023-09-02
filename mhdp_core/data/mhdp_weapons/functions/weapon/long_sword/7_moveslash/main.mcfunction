@@ -21,7 +21,7 @@
     execute if entity @s[scores={MhdpWeaponTimer=3}] run tp @s @s
     execute if entity @s[scores={MhdpWeaponTimer=3}] run tp @s ~ ~0.1 ~
     execute if entity @s[scores={MhdpWeaponTimer=3}] run scoreboard players set $strength delta.api.launch 13000
-    execute if entity @s[scores={MhdpWeaponTimer=3}] rotated ~180 0 run function delta:api/launch_looking
+    execute if entity @s[scores={MhdpWeaponTimer=3}] at @s rotated ~180 0 run function delta:api/launch_looking
 
 # 終了
     execute if entity @s[scores={MhdpWeaponTimer=35..}] run function mhdp_weapons:weapon/long_sword/7_moveslash/end

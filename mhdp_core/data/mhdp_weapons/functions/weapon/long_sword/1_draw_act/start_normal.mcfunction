@@ -37,7 +37,7 @@
     execute if entity @s[tag=!PlyJumpping] run tp @s @s
     execute if entity @s[tag=!PlyJumpping] run tp @s ~ ~0.1 ~
     execute if entity @s[tag=!PlyJumpping] run scoreboard players set $strength delta.api.launch 12000
-    execute if entity @s[tag=!PlyJumpping] rotated ~ 0 run function delta:api/launch_looking
+    execute if entity @s[tag=!PlyJumpping] at @s rotated ~ 0 run function delta:api/launch_looking
 
 # 空中の場合，即座に攻撃
     # execute if entity @s[tag=PlyJumpping] run scoreboard players set @s MhdpWeaponTimer 3

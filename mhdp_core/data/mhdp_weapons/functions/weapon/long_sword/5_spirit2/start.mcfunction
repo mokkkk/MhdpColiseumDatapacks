@@ -7,7 +7,7 @@
 
 # タグ更新
     tag @s add WpnLsword5Spirit2
-    scoreboard players set @s MhdpWeaponSpiritGaugeTimerLsword 80
+    scoreboard players set @s MhdpWeaponSpiritGaugeTimerLsword 200
     scoreboard players remove @s MhdpWeaponSpiritGaugeLsword 120
 
 # ステップ回避ロック開始

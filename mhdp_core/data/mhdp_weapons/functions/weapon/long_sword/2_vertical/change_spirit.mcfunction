@@ -12,4 +12,4 @@
     tag @s remove WpnLsword2Vertical
 
 # 移行
-    function mhdp_weapons:weapon/long_sword/6_spirit3/start
+    function mhdp_weapons:weapon/long_sword/4_spirit1/start
