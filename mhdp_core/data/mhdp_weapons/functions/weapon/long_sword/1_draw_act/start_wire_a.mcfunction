@@ -83,6 +83,6 @@
 # 翔蟲使用中止
     function mhdp_weapons:sp_items/wirebug/reset
 # 翔蟲クールタイム増加
-    scoreboard players set @s MhdpTItmWirebugCooltime 800
+    scoreboard players set @s MhdpTItmWirebugCooltime 1000
 
 say 鉄蟲糸技：水月の構え

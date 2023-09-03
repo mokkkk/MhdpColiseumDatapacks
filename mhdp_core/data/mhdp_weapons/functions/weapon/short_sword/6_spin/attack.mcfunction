@@ -1,6 +1,6 @@
 #> mhdp_weapons:weapon/short_sword/6_spin/attack
 #
-# 片手剣：盾攻撃１ 攻撃エフェクト
+# 片手剣：回転斬り 攻撃エフェクト
 #
 
 # 演出
@@ -11,9 +11,10 @@
     execute positioned ~ ~1.65 ~ run particle sweep_attack ^1 ^ ^1.2 0.2 0.2 0.2 0.05 5
 
 # 倍率設定
-    scoreboard players set #mhdp_temp_damage_multiply MhdpCore 140
-    scoreboard players set #mhdp_temp_damage_multiply_element MhdpCore 180
-    data modify storage mhdp_core:temp Temp.WeaponDamage set value {Type:1,Offhand:0b}
+    execute store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[1][3].Damage 1
+    execute store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[1][3].ElementDamage 1
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Type set from storage mh_dp:player_data AttackList[1][3].Type
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Offhand set from storage mh_dp:player_data AttackList[1][3].Offhand
 
 # ダメージ発生
     execute positioned ^ ^ ^1 as @e[type=slime,tag=MonsterParts,distance=..4] run tag @s add Targets

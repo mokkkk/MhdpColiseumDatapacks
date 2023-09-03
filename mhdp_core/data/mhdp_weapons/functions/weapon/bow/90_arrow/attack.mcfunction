@@ -11,13 +11,16 @@
     execute if entity @s[tag=JumpShot] run scoreboard players set @s MhdpCore 2
 
 # 溜め段階に応じて倍率設定
-    scoreboard players set #mhdp_temp_damage_multiply MhdpCore 100
-    scoreboard players set #mhdp_temp_damage_multiply_element MhdpCore 100
-    execute if entity @s[tag=WpnBowCharge1] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 120
-    execute if entity @s[tag=WpnBowCharge2] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 140
-    execute if entity @s[tag=WpnBowCharge3] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 180
-    execute if entity @s[tag=WpnBowCharge4] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 210
-    data modify storage mhdp_core:temp Temp.WeaponDamage set value {Type:3,Offhand:0b}
+    execute store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[3][0].Damage 1
+    execute store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[3][0].ElementDamage 1
+    execute if entity @s[tag=WpnBowCharge1] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[3][1].Damage 1
+    execute if entity @s[tag=WpnBowCharge2] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[3][2].Damage 1
+    execute if entity @s[tag=WpnBowCharge3] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[3][3].Damage 1
+    execute if entity @s[tag=WpnBowCharge4] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[3][4].Damage 1
+    execute if entity @s[tag=WpnBowCharge3] store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[3][3].ElementDamage 1
+    execute if entity @s[tag=WpnBowCharge4] store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[3][4].ElementDamage 1
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Type set from storage mh_dp:player_data AttackList[3][0].Type
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Offhand set from storage mh_dp:player_data AttackList[3][0].Offhand
 
 # クリティカル距離以外の場合，ダメージ減算
     execute if entity @s[scores={MhdpCore=..1}] run function mhdp_weapons:weapon/bow/90_arrow/calc

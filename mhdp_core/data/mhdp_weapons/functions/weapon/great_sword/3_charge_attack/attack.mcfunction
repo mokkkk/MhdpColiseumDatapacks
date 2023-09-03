@@ -10,14 +10,15 @@
     execute positioned ^ ^ ^2.5 run function mhdp_core:vfx/gsword/slash_charge/start
 
 # 倍率設定
-    scoreboard players set #mhdp_temp_damage_multiply MhdpCore 200
-    scoreboard players set #mhdp_temp_damage_multiply_element MhdpCore 100
-    execute if entity @s[tag=WpnGswordCharge1] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 250
-    execute if entity @s[tag=WpnGswordCharge2] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 320
-    execute if entity @s[tag=WpnGswordCharge3] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 550
-    execute if entity @s[tag=WpnGswordCharge2,tag=PlyDrawAttackWirebug] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 280
-    execute if entity @s[tag=WpnGswordCharge3,tag=PlyDrawAttackWirebug] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 360
-    data modify storage mhdp_core:temp Temp.WeaponDamage set value {Type:1,Offhand:0b}
+    execute store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[0][0].Damage 1
+    execute store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[0][0].ElementDamage 1
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Type set from storage mh_dp:player_data AttackList[0][0].Type
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Offhand set from storage mh_dp:player_data AttackList[0][0].Offhand
+    execute if entity @s[tag=WpnGswordCharge1] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[0][1].Damage 1
+    execute if entity @s[tag=WpnGswordCharge2] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[0][2].Damage 1
+    execute if entity @s[tag=WpnGswordCharge3] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[0][3].Damage 1
+    execute if entity @s[tag=WpnGswordCharge2,tag=PlyDrawAttackWirebug] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[0][4].Damage 1
+    execute if entity @s[tag=WpnGswordCharge3,tag=PlyDrawAttackWirebug] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[0][5].Damage 1
 
 # ダメージ発生
     execute positioned ^ ^ ^4.5 as @e[type=slime,tag=MonsterParts,distance=..4] run tag @s add Targets

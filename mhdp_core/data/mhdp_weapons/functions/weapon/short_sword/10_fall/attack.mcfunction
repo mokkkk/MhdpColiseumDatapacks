@@ -8,9 +8,10 @@
     playsound entity.hoglin.step master @a ~ ~ ~ 1 1
 
 # 倍率設定
-    scoreboard players set #mhdp_temp_damage_multiply MhdpCore 240
-    scoreboard players set #mhdp_temp_damage_multiply_element MhdpCore 0
-    data modify storage mhdp_core:temp Temp.WeaponDamage set value {Type:2,Offhand:1b}
+    execute store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[1][6].Damage 1
+    execute store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[1][6].ElementDamage 1
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Type set from storage mh_dp:player_data AttackList[1][6].Type
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Offhand set from storage mh_dp:player_data AttackList[1][6].Offhand
 
 # ダメージ発生
     execute if entity @e[type=slime,tag=Targets] run function mhdp_weapons:core/attack/attack_by_mhdp_skill

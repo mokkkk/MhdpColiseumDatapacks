@@ -82,5 +82,7 @@
 
 # 翔蟲使用中止
     function mhdp_weapons:sp_items/wirebug/reset
+# 翔蟲クールタイム増加
+    scoreboard players set @s MhdpTItmWirebugCooltime 800
 
 say 鉄蟲糸技：飛翔蹴り
