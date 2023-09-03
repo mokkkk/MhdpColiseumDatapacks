@@ -1,4 +1,4 @@
-#> mhdp_weapons:weapon/long_sword/6_spirit3/main
+#> mhdp_weapons:weapon/long_sword/6_spirit3/main_tec
 #
 # 太刀：気刃斬り3
 
@@ -39,6 +39,8 @@
     execute if entity @s[scores={MhdpWeaponTimer=22}] at @s rotated ~ 0 run function delta:api/launch_looking
 
 # 遷移
+    # 練気ゲージがあり，右クリック時，気刃大回転斬りに移行
+        execute if entity @s[tag=PlyUsingEyeStart,tag=!PlySneakCurrent,scores={MhdpWeaponTimer=28..,MhdpWeaponSpiritGaugeLsword=120..}] run function mhdp_weapons:weapon/long_sword/6_spirit3/change_spirit_finish
     # スニーク+右クリック時，斬り下がりに移行
         execute if entity @s[tag=PlyUsingEyeStart,tag=PlySneakCurrent,scores={MhdpWeaponTimer=40..}] run function mhdp_weapons:weapon/long_sword/6_spirit3/change_moveslash
 

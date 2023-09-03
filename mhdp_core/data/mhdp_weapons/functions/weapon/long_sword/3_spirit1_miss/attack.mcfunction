@@ -16,7 +16,8 @@
 
 # ダメージ発生
     execute positioned ^ ^ ^4.5 as @e[type=slime,tag=MonsterParts,distance=..4] run tag @s add Targets
-    execute if entity @e[tag=Targets] run scoreboard players add @s MhdpWeaponSpiritGaugeLsword 50
     execute if entity @e[tag=Targets] run scoreboard players set @s MhdpWeaponSpiritGaugeTimerLsword 200
+    execute if entity @s[tag=!PlySkillTechnical] if entity @e[tag=Targets] run scoreboard players add @s MhdpWeaponSpiritGaugeLsword 50
+    execute if entity @s[tag=PlySkillTechnical] if entity @e[tag=Targets] run scoreboard players add @s MhdpWeaponSpiritGaugeLsword 100
     execute if entity @e[type=slime,tag=Targets] run function mhdp_weapons:core/attack/attack_by_mhdp_skill
     tag @e[type=slime,tag=Targets] remove Targets

@@ -24,7 +24,7 @@
 # 移動処理
     execute if entity @s[scores={MhdpWeaponTimer=2}] run tp @s @s
     execute if entity @s[scores={MhdpWeaponTimer=2}] run scoreboard players set $strength delta.api.launch 3000
-    execute if entity @s[scores={MhdpWeaponTimer=2}] rotated ~ 0 run function delta:api/launch_looking
+    execute if entity @s[scores={MhdpWeaponTimer=2}] at @s rotated ~ 0 run function delta:api/launch_looking
 
 # 遷移
     # 練気ゲージがあり，右クリック時，気刃斬り2に移行

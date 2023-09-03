@@ -6,7 +6,7 @@
 # 処理簡略化
     scoreboard players remove @s MhdpWeaponSpiritGaugeColorLsword 12000
 
-# 練気ゲージ色：黄
+# 練気ゲージ色：赤
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches ..600 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"1","font":"ex/long_sword_color","color":"#FF5659"}]'
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 601..1200 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"2","font":"ex/long_sword_color","color":"#FF5659"}]'
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 1201..1800 run data modify storage mhdp_core:temp Temp.UI.ExArray append value '[{"text":"3","font":"ex/long_sword_color","color":"#FF5659"}]'

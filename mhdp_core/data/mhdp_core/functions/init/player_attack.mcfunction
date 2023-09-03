@@ -68,7 +68,7 @@
 
 # 2：太刀
     data modify storage mh_dp:player_data AttackList append value []
-        # 0_踏み込み斬り
+        # 0_斬りおろし
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:80,ElementDamage:100,Type:1,Offhand:0b}
         # 1_気刃斬り1_失敗
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:60,ElementDamage:70,Type:1,Offhand:0b}
@@ -91,7 +91,13 @@
         # 10_水月の構え
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:240,ElementDamage:100,Type:1,Offhand:1b}
         # 11_直接攻撃
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:40,ElementDamage:30,Type:1,Offhand:1b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:40,DamageTec:20,ElementDamage:30,Type:1,Offhand:1b}
+        # 12_気刃斬り大回転斬り
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:160,ElementDamage:100,Type:1,Offhand:0b}
+        # 13_踏み込み斬り
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:80,ElementDamage:100,Type:1,Offhand:0b}
+        # 14_気刃踏み込み斬り
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:100,ElementDamage:100,Type:1,Offhand:0b}
 
 # 3：弓
     data modify storage mh_dp:player_data AttackList append value []
