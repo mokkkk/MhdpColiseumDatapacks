@@ -21,7 +21,7 @@
 
 # 遷移
     # 右クリック時，居合抜刀気刃斬りに移行
-        # execute if entity @s[tag=PlyUsingEyeStart,tag=!PlySneakCurrent,scores={MhdpWeaponTimer=23..,MhdpWeaponSpiritGaugeLsword=120..}] run function mhdp_weapons:weapon/long_sword/17_foresight_slash/change_spirit
+        execute if entity @s[tag=PlyUsingEyeStart,scores={MhdpWeaponTimer=36..,MhdpWeaponSpiritGaugeColorLsword=1..}] run function mhdp_weapons:weapon/long_sword/18_sp_sheathe/change_spirit
 
 # 終了
     execute if entity @s[scores={MhdpWeaponTimer=236..}] run function mhdp_weapons:weapon/long_sword/18_sp_sheathe/end

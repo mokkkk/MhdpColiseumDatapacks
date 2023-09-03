@@ -29,7 +29,9 @@
      tag @s remove WpnLsword17ForesightSlash
      tag @s remove WpnLsword18SpSheathe
      tag @s remove WpnLsword19Iai
+     tag @s remove WpnLsword20SpiritIai
 
+     tag @s remove WpnLswordSpiritIaiSuccess
      tag @s remove WpnLswordForesightSuccess
 
 # ステップ回避ロック解除

@@ -28,6 +28,7 @@
     execute if score @s MhdpWeaponSpiritGaugeLsword matches 1.. unless score @s MhdpWeaponSpiritGaugeTimerLsword matches 1.. run scoreboard players remove @s MhdpWeaponSpiritGaugeLsword 1
 
 # 練気ゲージ色減少
+    execute if score @s MhdpWeaponSpiritGaugeColorLsword matches ..-1 run scoreboard players set @s MhdpWeaponSpiritGaugeColorLsword 0
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 18001.. run scoreboard players set @s MhdpWeaponSpiritGaugeColorLsword 18000
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 1..6000 run scoreboard players remove @s MhdpWeaponSpiritGaugeColorLsword 1
     execute if score @s MhdpWeaponSpiritGaugeColorLsword matches 6001..12000 run scoreboard players remove @s MhdpWeaponSpiritGaugeColorLsword 3

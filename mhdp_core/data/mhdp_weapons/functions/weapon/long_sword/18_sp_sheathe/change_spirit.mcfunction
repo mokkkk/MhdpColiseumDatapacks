@@ -1,6 +1,6 @@
-#> mhdp_weapons:weapon/long_sword/17_foresight_slash/change_spirit
+#> mhdp_weapons:weapon/long_sword/18_sp_sheathe/change_spirit
 #
-# 太刀：見切り斬り → 気刃大回転斬り
+# 太刀：特殊納刀 → 居合抜刀気刃斬り
 
 # モデル変更
     function mhdp_weapons:weapon/long_sword/99_reset/model
@@ -9,8 +9,7 @@
     tag @s remove PlySneakAvoidLock
 
 # タグ更新
-    tag @s remove WpnLsword17ForesightSlash
-    tag @s remove WpnLswordForesightSuccess
+    tag @s remove WpnLsword18SpSheathe
 
 # 移行
-    function mhdp_weapons:weapon/long_sword/14_spirit_finish/start
+    function mhdp_weapons:weapon/long_sword/20_spirit_iai/start

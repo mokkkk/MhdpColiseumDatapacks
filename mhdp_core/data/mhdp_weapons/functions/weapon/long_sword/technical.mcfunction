@@ -25,8 +25,10 @@
 #declare tag WpnLsword17ForesightSlash 太刀:見切り斬り
 #declare tag WpnLsword18SpSheathe 太刀:特殊納刀
 #declare tag WpnLsword19Iai 太刀:居合抜刀斬り
+#declare tag WpnLsword20SpiritIai 太刀:居合抜刀気刃斬り
 
 #declare tag WpnLswordForesightSuccess 太刀:見切り斬り成功
+#declare tag WpnLswordSpiritIaiSuccess 太刀:居合抜刀気刃斬り成功
 
 # 0_常時実行：
     function mhdp_weapons:weapon/long_sword/0_tick/
@@ -91,6 +93,9 @@
 
 ## 19_居合抜刀斬り：
     execute if entity @s[tag=IsDrawing,tag=WpnLsword19Iai] run function mhdp_weapons:weapon/long_sword/19_iai/main
+
+## 20_居合抜刀気刃斬り：
+    execute if entity @s[tag=IsDrawing,tag=WpnLsword20SpiritIai] run function mhdp_weapons:weapon/long_sword/20_spirit_iai/main
 
 # 終了
     tag @s remove IsDrawing
