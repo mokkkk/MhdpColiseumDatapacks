@@ -23,6 +23,14 @@
      tag @s remove WpnLsword11KabutoLand
      tag @s remove WpnLsword12SerenePose
      tag @s remove WpnLsword13SereneCounter
+     tag @s remove WpnLsword14SpiritFinish
+     tag @s remove WpnLsword15FrontMoveSlash
+     tag @s remove WpnLsword16SpiritMoveSlash
+     tag @s remove WpnLsword17ForesightSlash
+     tag @s remove WpnLsword18SpSheathe
+     tag @s remove WpnLsword19Iai
+
+     tag @s remove WpnLswordForesightSuccess
 
 # ステップ回避ロック解除
      tag @s remove PlySneakAvoidLock

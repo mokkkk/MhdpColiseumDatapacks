@@ -98,6 +98,8 @@
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:80,ElementDamage:100,Type:1,Offhand:0b}
         # 14_気刃踏み込み斬り
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:100,ElementDamage:100,Type:1,Offhand:0b}
+        # 15_居合抜刀斬り
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:40,ElementDamage:50,Type:1,Offhand:0b}
 
 # 3：弓
     data modify storage mh_dp:player_data AttackList append value []

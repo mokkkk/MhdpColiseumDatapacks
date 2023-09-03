@@ -9,6 +9,9 @@
 # スタミナ回復
     execute if entity @s[tag=!PlyStaminaNotRegen,tag=!WpnSsword3Guard,tag=!WpnSsword7Step,scores={MhdpStamina=..999}] run tag @s add Regen
 
+# 納刀操作
+    execute if entity @s[tag=PlySheatheSucceed,tag=PlySkillTechnical] run function mhdp_weapons:weapon/long_sword/0_tick/sheathe
+
 # 回復
     execute if entity @s[tag=Regen,scores={MhdpStaminaSpeed=..79}] run scoreboard players add @s MhdpStaminaSpeed 1
     execute if entity @s[tag=Regen,scores={MhdpStaminaSpeed=..39,MhdpStamina=..999}] run scoreboard players add @s MhdpStamina 4

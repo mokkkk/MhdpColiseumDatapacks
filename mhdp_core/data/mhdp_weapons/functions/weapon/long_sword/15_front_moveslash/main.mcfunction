@@ -24,5 +24,9 @@
     execute if entity @s[scores={MhdpWeaponTimer=3}] run scoreboard players set $strength delta.api.launch 13000
     execute if entity @s[scores={MhdpWeaponTimer=3}] at @s rotated ~ 0 run function delta:api/launch_looking
 
+# 遷移
+    # スニーク+ジャンプ時，見切り斬りに移行
+        execute if entity @s[tag=PlyJumpping,tag=PlySneakCurrent,scores={MhdpWeaponTimer=12..}] run function mhdp_weapons:weapon/long_sword/15_front_moveslash/change_foresight
+
 # 終了
     execute if entity @s[scores={MhdpWeaponTimer=31..}] run function mhdp_weapons:weapon/long_sword/15_front_moveslash/end

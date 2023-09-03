@@ -32,6 +32,8 @@
 # 遷移
     # 練気ゲージがあり，右クリック時，気刃斬り2に移行
         execute if entity @s[tag=PlyUsingEyeStart,tag=!PlySneakCurrent,scores={MhdpWeaponTimer=12..,MhdpWeaponSpiritGaugeLsword=120..}] run function mhdp_weapons:weapon/long_sword/16_spirit_moveslash/change_spirit
+    # スニーク+ジャンプ時，見切り斬りに移行
+        execute if entity @s[tag=PlyJumpping,tag=PlySneakCurrent,scores={MhdpWeaponTimer=12..}] run function mhdp_weapons:weapon/long_sword/16_spirit_moveslash/change_foresight
 
 # 終了
     execute if entity @s[scores={MhdpWeaponTimer=31..}] run function mhdp_weapons:weapon/long_sword/16_spirit_moveslash/end
