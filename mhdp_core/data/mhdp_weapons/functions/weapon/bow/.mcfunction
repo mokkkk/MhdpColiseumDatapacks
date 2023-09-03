@@ -3,7 +3,7 @@
 # 弓のメイン処理
 #
 
-# 通常
-    function mhdp_weapons:weapon/bow/normal
+# 地ノ型
+    execute if entity @s[tag=!PlySkillTechnical] run function mhdp_weapons:weapon/bow/normal
     
 # 天ノ型

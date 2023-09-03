@@ -17,6 +17,12 @@
      tag @s remove WpnLsword5Spirit2
      tag @s remove WpnLsword6Spirit3
      tag @s remove WpnLsword7Moveslash
+     tag @s remove WpnLsword8WireKick
+     tag @s remove WpnLsword9WireKickJump
+     tag @s remove WpnLsword10Kabuto
+     tag @s remove WpnLsword11KabutoLand
+     tag @s remove WpnLsword12SerenePose
+     tag @s remove WpnLsword13SereneCounter
 
 # ステップ回避ロック解除
      tag @s remove PlySneakAvoidLock

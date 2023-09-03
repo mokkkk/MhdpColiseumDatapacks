@@ -23,10 +23,10 @@
     execute if entity @s[scores={MhdpWeaponTimer=13}] run playsound item.trident.return master @a ~ ~ ~ 1 1.2
 
 # 攻撃
-    # 練気が満タンでない場合，失敗
-        execute if entity @s[scores={MhdpWeaponTimer=11,MhdpWeaponSpiritGaugeLsword=..599}] at @s run function mhdp_weapons:weapon/long_sword/10_kabuto/attack_miss
-    # 練気が満タンの場合，攻撃用Marker召喚
-        execute if entity @s[scores={MhdpWeaponTimer=11,MhdpWeaponSpiritGaugeLsword=600..}] at @s run function mhdp_weapons:weapon/long_sword/10_kabuto/attack
+    # 練気が足りない場合，失敗
+        execute if entity @s[scores={MhdpWeaponTimer=11,MhdpWeaponSpiritGaugeLsword=..299}] at @s run function mhdp_weapons:weapon/long_sword/10_kabuto/attack_miss
+    # 練気が半分以上の場合，攻撃用Marker召喚
+        execute if entity @s[scores={MhdpWeaponTimer=11,MhdpWeaponSpiritGaugeLsword=300..}] at @s run function mhdp_weapons:weapon/long_sword/10_kabuto/attack
     
 # 移動速度低下
     execute if entity @s[scores={MhdpWeaponTimer=1}] run effect give @s slowness 3 4 true

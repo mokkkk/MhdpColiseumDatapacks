@@ -14,7 +14,8 @@
     summon marker ~ ~ ~ {Tags:["MonsterShot","PlyKabuto","Start"]}
     scoreboard players operation @e[type=marker,tag=PlyKabuto,tag=Start,limit=1,sort=nearest] MhdpPartsUid = @e[type=slime,tag=Targets,limit=1,sort=nearest] MhdpPartsUid
     scoreboard players operation @e[type=marker,tag=PlyKabuto,tag=Start,limit=1,sort=nearest] MhdpPlayerUid = @s MhdpPlayerUid
-    scoreboard players set @e[type=marker,tag=PlyKabuto,tag=Start,limit=1,sort=nearest] MhdpWeaponSpiritGaugeColorLsword 1
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches ..599 run scoreboard players set @e[type=marker,tag=PlyKabuto,tag=Start,limit=1,sort=nearest] MhdpWeaponSpiritGaugeColorLsword 0
+    execute if score @s MhdpWeaponSpiritGaugeLsword matches 600.. run scoreboard players set @e[type=marker,tag=PlyKabuto,tag=Start,limit=1,sort=nearest] MhdpWeaponSpiritGaugeColorLsword 1
 
 # 終了
     tag @e[type=slime,tag=Targets] remove Targets

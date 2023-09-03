@@ -11,6 +11,9 @@
 # 101：研石
     execute if score #mhdp_temp_id MhdpCore matches 101 run function mhdp_core:player/item/carrot_on_a_stick/whetstone/start
 
+# 102：天ノ型の秘伝書
+    execute if score #mhdp_temp_id MhdpCore matches 102 run function mhdp_core:player/item/carrot_on_a_stick/hidensyo/start
+
 # 1001：不動の装衣
     execute if score #mhdp_temp_id MhdpCore matches 1001 run function mhdp_weapons:sp_items/immovable/start
 

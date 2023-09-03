@@ -37,6 +37,8 @@
         
         #declare tag MnsTarget モンスターのターゲットになりうる
 
+        #declare tag PlySkillTechnical 天の型
+
     # 特殊装具処理関連
         #declare tag PlyItmImmovable 処理特殊装具判定用タグ（不動の装衣）
 

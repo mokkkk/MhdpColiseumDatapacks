@@ -19,23 +19,23 @@
 # 2：太刀
     data modify storage mh_dp:player_data AttackList append value []
         # 0_踏み込み斬り
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:120,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:100,ElementDamage:100,Type:1,Offhand:0b}
         # 1_気刃斬り1_失敗
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:100,ElementDamage:70,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:80,ElementDamage:70,Type:1,Offhand:0b}
         # 2_気刃斬り1
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:150,ElementDamage:100,Type:1,Offhand:0b}
-        # 3_斬り下がり
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:120,ElementDamage:100,Type:1,Offhand:0b}
+        # 3_斬り下がり
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:90,ElementDamage:80,Type:1,Offhand:0b}
         # 4_気刃斬り2
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:160,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:130,ElementDamage:100,Type:1,Offhand:0b}
         # 5_気刃斬り3_1,2段目
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:70,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:60,ElementDamage:100,Type:1,Offhand:0b}
         # 6_気刃斬り3_3段目
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:180,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:160,ElementDamage:100,Type:1,Offhand:0b}
         # 7_気刃兜割_白
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:50,ElementDamage:100,Type:1,Offhand:1b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:40,ElementDamage:100,Type:1,Offhand:1b}
         # 8_気刃兜割_黄
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:65,ElementDamage:100,Type:1,Offhand:1b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:60,ElementDamage:100,Type:1,Offhand:1b}
         # 9_気刃兜割_赤
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:85,ElementDamage:100,Type:1,Offhand:1b}
         # 10_水月の構え
