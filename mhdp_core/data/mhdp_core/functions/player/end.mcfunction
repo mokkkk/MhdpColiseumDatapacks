@@ -18,6 +18,8 @@
     execute if entity @s[tag=PlyDroppedEnderEye] run tag @s remove PlyDroppedEnderEye
     execute if entity @s[tag=PlyUsingEyeStart] run tag @s remove PlyUsingEyeStart
     execute if entity @s[tag=PlyUsingEyeEnd] run tag @s remove PlyUsingEyeEnd
+    execute if entity @s[tag=PlyUsingEyeEndShort] run tag @s remove PlyUsingEyeEndShort
+    execute if entity @s[tag=PlyUsingEyeLong] run tag @s remove PlyUsingEyeLong
     execute if entity @s[tag=PlySheatheSucceed] run tag @s remove PlySheatheSucceed
 
 # 空中状態リセット

@@ -30,7 +30,9 @@
      tag @s remove WpnLsword18SpSheathe
      tag @s remove WpnLsword19Iai
      tag @s remove WpnLsword20SpiritIai
+     tag @s remove WpnLsword21SpiritSpear
 
+     tag @s remove AttackHit
      tag @s remove WpnLswordSpiritIaiSuccess
      tag @s remove WpnLswordForesightSuccess
 

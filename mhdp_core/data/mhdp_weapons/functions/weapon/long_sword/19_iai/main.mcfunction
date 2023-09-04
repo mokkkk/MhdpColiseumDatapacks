@@ -28,8 +28,12 @@
     execute if entity @s[scores={MhdpWeaponTimer=1}] at @s rotated ~ 0 run function delta:api/launch_looking
 
 # 遷移
+    # 右クリック時，気刃斬りに移行
+        execute if entity @s[tag=PlyUsingEyeStart,tag=!PlySneakCurrent,scores={MhdpWeaponTimer=18..}] run function mhdp_weapons:weapon/long_sword/19_iai/change_spirit
     # スニーク+右クリック時，斬り下がりに移行
         execute if entity @s[tag=PlyUsingEyeStart,tag=PlySneakCurrent,scores={MhdpWeaponTimer=18..}] run function mhdp_weapons:weapon/long_sword/19_iai/change_moveslash
 
+# タグ消去
+    execute if entity @s[scores={MhdpWeaponTimer=11}] run function mhdp_weapons:weapon/long_sword/2_vertical/remove_tag
 # 終了
     execute if entity @s[scores={MhdpWeaponTimer=30..}] run function mhdp_weapons:weapon/long_sword/19_iai/end

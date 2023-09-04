@@ -1,6 +1,6 @@
 #> mhdp_weapons:weapon/long_sword/1_draw_act/start_normal
 #
-# 片手剣：抜刀攻撃（突進斬り） 実行
+# 太刀：抜刀攻撃（斬りおろし） 実行
 
 # 武器移動処理
     # shulker_boxに武器データをコピー
@@ -28,7 +28,6 @@
         tag @s add PlySneakAvoidLock
     # 抜刀検知タグ追加
         tag @s add PlyDrawAttack
-    # 翔蟲抜刀検知タグ追加
 
 # 抜刀演出
     playsound item.armor.equip_iron master @a ~ ~ ~ 1 1
@@ -39,7 +38,4 @@
     execute if entity @s[tag=!PlyJumpping] run scoreboard players set $strength delta.api.launch 12000
     execute if entity @s[tag=!PlyJumpping] at @s rotated ~ 0 run function delta:api/launch_looking
 
-# 空中の場合，即座に攻撃
-    # execute if entity @s[tag=PlyJumpping] run scoreboard players set @s MhdpWeaponTimer 3
-
-say 抜刀踏み込み斬り開始
+say 抜刀斬り下ろし開始

@@ -26,6 +26,7 @@
 #declare tag WpnLsword18SpSheathe 太刀:特殊納刀
 #declare tag WpnLsword19Iai 太刀:居合抜刀斬り
 #declare tag WpnLsword20SpiritIai 太刀:居合抜刀気刃斬り
+#declare tag WpnLsword21SpiritSpear 太刀:気刃突き
 
 #declare tag WpnLswordForesightSuccess 太刀:見切り斬り成功
 #declare tag WpnLswordSpiritIaiSuccess 太刀:居合抜刀気刃斬り成功
@@ -40,7 +41,7 @@
     execute if entity @s[tag=IsDrawing,tag=WpnLsword2Vertical] run function mhdp_weapons:weapon/long_sword/2_vertical/main_tec
 
 ## 3_気刃斬り1_失敗：
-    execute if entity @s[tag=!PlyWeaponDeactivate,tag=IsDrawing,tag=!PlySneakAvoidFunc,tag=PlyUsingEyeStart,tag=!PlySneakCurrent,tag=!WpnLsword2Vertical,tag=!WpnLsword3Spirit1Miss,tag=!WpnLsword4Spirit1,tag=!WpnLsword5Spirit2,tag=!WpnLsword6Spirit3,tag=!WpnLsword7Moveslash,tag=!WpnLsword8WireKick,tag=!WpnLsword9WireKickJump,tag=!WpnLsword10Kabuto,tag=!WpnLsword11KabutoLand,tag=!WpnLsword12SerenePose,tag=!WpnLsword13SereneCounter,tag=!WpnLsword14SpiritFinish,tag=!WpnLsword15FrontMoveSlash,tag=!WpnLsword16SpiritMoveSlash,tag=!WpnLsword17ForesightSlash,tag=!WpnLsword18SpSheathe,tag=!WpnLsword19Iai] run function mhdp_weapons:weapon/long_sword/3_spirit1_miss/start
+    execute if entity @s[tag=!PlyWeaponDeactivate,tag=IsDrawing,tag=!PlySneakAvoidFunc,tag=PlyUsingEyeEndShort,tag=!PlySneakCurrent,tag=!WpnLsword2Vertical,tag=!WpnLsword3Spirit1Miss,tag=!WpnLsword4Spirit1,tag=!WpnLsword5Spirit2,tag=!WpnLsword6Spirit3,tag=!WpnLsword7Moveslash,tag=!WpnLsword8WireKick,tag=!WpnLsword9WireKickJump,tag=!WpnLsword10Kabuto,tag=!WpnLsword11KabutoLand,tag=!WpnLsword12SerenePose,tag=!WpnLsword13SereneCounter,tag=!WpnLsword14SpiritFinish,tag=!WpnLsword15FrontMoveSlash,tag=!WpnLsword16SpiritMoveSlash,tag=!WpnLsword17ForesightSlash,tag=!WpnLsword18SpSheathe,tag=!WpnLsword19Iai,tag=!WpnLsword20SpiritIai,tag=!WpnLsword21SpiritSpear] run function mhdp_weapons:weapon/long_sword/3_spirit1_miss/start
     execute if entity @s[tag=IsDrawing,tag=WpnLsword3Spirit1Miss] run function mhdp_weapons:weapon/long_sword/3_spirit1_miss/main_tec
 
 ## 4_気刃斬り1：
@@ -53,7 +54,7 @@
     execute if entity @s[tag=IsDrawing,tag=WpnLsword6Spirit3] run function mhdp_weapons:weapon/long_sword/6_spirit3/main_tec
 
 ## 7_斬り下がり：
-    execute if entity @s[tag=!PlyWeaponDeactivate,tag=IsDrawing,tag=!PlySneakAvoidFunc,tag=PlyUsingEyeStart,tag=PlySneakCurrent,tag=!WpnLsword2Vertical,tag=!WpnLsword3Spirit1Miss,tag=!WpnLsword4Spirit1,tag=!WpnLsword5Spirit2,tag=!WpnLsword6Spirit3,tag=!WpnLsword7Moveslash,tag=!WpnLsword8WireKick,tag=!WpnLsword9WireKickJump,tag=!WpnLsword10Kabuto,tag=!WpnLsword11KabutoLand,tag=!WpnLsword12SerenePose,tag=!WpnLsword13SereneCounter,tag=!WpnLsword14SpiritFinish,tag=!WpnLsword15FrontMoveSlash,tag=!WpnLsword16SpiritMoveSlash,tag=!WpnLsword17ForesightSlash,tag=!WpnLsword18SpSheathe,tag=!WpnLsword19Iai] run function mhdp_weapons:weapon/long_sword/7_moveslash/start
+    execute if entity @s[tag=!PlyWeaponDeactivate,tag=IsDrawing,tag=!PlySneakAvoidFunc,tag=PlyUsingEyeStart,tag=PlySneakCurrent,tag=!WpnLsword2Vertical,tag=!WpnLsword3Spirit1Miss,tag=!WpnLsword4Spirit1,tag=!WpnLsword5Spirit2,tag=!WpnLsword6Spirit3,tag=!WpnLsword7Moveslash,tag=!WpnLsword8WireKick,tag=!WpnLsword9WireKickJump,tag=!WpnLsword10Kabuto,tag=!WpnLsword11KabutoLand,tag=!WpnLsword12SerenePose,tag=!WpnLsword13SereneCounter,tag=!WpnLsword14SpiritFinish,tag=!WpnLsword15FrontMoveSlash,tag=!WpnLsword16SpiritMoveSlash,tag=!WpnLsword17ForesightSlash,tag=!WpnLsword18SpSheathe,tag=!WpnLsword19Iai,tag=!WpnLsword20SpiritIai,tag=!WpnLsword21SpiritSpear] run function mhdp_weapons:weapon/long_sword/7_moveslash/start
     execute if entity @s[tag=IsDrawing,tag=WpnLsword7Moveslash] run function mhdp_weapons:weapon/long_sword/7_moveslash/main_tec
 
 ## 8_飛翔蹴り：
@@ -96,6 +97,10 @@
 
 ## 20_居合抜刀気刃斬り：
     execute if entity @s[tag=IsDrawing,tag=WpnLsword20SpiritIai] run function mhdp_weapons:weapon/long_sword/20_spirit_iai/main
+
+## 21_気刃突き：
+    execute if entity @s[tag=!PlyWeaponDeactivate,tag=IsDrawing,tag=!PlySneakAvoidFunc,tag=PlyUsingEyeLong,tag=!PlySneakCurrent,tag=!WpnLsword2Vertical,tag=!WpnLsword3Spirit1Miss,tag=!WpnLsword4Spirit1,tag=!WpnLsword5Spirit2,tag=!WpnLsword6Spirit3,tag=!WpnLsword7Moveslash,tag=!WpnLsword8WireKick,tag=!WpnLsword9WireKickJump,tag=!WpnLsword10Kabuto,tag=!WpnLsword11KabutoLand,tag=!WpnLsword12SerenePose,tag=!WpnLsword13SereneCounter,tag=!WpnLsword14SpiritFinish,tag=!WpnLsword15FrontMoveSlash,tag=!WpnLsword16SpiritMoveSlash,tag=!WpnLsword17ForesightSlash,tag=!WpnLsword18SpSheathe,tag=!WpnLsword19Iai,tag=!WpnLsword20SpiritIai,tag=!WpnLsword21SpiritSpear] run function mhdp_weapons:weapon/long_sword/21_spirit_spear/start
+    execute if entity @s[tag=IsDrawing,tag=WpnLsword21SpiritSpear] run function mhdp_weapons:weapon/long_sword/21_spirit_spear/main
 
 # 終了
     tag @s remove IsDrawing

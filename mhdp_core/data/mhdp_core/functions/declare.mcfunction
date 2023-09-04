@@ -12,6 +12,8 @@
     #declare tag PlyUsingEyeStart プレイヤーがエンダーアイを使用開始した
     #declare tag PlyUsingEyeCurrent プレイヤーがエンダーアイ使用中
     #declare tag PlyUsingEyeEnd プレイヤーがエンダーアイ使用を解除した
+    #declare tag PlyUsingEyeEndShort プレイヤーがエンダーアイ使用を解除した・使用時間短
+    #declare tag PlyUsingEyeLong プレイヤーがエンダーアイを使用・使用時間長
     #declare tag PlyDroppedEnderEye プレイヤーがエンダーアイを投げ捨てた
     #declare tag PlyJumpping プレイヤージャンプ中（空中）
     #declare tag PlySelectedItemChanged プレイヤーのSelectedItemSlotが変化した

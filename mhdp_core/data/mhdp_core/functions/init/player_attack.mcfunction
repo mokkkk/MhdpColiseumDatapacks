@@ -68,20 +68,20 @@
 
 # 2：太刀
     data modify storage mh_dp:player_data AttackList append value []
-        # 0_斬りおろし
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:80,ElementDamage:100,Type:1,Offhand:0b}
+        # 0_斬りおろし，気刃兜割_失敗，気刃突き
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:80,DamageColor0:65,DamageColor1:75,DamageColor2:80,DamageColor3:85,ElementDamage:100,Type:1,Offhand:0b}
         # 1_気刃斬り1_失敗
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:60,ElementDamage:70,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:60,DamageColor0:52,DamageColor1:55,DamageColor2:60,DamageColor3:65,ElementDamage:70,Type:1,Offhand:0b}
         # 2_気刃斬り1
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:100,ElementDamage:100,Type:1,Offhand:0b}
-        # 3_斬り下がり
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:60,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:100,DamageColor0:87,DamageColor1:95,DamageColor2:100,DamageColor3:108,ElementDamage:100,Type:1,Offhand:0b}
+        # 3_斬り下がり，見切り斬り
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:60,DamageColor0:54,DamageColor1:55,DamageColor2:60,DamageColor3:65,ElementDamage:100,Type:1,Offhand:0b}
         # 4_気刃斬り2
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:120,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:120,DamageColor0:110,DamageColor1:115,DamageColor2:120,DamageColor3:128,ElementDamage:100,Type:1,Offhand:0b}
         # 5_気刃斬り3_1,2段目
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:60,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:60,DamageColor0:50,DamageColor1:55,DamageColor2:60,DamageColor3:65,ElementDamage:100,Type:1,Offhand:0b}
         # 6_気刃斬り3_3段目
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:130,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:130,DamageColor0:120,DamageColor1:125,DamageColor2:130,DamageColor3:140,ElementDamage:100,Type:1,Offhand:0b}
         # 7_気刃兜割_白
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:40,ElementDamage:100,Type:1,Offhand:1b}
         # 8_気刃兜割_黄
@@ -89,17 +89,17 @@
         # 9_気刃兜割_赤
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:70,ElementDamage:100,Type:1,Offhand:1b}
         # 10_水月の構え
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:240,ElementDamage:100,Type:1,Offhand:1b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:240,DamageColor0:230,DamageColor1:235,DamageColor2:240,DamageColor3:245,ElementDamage:100,Type:1,Offhand:1b}
         # 11_直接攻撃
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:40,DamageTec:20,ElementDamage:30,Type:1,Offhand:1b}
-        # 12_気刃斬り大回転斬り
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:160,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:40,DamageColor0:16,DamageColor1:18,DamageColor2:20,DamageColor3:23,ElementDamage:30,Type:1,Offhand:1b}
+        # 12_気刃大回転斬り
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:160,DamageColor0:150,DamageColor1:155,DamageColor2:160,DamageColor3:170,ElementDamage:100,Type:1,Offhand:0b}
         # 13_踏み込み斬り
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:80,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:80,DamageColor0:70,DamageColor1:75,DamageColor2:80,DamageColor3:85,ElementDamage:100,Type:1,Offhand:0b}
         # 14_気刃踏み込み斬り
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:100,ElementDamage:100,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:100,DamageColor0:90,DamageColor1:95,DamageColor2:100,DamageColor3:108,ElementDamage:100,Type:1,Offhand:0b}
         # 15_居合抜刀斬り
-        data modify storage mh_dp:player_data AttackList[2] append value {Damage:40,ElementDamage:50,Type:1,Offhand:0b}
+        data modify storage mh_dp:player_data AttackList[2] append value {Damage:40,DamageColor0:34,DamageColor1:37,DamageColor2:40,DamageColor3:43,ElementDamage:50,Type:1,Offhand:0b}
         # 16_居合抜刀気刃斬り
         data modify storage mh_dp:player_data AttackList[2] append value {Damage:250,ElementDamage:100,Type:1,Offhand:0b}
 

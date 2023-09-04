@@ -6,6 +6,7 @@
     scoreboard players add @s MhdpWeaponTimer 1
 
 # 武器アニメーション
+    execute if entity @s[scores={MhdpWeaponTimer=1}] run function mhdp_weapons:weapon/long_sword/6_spirit3/animation_3
     execute if entity @s[scores={MhdpWeaponTimer=18}] run function mhdp_weapons:weapon/long_sword/7_moveslash/animation_0
     execute if entity @s[scores={MhdpWeaponTimer=21}] run function mhdp_weapons:weapon/long_sword/7_moveslash/animation_1
     execute if entity @s[scores={MhdpWeaponTimer=22}] run function mhdp_weapons:weapon/long_sword/7_moveslash/animation_2
