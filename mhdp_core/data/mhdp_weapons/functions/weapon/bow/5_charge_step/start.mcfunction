@@ -45,7 +45,7 @@
         execute store success score #mhdp_temp_success MhdpCore as @e[type=marker,tag=SneakAvoidStand0,tag=Start] run data modify storage mhdp_core:temp Temp.Pos1 set from storage mhdp_core:temp Temp.Pos2
         execute unless score #mhdp_temp_success MhdpCore matches 1.. rotated ~ 0 as @e[type=marker,tag=SneakAvoidStand0,tag=Start] run tp @s ~ ~ ~ ~ ~
 
-# test
+# 移動
     tp @s @s
     scoreboard players set $strength delta.api.launch 13000
     execute rotated as @e[type=marker,tag=SneakAvoidStand0,tag=Start] rotated ~ 0 run function delta:api/launch_looking
@@ -61,7 +61,7 @@
     execute if entity @s[tag=SklBowChargePlus,tag=!WpnBowCharge4] run playsound entity.experience_orb.pickup master @a ~ ~ ~ 1 1
 
 # 終了
-    tag @e[type=marker,tag=SneakAvoidStand0,tag=Start] remove Start
+    kill @e[type=marker,tag=SneakAvoidStand0,tag=Start]
     kill @e[type=marker,tag=SneakAvoidStand1,tag=Start]
     scoreboard players reset #mhdp_temp_success
     data remove storage mhdp_core:temp Temp

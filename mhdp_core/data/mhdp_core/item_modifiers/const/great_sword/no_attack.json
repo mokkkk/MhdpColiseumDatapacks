@@ -45,6 +45,14 @@
         "operation": "addition",
         "id": "8d0046ab-681b-4829-9e48-fdb9e3deca65",
         "slot": "mainhand"
+      },
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "name": "",
+        "amount": -0.05,
+        "operation": "addition",
+        "id": "8d0046ab-681b-4829-9e48-fdb9e3deca65",
+        "slot": "mainhand"
       }
     ]
   }

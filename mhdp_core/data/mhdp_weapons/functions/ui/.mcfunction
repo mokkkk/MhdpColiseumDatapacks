@@ -4,7 +4,7 @@
 #
 
 # 初期化
-    data modify storage mhdp_core:temp Temp.UI set value {Sharpness:{},Stamina:{},StaminaArray:[]}
+    data modify storage mhdp_core:temp Temp.UI set value {Sharpness:{},Stamina:{},StaminaArray:[],ExArray:[]}
 
 # 斬れ味
     function mhdp_weapons:ui/sharpness/

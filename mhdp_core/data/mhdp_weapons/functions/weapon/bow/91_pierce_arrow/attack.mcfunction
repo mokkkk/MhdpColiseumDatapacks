@@ -8,9 +8,10 @@
     execute as @a if score @s MhdpPlayerUid = @e[type=marker,tag=Target,limit=1] MhdpPlayerUid run tag @s add Attacker
 
 # 倍率設定
-    scoreboard players set #mhdp_temp_damage_multiply MhdpCore 40
-    scoreboard players set #mhdp_temp_damage_multiply_element MhdpCore 40
-    data modify storage mhdp_core:temp Temp.WeaponDamage set value {Type:1,Offhand:0b}
+    execute store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[3][5].Damage 1
+    execute store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[3][5].ElementDamage 1
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Type set from storage mh_dp:player_data AttackList[3][5].Type
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Offhand set from storage mh_dp:player_data AttackList[3][5].Offhand
 
 # クリティカル距離以外の場合，ダメージ減算
     execute if entity @s[scores={MhdpCore=..3}] run function mhdp_weapons:weapon/bow/91_pierce_arrow/calc

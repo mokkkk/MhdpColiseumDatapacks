@@ -7,3 +7,6 @@
 
 # 防具取得処理
     execute if entity @s[tag=!PlyQuest,tag=AdvInventoryChangedArmor] run function mhdp_core:phase/0_village/player/armor/
+
+# 秘伝書使用検知
+    execute if entity @s[tag=PlyUsedCoas] run function mhdp_core:player/item/carrot_on_a_stick/hidensyo/check

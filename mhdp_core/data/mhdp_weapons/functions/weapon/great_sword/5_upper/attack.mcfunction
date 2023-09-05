@@ -9,9 +9,10 @@
     execute positioned ^ ^ ^1.5 run particle sweep_attack ~ ~1 ~ 0.1 1 0.1 0 20
 
 # 倍率設定
-    scoreboard players set #mhdp_temp_damage_multiply MhdpCore 260
-    scoreboard players set #mhdp_temp_damage_multiply_element MhdpCore 100
-    data modify storage mhdp_core:temp Temp.WeaponDamage set value {Type:1,Offhand:0b}
+    execute store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[0][7].Damage 1
+    execute store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[0][7].ElementDamage 1
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Type set from storage mh_dp:player_data AttackList[0][7].Type
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Offhand set from storage mh_dp:player_data AttackList[0][7].Offhand
 
 # ダメージ発生
     execute positioned ^ ^ ^4.5 as @e[type=slime,tag=MonsterParts,distance=..4] run tag @s add Targets

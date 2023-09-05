@@ -12,6 +12,8 @@
     #declare tag PlyUsingEyeStart プレイヤーがエンダーアイを使用開始した
     #declare tag PlyUsingEyeCurrent プレイヤーがエンダーアイ使用中
     #declare tag PlyUsingEyeEnd プレイヤーがエンダーアイ使用を解除した
+    #declare tag PlyUsingEyeEndShort プレイヤーがエンダーアイ使用を解除した・使用時間短
+    #declare tag PlyUsingEyeLong プレイヤーがエンダーアイを使用・使用時間長
     #declare tag PlyDroppedEnderEye プレイヤーがエンダーアイを投げ捨てた
     #declare tag PlyJumpping プレイヤージャンプ中（空中）
     #declare tag PlySelectedItemChanged プレイヤーのSelectedItemSlotが変化した
@@ -26,14 +28,18 @@
         #declare tag PlyWpnBow 所持武器判定用タグ（弓）
         #declare tag PlyWpnGsword 所持武器判定用タグ（大剣）
         #declare tag PlyWpnSsword 所持武器判定用タグ（片手剣）
+        #declare tag PlyWpnLsword 所持武器判定用タグ（太刀）
         #declare tag PlyWeaponDrawing プレイヤー武器抜刀中
         #declare tag PlyWeaponDrawingSub プレイヤーサブ武器抜刀中
         #declare tag PlyDrawAttack プレイヤー抜刀攻撃中
+        #declare tag PlySheatheSucceed プレイヤーが通常納刀した（Fキーによる操作）
 
         #declare tag PlyArmorSuper スーパーアーマー中
         #declare tag PlyArmorHyper ハイパーアーマー中
         
         #declare tag MnsTarget モンスターのターゲットになりうる
+
+        #declare tag PlySkillTechnical 天の型
 
     # 特殊装具処理関連
         #declare tag PlyItmImmovable 処理特殊装具判定用タグ（不動の装衣）

@@ -12,11 +12,12 @@
     execute if entity @s[tag=WpnSswordJust] positioned ~ ~1.75 ~ positioned ^-0.5 ^ ^2 rotated ~90 30 run function mhdp_weapons:weapon/short_sword/12_just_1/particle_0
 
 # 倍率設定
-    scoreboard players set #mhdp_temp_damage_multiply MhdpCore 150
-    scoreboard players set #mhdp_temp_damage_multiply_element MhdpCore 180
-    execute if entity @s[tag=WpnSswordJust] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 210
-    execute if entity @s[tag=WpnSswordJust] run scoreboard players set #mhdp_temp_damage_multiply_element MhdpCore 350
-    data modify storage mhdp_core:temp Temp.WeaponDamage set value {Type:1,Offhand:0b}
+    execute store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[1][11].Damage 1
+    execute store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[1][11].ElementDamage 1
+    execute if entity @s[tag=WpnSswordJust] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[1][11].DamageJust 1
+    execute if entity @s[tag=WpnSswordJust] store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[1][11].ElementDamageJust 1
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Type set from storage mh_dp:player_data AttackList[1][11].Type
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Offhand set from storage mh_dp:player_data AttackList[1][11].Offhand
 
 # ダメージ発生
     execute positioned ^ ^ ^3 as @e[type=slime,tag=MonsterParts,distance=..3.5] run tag @s add Targets

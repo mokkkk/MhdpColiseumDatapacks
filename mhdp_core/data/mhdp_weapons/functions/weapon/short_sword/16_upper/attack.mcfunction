@@ -16,10 +16,11 @@
     execute positioned ~ ~5 ~ run particle cloud ^ ^ ^1.7 0.2 0.2 0.2 0.05 5
 
 # 倍率設定
-    scoreboard players set #mhdp_temp_damage_multiply MhdpCore 300
-    execute if entity @s[tag=WpnSswordCounter] run scoreboard players set #mhdp_temp_damage_multiply MhdpCore 450
-    scoreboard players set #mhdp_temp_damage_multiply_element MhdpCore 0
-    data modify storage mhdp_core:temp Temp.WeaponDamage set value {Type:2,Offhand:1b}
+    execute store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[1][14].Damage 1
+    execute if entity @s[tag=WpnSswordCounter] store result score #mhdp_temp_damage_multiply MhdpCore run data get storage mh_dp:player_data AttackList[1][14].DamageCounter 1
+    execute store result score #mhdp_temp_damage_multiply_element MhdpCore run data get storage mh_dp:player_data AttackList[1][14].ElementDamage 1
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Type set from storage mh_dp:player_data AttackList[1][14].Type
+    data modify storage mhdp_core:temp Temp.WeaponDamage.Offhand set from storage mh_dp:player_data AttackList[1][14].Offhand
 
 # ダメージ発生
     execute positioned ~ ~1 ~ as @e[type=slime,tag=MonsterParts,distance=..4.5] run tag @s add Targets

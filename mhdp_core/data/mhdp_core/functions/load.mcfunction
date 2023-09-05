@@ -29,6 +29,7 @@
     # プレイヤー行動用
         scoreboard objectives add MhdpFuncSneakAvoid dummy
         scoreboard objectives add MhdpPlayerUsingItemId dummy
+        scoreboard objectives add MhdpPlayerUsingEnderEyeTimer dummy
 
     # プレイヤー防具用
         scoreboard objectives add SkillLv dummy
@@ -48,6 +49,10 @@
         scoreboard objectives add MhdpWeaponDeactivateTimer dummy
         scoreboard objectives add MhdpWeaponCountBow dummy
         scoreboard objectives add MhdpWeaponTimerSsword dummy
+        scoreboard objectives add MhdpWeaponTimerLsword dummy
+        scoreboard objectives add MhdpWeaponSpiritGaugeLsword dummy
+        scoreboard objectives add MhdpWeaponSpiritGaugeTimerLsword dummy
+        scoreboard objectives add MhdpWeaponSpiritGaugeColorLsword dummy
 
     # 特殊装具処理用
         scoreboard objectives add MhdpDropCoas dropped:carrot_on_a_stick
@@ -101,3 +106,5 @@
     function mhdp_core:init/monster_defence
 # モンスター攻撃力初期化
     function mhdp_core:init/monster_attack
+# プレイヤー攻撃力初期化
+    function mhdp_core:init/player_attack

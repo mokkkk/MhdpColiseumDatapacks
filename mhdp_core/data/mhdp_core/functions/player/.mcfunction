@@ -5,6 +5,14 @@
 # 初期実行処理（状態取得）
     function mhdp_core:player/pre
 
+# 経験値設定
+    xp set @s 40 levels
+    # 地の型
+        execute if entity @s[tag=!PlySkillTechnical] run xp set @s 200 points
+    # 天の型
+        execute if entity @s[tag=PlySkillTechnical] run xp set @s 0 points
+    xp set @s 0 levels
+
 # 村中処理
     execute if entity @s[tag=!PlyQuest] run function mhdp_core:player/village/
 

@@ -35,9 +35,10 @@
         item replace entity @s weapon.offhand from block 0 0 0 container.0
 
 # 武器タグ消去
-        tag @s remove PlyWpnBow
-        tag @s remove PlyWpnGsword
-        tag @s remove PlyWpnSsword
+    tag @s remove PlyWpnBow
+    tag @s remove PlyWpnGsword
+    tag @s remove PlyWpnSsword
+    tag @s remove PlyWpnLsword
 
 # UI消去
     title @a actionbar {"text": ""}

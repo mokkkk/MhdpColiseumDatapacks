@@ -67,3 +67,40 @@
     function mhdp_core:phase/4_quest_cleared/back_home/setup/consumable_items/
 
 ################################################################################################
+
+################################################################################################
+# 武器の追加時修正する共通処理
+
+# init
+## 攻撃力
+    function mhdp_core:init/player_attack
+
+# クエスト開始時
+## 所持武器判別用タグ付与・スコア初期化
+    function mhdp_core:phase/2_quest_wait/start_quest/setup/weapon
+
+# クエスト中
+## 各武器メイン処理への分岐
+    function mhdp_weapons:weapon/
+## 各武器抜刀処理への分岐
+    function mhdp_weapons:core/draw/weapon
+## 各武器納刀処理への分岐
+    function mhdp_weapons:core/sheathe/weapon
+## 各武器中断処理への分岐
+    function mhdp_weapons:core/interruption/
+## 各武器リセット処理への分岐
+    function mhdp_weapons:core/reset/weapon
+## 各武器直接攻撃処理への分岐
+    function mhdp_weapons:core/attack/weapon
+## 武器の切れ味更新処理への分岐
+    function mhdp_weapons:core/attack/attack_by_mhdp_skill
+## (optional)武器の特殊UI表示
+    function mhdp_weapons:ui/ex/
+## (optional)フレーム回避時の処理分岐
+    function mhdp_core:player/damage/player_avoid
+
+# クエスト終了時
+## 所持武器判別用タグを消去する
+    function mhdp_core:phase/4_quest_cleared/back_home/setup/weapon
+
+################################################################################################

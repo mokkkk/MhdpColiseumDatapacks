@@ -6,8 +6,15 @@
     playsound entity.player.attack.sweep master @s ~ ~ ~ 1 2
 
 # 無敵時間設定
-    scoreboard players set @s MhdpTAvoid 0
     scoreboard players set @s MhdpTDamage 5
 
 # 各処理への分岐
-    # 弓・チャージステップ
+    # 太刀・水月の構え
+        execute if entity @s[tag=WpnLsword12SerenePose] if score @s MhdpWeaponTimer matches 1..80 run function mhdp_weapons:weapon/long_sword/12_serene_pose/change_counter
+    # 太刀・見切り斬り
+        execute if entity @s[tag=WpnLsword17ForesightSlash] if score @s MhdpWeaponTimer matches 1..14 run function mhdp_weapons:weapon/long_sword/17_foresight_slash/success_counter
+    # 太刀・居合抜刀気刃斬り
+        execute if entity @s[tag=WpnLsword20SpiritIai] if score @s MhdpWeaponTimer matches 1..7 run function mhdp_weapons:weapon/long_sword/20_spirit_iai/success_counter
+
+# 回避受付時間リセット
+    scoreboard players set @s MhdpTAvoid 0

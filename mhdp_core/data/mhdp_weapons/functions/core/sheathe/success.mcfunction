@@ -30,3 +30,5 @@
 # 終了
     scoreboard players reset #mhdp_temp_cmd
     data remove storage mhdp_core:temp Temp
+
+say 通常納刀

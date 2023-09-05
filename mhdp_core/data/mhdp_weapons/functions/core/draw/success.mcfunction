@@ -8,7 +8,7 @@
 # サブ武器が存在する武器種の場合
     # function mhdp_weapons:core/draw/sub/
 
-# 武器に応じた納刀処理
+# 武器に応じた抜刀処理
     function mhdp_weapons:core/draw/weapon
 
 # 演出
