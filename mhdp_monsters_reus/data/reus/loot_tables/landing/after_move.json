@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "##comment":"噛みつき",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 3,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:1}"
+                }
+              ]
+            },
+            {
+              "##comment":"移動ひっかき",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 5,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:2}"
+                }
+              ]
+            },
+            {
+              "##comment":"タックル",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 6,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:3}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

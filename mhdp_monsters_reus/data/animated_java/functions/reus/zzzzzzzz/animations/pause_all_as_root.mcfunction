@@ -1,0 +1,13 @@
+function animated_java:reus/zzzzzzzz/animations/land_idle/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_voice/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_dash_start/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_dash/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_dash_bite/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_tail_spin_r/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_tail_spin_l/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_bite_r/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_bite_l/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_chargebite/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_after_attack/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_breath/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_idle/pause_as_root

@@ -6,7 +6,7 @@
     execute if data storage mhdp_core:temp Temp{Name:"Ranposu"} run function ranposu:manager/4_general/uninstall
 
 # 火竜
-    # execute if data storage mhdp_core:temp Temp{Name:"Reus"} run function asa_animator:reus/manager/0_init/0_summon/
+    execute if data storage mhdp_core:temp Temp{Name:"Reus"} run function reus:manager/4_general/uninstall
 
 # 雷狼竜
     # execute if data storage mhdp_core:temp Temp{Name:"Zinogre"} run function asa_animator:zinogre/manager/0_init/0_summon/

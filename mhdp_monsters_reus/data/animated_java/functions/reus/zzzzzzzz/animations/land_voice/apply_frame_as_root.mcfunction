@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..98 run function animated_java:reus/zzzzzzzz/animations/land_voice/tree/branch_0_98

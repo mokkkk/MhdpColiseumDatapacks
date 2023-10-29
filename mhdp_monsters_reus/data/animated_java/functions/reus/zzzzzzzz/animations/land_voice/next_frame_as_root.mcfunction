@@ -1,0 +1,1 @@
+function animated_java:reus/zzzzzzzz/animations/land_voice/tick_animation
