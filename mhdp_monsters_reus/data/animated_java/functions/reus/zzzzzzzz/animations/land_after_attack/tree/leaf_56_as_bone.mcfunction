@@ -10,4 +10,4 @@ execute if entity @s[tag=aj.reus.locator_origin.leg_left_1] at @s on origin run 
 execute if entity @s[tag=aj.reus.locator_origin.tail_0] at @s on origin run tp @s ^0 ^1.38644 ^-1.74699 ~0 ~5
 execute if entity @s[tag=aj.reus.locator_origin.tail_1] at @s on origin run tp @s ^0 ^1.34944 ^-3.24884 ~0 ~-2.5
 execute if entity @s[tag=aj.reus.locator_origin.tail_2] at @s on origin run tp @s ^0 ^0.8981 ^-4.58523 ~0 ~-22.5
-execute if entity @s[tag=aj.reus.locator_origin.shadow] at @s on origin run tp @s ^0 ^1.86563 ^-0.53438 ~0 ~0
+execute if entity @s[tag=aj.reus.locator_origin.shadow] at @s on origin run tp @s ^0 ^0.44063 ^-0.05938 ~0 ~0

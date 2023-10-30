@@ -3,16 +3,16 @@
 # 火竜 アニメーション遷移処理
 
 # アニメーション再生停止
-    # function reus:manager/1_change/0_stop/
+    function reus:manager/1_change/0_stop/
 
 # フェーズ変更用行動回数カウント
     # Ignore
 
 # ターゲットリセット
-    # execute if entity @s[tag=!StateAfterMove] run function reus:manager/1_change/target
+    execute if entity @s[tag=!StateAfterMove] run function reus:manager/1_change/target
 
 # 強制
-    # tag @s add AnmClaw
+    # tag @s add AnmVoice
 
 # 行動
     # execute if entity @a[tag=ReusAttackTarget] run function reus:manager/1_change/act
@@ -26,7 +26,7 @@
     # execute if entity @s[tag=StateIsAnger] if score #mhdp_reus_anger_count AsaMatrix matches 30.. run function reus:manager/6_damage_animation/2_anger/end
 
 # アニメーション再生開始
-    # function reus:manager/1_change/3_play/
+    function reus:manager/1_change/3_play/
 
 # 念のためStateタグを消去
     # tag @s remove StateIsStun
