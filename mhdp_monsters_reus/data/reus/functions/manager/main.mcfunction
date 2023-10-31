@@ -7,6 +7,8 @@
 #declare tag StateIsFlying 空中
 #declare tag StateIsStun スタン中
 #declare tag StateBreakHead 部位破壊(頭)
+#declare tag StateBreakBody 部位破壊(胴)
+#declare tag StateBreakTail 部位破壊(尻尾)
 #declare tag StateAfterMove 移動後
 
 # 壁埋まり対策
@@ -19,4 +21,4 @@
     execute at @s run function reus:manager/5_animation/
 
 # 怒り時パーティクル
-    execute if entity @s[tag=StateIsAnger] at @e[type=marker,tag=LctPosHead] run particle smoke ^ ^ ^0.5 0.25 0.25 0.25 0.01 1
+    execute if entity @s[tag=StateIsAnger] on passengers if entity @s[tag=LctPosHead] on origin at @s run particle smoke ^ ^ ^0.5 0.25 0.25 0.25 0.01 1

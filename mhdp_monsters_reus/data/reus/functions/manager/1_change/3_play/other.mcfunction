@@ -2,6 +2,18 @@
 #
 # 青鳥竜 アニメーション遷移処理 再生開始 その他
 
+# 尻尾回転
+    execute if entity @s[tag=AnmTailSpinR] run function animated_java:reus/animations/land_tail_spin_r/play
+    tag @s remove AnmTailSpinR
+    execute if entity @s[tag=AnmTailSpinL] run function animated_java:reus/animations/land_tail_spin_l/play
+    tag @s remove AnmTailSpinL
+
+# 嚙みつき
+    execute if entity @s[tag=AnmBiteR] run function animated_java:reus/animations/land_bite_r/play
+    tag @s remove AnmBiteR
+    execute if entity @s[tag=AnmBiteL] run function animated_java:reus/animations/land_bite_l/play
+    tag @s remove AnmBiteL
+
 # 威嚇
     execute if entity @s[tag=AnmVoice] run function animated_java:reus/animations/land_voice/play
     tag @s remove AnmVoice

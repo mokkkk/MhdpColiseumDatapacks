@@ -9,6 +9,8 @@ execute if entity @s[tag=aj.reus.locator_origin.leg_left_0] run function animate
 execute if entity @s[tag=aj.reus.locator_origin.leg_left_1] run function animated_java:reus/zzzzzzzz/summon/locator_leg_left_1/as_origin
 execute if entity @s[tag=aj.reus.locator_origin.tail_0] run function animated_java:reus/zzzzzzzz/summon/locator_tail_0/as_origin
 execute if entity @s[tag=aj.reus.locator_origin.tail_1] run function animated_java:reus/zzzzzzzz/summon/locator_tail_1/as_origin
+execute if entity @s[tag=aj.reus.locator_origin.pos_tail_2] run function animated_java:reus/zzzzzzzz/summon/locator_pos_tail_2/as_origin
+execute if entity @s[tag=aj.reus.locator_origin.pos_tail_3] run function animated_java:reus/zzzzzzzz/summon/locator_pos_tail_3/as_origin
 execute if entity @s[tag=aj.reus.locator_origin.tail_2] run function animated_java:reus/zzzzzzzz/summon/locator_tail_2/as_origin
 execute if entity @s[tag=aj.reus.locator_origin.shadow] run function animated_java:reus/zzzzzzzz/summon/locator_shadow/as_origin
 function #animated_java:reus/on_summon/as_locator_origins

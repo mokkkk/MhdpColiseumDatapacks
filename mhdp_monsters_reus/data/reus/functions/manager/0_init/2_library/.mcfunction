@@ -3,7 +3,9 @@
 # 火竜 TSBライブラリ用init処理
 
 # 処理簡略化用タグ付与
-    execute on passengers if entity @s[tag=aj.reus.locator_origin.pos_head] on origin run tag @s add LctPosHead
+    execute on passengers if entity @s[tag=aj.reus.locator_origin.pos_head] run tag @s add LctPosHead
+    execute on passengers if entity @s[tag=aj.reus.locator_origin.pos_tail_2] run tag @s add LctPosTail2
+    execute on passengers if entity @s[tag=aj.reus.locator_origin.pos_tail_3] run tag @s add LctPosTail3
 
     execute on passengers if entity @s[tag=aj.reus.locator_origin.head_0] on origin run tag @s add MonsterParts
     execute on passengers if entity @s[tag=aj.reus.locator_origin.head_0] on origin run tag @s add ReusHealth

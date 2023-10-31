@@ -42,6 +42,8 @@ execute if entity @s[tag=aj.reus.bone.locator_tail_0] run data modify entity @s 
 
 execute if entity @s[tag=aj.reus.bone.locator_tail_1] run data modify entity @s item.tag.CustomModelData set value 55
 
+
+
 execute if entity @s[tag=aj.reus.bone.locator_tail_2] run data modify entity @s item.tag.CustomModelData set value 56
 execute if entity @s[tag=aj.reus.bone.tail_3] run data modify entity @s item.tag.CustomModelData set value 57
 execute if entity @s[tag=aj.reus.bone.tail_2] run data modify entity @s item.tag.CustomModelData set value 58
