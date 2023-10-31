@@ -10,6 +10,7 @@
 
 ## 尻尾回転
     execute if entity @s[tag=aj.reus.animation.land_tail_spin_r] run function reus:manager/5_animation/land_tail_spin_r/
+    execute if entity @s[tag=aj.reus.animation.land_tail_spin_l] run function reus:manager/5_animation/land_tail_spin_l/
 
 ## 噛みつき
     execute if entity @s[tag=aj.reus.animation.land_bite_r] run function reus:manager/5_animation/land_bite_r/

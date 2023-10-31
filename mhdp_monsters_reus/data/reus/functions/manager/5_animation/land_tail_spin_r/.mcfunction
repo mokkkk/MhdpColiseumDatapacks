@@ -1,6 +1,6 @@
 #> reus:manager/5_animation/land_tail_spin_r/
 #
-# 火竜 アニメーションのイベントハンドラ 噛みつき
+# 火竜 アニメーションのイベントハンドラ 尻尾回転
 
 # 移動
     execute if score @s aj.reus.animation.land_tail_spin_r.local_anim_time matches 26..34 at @s run tp @s ^ ^ ^ ~15 0
