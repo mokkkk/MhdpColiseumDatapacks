@@ -1,4 +1,4 @@
-#> reus:manager/5_animation/idle/
+#> reus:manager/5_animation/land_idle/
 #
 # 火竜 アニメーションのイベントハンドラ 待機
 
@@ -19,4 +19,4 @@
     execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
     
 # 終了
-    execute if score @s aj.reus.animation.land_idle.local_anim_time matches 87.. run tag @s add ChangeAnm
+    execute if score @s aj.reus.animation.land_idle.local_anim_time matches 86.. run tag @s add ChangeAnm

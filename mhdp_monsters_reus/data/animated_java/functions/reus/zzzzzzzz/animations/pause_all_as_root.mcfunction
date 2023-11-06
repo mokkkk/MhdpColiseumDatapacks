@@ -9,5 +9,9 @@ function animated_java:reus/zzzzzzzz/animations/land_bite_r/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_bite_l/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_chargebite/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_after_attack/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_backstep/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_breath/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_jump/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_idle/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_attack/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_tail/pause_as_root

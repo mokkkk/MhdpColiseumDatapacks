@@ -25,5 +25,7 @@
         data modify storage mh_dp:monster_data AttackList[1] append value {Damage:6.0f,Knockback:2,Guard:2,Type:0,Blight:0b,Anger:7.2f}
         # 1_尻尾回転：4ダメージ，ノックバック中，ガード可能，無属性，怒り補正1.2倍
         data modify storage mh_dp:monster_data AttackList[1] append value {Damage:4.0f,Knockback:2,Guard:2,Type:0,Blight:0b,Anger:4.8f}
+        # 2_床ドン：8ダメージ，ノックバック大，ガード性能1，無属性，怒り補正1.2倍
+        data modify storage mh_dp:monster_data AttackList[1] append value {Damage:8.0f,Knockback:3,Guard:4,Type:0,Blight:0b,Anger:9.6f}
 
 say モンスター攻撃力データstorageを初期化しました

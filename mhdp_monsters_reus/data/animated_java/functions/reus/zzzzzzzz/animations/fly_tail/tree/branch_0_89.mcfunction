@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 0..63 run function animated_java:reus/zzzzzzzz/animations/fly_tail/tree/branch_0_63
+execute if score @s aj.anim_time matches 64..89 run function animated_java:reus/zzzzzzzz/animations/fly_tail/tree/branch_64_89

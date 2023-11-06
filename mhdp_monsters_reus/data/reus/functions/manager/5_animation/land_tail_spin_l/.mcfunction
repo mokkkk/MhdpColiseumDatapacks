@@ -3,12 +3,12 @@
 # 火竜 アニメーションのイベントハンドラ 尻尾回転
 
 # 移動
-    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 26..34 at @s run tp @s ^ ^ ^ ~-15 0
-    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 35..40 at @s run tp @s ^ ^ ^ ~-6 0
-    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 41..50 at @s run tp @s ^ ^ ^ ~-1 0
-    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 70..78 at @s run tp @s ^ ^ ^ ~-15 0
-    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 79..84 at @s run tp @s ^ ^ ^ ~-6 0
-    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 85..94 at @s run tp @s ^ ^ ^ ~-1 0
+    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 26..32 at @s run tp @s ^ ^ ^ ~-20 0
+    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 33..38 at @s run tp @s ^ ^ ^ ~-3 0
+    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 39..50 at @s run tp @s ^ ^ ^ ~-1 0
+    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 70..76 at @s run tp @s ^ ^ ^ ~-20 0
+    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 77..82 at @s run tp @s ^ ^ ^ ~-3 0
+    execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 83..94 at @s run tp @s ^ ^ ^ ~-1 0
 
 # 演出
     execute if score @s aj.reus.animation.land_tail_spin_l.local_anim_time matches 1..3 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
