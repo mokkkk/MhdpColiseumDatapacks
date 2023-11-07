@@ -15,3 +15,4 @@ execute if entity @s[tag=aj.reus.animation.land_jump] run function animated_java
 execute if entity @s[tag=aj.reus.animation.fly_idle] run function animated_java:reus/zzzzzzzz/animations/fly_idle/tick
 execute if entity @s[tag=aj.reus.animation.fly_attack] run function animated_java:reus/zzzzzzzz/animations/fly_attack/tick
 execute if entity @s[tag=aj.reus.animation.fly_tail] run function animated_java:reus/zzzzzzzz/animations/fly_tail/tick
+execute if entity @s[tag=aj.reus.animation.fly_bite] run function animated_java:reus/zzzzzzzz/animations/fly_bite/tick

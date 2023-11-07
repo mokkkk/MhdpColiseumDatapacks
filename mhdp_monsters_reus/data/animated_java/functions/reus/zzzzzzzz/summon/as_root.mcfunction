@@ -43,6 +43,8 @@ execute if score #animation aj.i = $aj.reus.animation.fly_attack aj.id run funct
 execute if score #animation aj.i = $aj.reus.animation.fly_attack aj.id run scoreboard players operation @s aj.reus.animation.fly_attack.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.fly_tail aj.id run function animated_java:reus/zzzzzzzz/animations/fly_tail/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.fly_tail aj.id run scoreboard players operation @s aj.reus.animation.fly_tail.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.reus.animation.fly_bite aj.id run function animated_java:reus/zzzzzzzz/animations/fly_bite/apply_frame_as_root
+execute if score #animation aj.i = $aj.reus.animation.fly_bite aj.id run scoreboard players operation @s aj.reus.animation.fly_bite.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:reus/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

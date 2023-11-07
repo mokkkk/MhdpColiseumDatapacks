@@ -29,6 +29,7 @@
 # 特定アニメーション管理
     scoreboard players reset #mhdp_reus_down_count
     scoreboard players reset #mhdp_reus_move_count
+    scoreboard players reset #mhdp_reus_dash_count
     scoreboard players reset #mhdp_reus_tail_count
     scoreboard players reset #mhdp_reus_damage_count
 

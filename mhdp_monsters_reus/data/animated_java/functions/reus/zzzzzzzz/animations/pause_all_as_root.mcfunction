@@ -15,3 +15,4 @@ function animated_java:reus/zzzzzzzz/animations/land_jump/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_idle/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_attack/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_tail/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_bite/pause_as_root
