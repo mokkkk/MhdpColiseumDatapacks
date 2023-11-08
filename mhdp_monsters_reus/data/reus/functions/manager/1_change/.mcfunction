@@ -12,7 +12,8 @@
     execute if entity @s[tag=!StateAfterMove] run function reus:manager/1_change/target
 
 # 強制
-    tag @s add AnmBackStep
+    # function reus:manager/1_change/2_animations/breath
+    # tag @s add AnmBackStep
     tp @s -71.5 66 100.5 0 0
 
 # 行動

@@ -4,6 +4,7 @@
 
 ## 待機
     execute if entity @s[tag=aj.reus.animation.land_idle] run function reus:manager/5_animation/land_idle/
+    execute if entity @s[tag=aj.reus.animation.fly_idle] run function reus:manager/5_animation/fly_idle/
 
 ## 咆哮
     execute if entity @s[tag=aj.reus.animation.land_voice] run function reus:manager/5_animation/land_voice/

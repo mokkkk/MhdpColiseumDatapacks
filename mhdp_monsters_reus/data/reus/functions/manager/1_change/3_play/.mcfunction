@@ -9,7 +9,8 @@
     execute if entity @s[tag=!StateAppliedAnm] unless predicate reus:animation/is_stay_animation_tags run function reus:manager/1_change/3_play/other
 
 # 待機
-    execute if entity @s[tag=!StateAppliedAnm] run function animated_java:reus/animations/land_idle/play
+    execute if entity @s[tag=!StateIsFlying,tag=!StateAppliedAnm] run function animated_java:reus/animations/land_idle/play
+    execute if entity @s[tag=StateIsFlying,tag=!StateAppliedAnm] run function animated_java:reus/animations/fly_idle/play
 
 # 終了
     tag @s remove StateAppliedAnm

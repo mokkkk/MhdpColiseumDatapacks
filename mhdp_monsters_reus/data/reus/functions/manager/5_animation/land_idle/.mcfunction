@@ -7,6 +7,7 @@
     execute if score @s aj.reus.animation.land_idle.local_anim_time matches 35 run playsound entity.hoglin.step master @a ~ ~ ~ 2 0.7
     execute if score @s aj.reus.animation.land_idle.local_anim_time matches 35 run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7
     execute if score @s aj.reus.animation.land_idle.local_anim_time matches 70 run playsound block.grass.step master @a ~ ~ ~ 2 0.7
+    execute if score @s aj.reus.animation.land_idle.local_anim_time matches 35 run particle block sand ^ ^0.1 ^-4 0.8 0 0.8 0 10
 
 # まばたき
     execute if score @s aj.reus.animation.land_idle.local_anim_time matches 10 run function reus:manager/7_model/head_blink
