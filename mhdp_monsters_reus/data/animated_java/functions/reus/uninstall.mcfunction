@@ -19,10 +19,13 @@ scoreboard objectives remove aj.reus.animation.land_after_attack.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_backstep.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_breath.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_jump.local_anim_time
+scoreboard objectives remove aj.reus.animation.land_to_fly.local_anim_time
+scoreboard objectives remove aj.reus.animation.land_bjb.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_idle.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_attack.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_tail.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_bite.local_anim_time
+scoreboard objectives remove aj.reus.animation.fly_assault.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_idle.loop_mode
 scoreboard objectives remove aj.reus.animation.land_voice.loop_mode
 scoreboard objectives remove aj.reus.animation.land_dash_start.loop_mode
@@ -37,8 +40,11 @@ scoreboard objectives remove aj.reus.animation.land_after_attack.loop_mode
 scoreboard objectives remove aj.reus.animation.land_backstep.loop_mode
 scoreboard objectives remove aj.reus.animation.land_breath.loop_mode
 scoreboard objectives remove aj.reus.animation.land_jump.loop_mode
+scoreboard objectives remove aj.reus.animation.land_to_fly.loop_mode
+scoreboard objectives remove aj.reus.animation.land_bjb.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_idle.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_attack.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_tail.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_bite.loop_mode
+scoreboard objectives remove aj.reus.animation.fly_assault.loop_mode
 tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The reus Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]

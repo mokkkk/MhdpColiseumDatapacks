@@ -19,11 +19,11 @@
     execute if score @s aj.reus.animation.land_voice.local_anim_time matches 44..75 positioned ^ ^ ^6 run particle block grass_block ~ ~ ~ 2 0.1 2 0 5
 
 # 咆哮怯み
-    execute if score @s aj.reus.animation.land_voice.local_anim_time matches 44 as @a[distance=..12] at @s run function mhdp_core:player/damage/knockback/voice/1
+    execute if score @s aj.reus.animation.land_voice.local_anim_time matches 44 as @a[distance=..24] at @s run function mhdp_core:player/damage/knockback/voice/1
 
 # 接地
     execute at @s if block ~ ~-0.1 ~ #asa_animator:no_collision at @s run function asa_animator:general/check_ground
     execute at @s unless block ~ ~ ~ #asa_animator:no_collision at @s run tp @s ~ ~0.1 ~ ~ ~
     
 # 終了
-    execute if score @s aj.reus.animation.land_voice.local_anim_time matches 97.. run tag @s add ChangeAnm
+    execute if score @s aj.reus.animation.land_voice.local_anim_time matches 97.. run function reus:manager/5_animation/land_voice/end

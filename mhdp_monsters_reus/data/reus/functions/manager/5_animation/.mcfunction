@@ -32,3 +32,9 @@
 
 ## 後隙
     execute if entity @s[tag=aj.reus.animation.land_after_attack] run function reus:manager/5_animation/land_after_attack/
+
+## バックステップ
+    execute if entity @s[tag=aj.reus.animation.land_backstep] run function reus:manager/5_animation/land_backstep/
+
+## ブレス
+    execute if entity @s[tag=aj.reus.animation.land_breath] run function reus:manager/5_animation/land_breath/

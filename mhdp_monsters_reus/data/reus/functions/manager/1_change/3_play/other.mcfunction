@@ -2,6 +2,10 @@
 #
 # 火竜 アニメーション遷移処理 再生開始 その他
 
+# 咆哮
+    execute if entity @s[tag=AnmVoice] run function animated_java:reus/animations/land_voice/tween_play
+    tag @s remove AnmVoice
+
 # 突進
     execute if entity @s[tag=AnmDashStart] run function animated_java:reus/animations/land_dash_start/tween_play
     tag @s remove AnmDashStart
@@ -26,9 +30,16 @@
     execute if entity @s[tag=AnmChargeBite] run function animated_java:reus/animations/land_chargebite/tween_play
     tag @s remove AnmChargeBite
 
-# 威嚇
-    execute if entity @s[tag=AnmVoice] run function animated_java:reus/animations/land_voice/tween_play
-    tag @s remove AnmVoice
+# バックステップ
+    execute if entity @s[tag=AnmBackStep] run function animated_java:reus/animations/land_backstep/tween_play
+    tag @s remove AnmBackStep
+
+# ブレス
+    execute if entity @s[tag=AnmBreath] run function animated_java:reus/animations/land_breath/tween_play
+    tag @s remove AnmBreath
+
+
+
 
 # 怒り状態移行
     execute if entity @s[tag=AnmAnger] run function animated_java:reus/animations/anger/tween_play

@@ -19,10 +19,13 @@ scoreboard objectives add aj.reus.animation.land_after_attack.local_anim_time du
 scoreboard objectives add aj.reus.animation.land_backstep.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.land_breath.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.land_jump.local_anim_time dummy
+scoreboard objectives add aj.reus.animation.land_to_fly.local_anim_time dummy
+scoreboard objectives add aj.reus.animation.land_bjb.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.fly_idle.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.fly_attack.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.fly_tail.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.fly_bite.local_anim_time dummy
+scoreboard objectives add aj.reus.animation.fly_assault.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.land_idle.loop_mode dummy
 scoreboard objectives add aj.reus.animation.land_voice.loop_mode dummy
 scoreboard objectives add aj.reus.animation.land_dash_start.loop_mode dummy
@@ -37,10 +40,13 @@ scoreboard objectives add aj.reus.animation.land_after_attack.loop_mode dummy
 scoreboard objectives add aj.reus.animation.land_backstep.loop_mode dummy
 scoreboard objectives add aj.reus.animation.land_breath.loop_mode dummy
 scoreboard objectives add aj.reus.animation.land_jump.loop_mode dummy
+scoreboard objectives add aj.reus.animation.land_to_fly.loop_mode dummy
+scoreboard objectives add aj.reus.animation.land_bjb.loop_mode dummy
 scoreboard objectives add aj.reus.animation.fly_idle.loop_mode dummy
 scoreboard objectives add aj.reus.animation.fly_attack.loop_mode dummy
 scoreboard objectives add aj.reus.animation.fly_tail.loop_mode dummy
 scoreboard objectives add aj.reus.animation.fly_bite.loop_mode dummy
+scoreboard objectives add aj.reus.animation.fly_assault.loop_mode dummy
 scoreboard players set $aj.reus.animation.land_idle aj.id 0
 scoreboard players set $aj.reus.animation.land_voice aj.id 1
 scoreboard players set $aj.reus.animation.land_dash_start aj.id 2
@@ -55,15 +61,18 @@ scoreboard players set $aj.reus.animation.land_after_attack aj.id 10
 scoreboard players set $aj.reus.animation.land_backstep aj.id 11
 scoreboard players set $aj.reus.animation.land_breath aj.id 12
 scoreboard players set $aj.reus.animation.land_jump aj.id 13
-scoreboard players set $aj.reus.animation.fly_idle aj.id 14
-scoreboard players set $aj.reus.animation.fly_attack aj.id 15
-scoreboard players set $aj.reus.animation.fly_tail aj.id 16
-scoreboard players set $aj.reus.animation.fly_bite aj.id 17
+scoreboard players set $aj.reus.animation.land_to_fly aj.id 14
+scoreboard players set $aj.reus.animation.land_bjb aj.id 15
+scoreboard players set $aj.reus.animation.fly_idle aj.id 16
+scoreboard players set $aj.reus.animation.fly_attack aj.id 17
+scoreboard players set $aj.reus.animation.fly_tail aj.id 18
+scoreboard players set $aj.reus.animation.fly_bite aj.id 19
+scoreboard players set $aj.reus.animation.fly_assault aj.id 20
 scoreboard players set $aj.reus.variant.default aj.id 0
 scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.reus.export_version aj.i 1889859785
+scoreboard players set aj.reus.export_version aj.i 78822996
 scoreboard players reset * aj.reus.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.reus.root] run function animated_java:reus/zzzzzzzz/on_load
