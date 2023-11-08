@@ -13,8 +13,8 @@
 
 # 強制
     # function reus:manager/1_change/2_animations/breath
-    # tag @s add AnmBackStep
-    tp @s -71.5 66 100.5 0 0
+    # tag @s add AnmFlyStart
+    # tp @s -71.5 66 100.5 0 0
 
 # 行動
     # execute if entity @a[tag=ReusAttackTarget] run function reus:manager/1_change/act

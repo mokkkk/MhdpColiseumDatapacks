@@ -14,7 +14,7 @@
 
 # 攻撃
     execute if score @s aj.reus.animation.land_jump.local_anim_time matches 33 run function reus:manager/5_animation/land_jump/damage
-# 風圧
+# 風圧：大
     execute if score @s aj.reus.animation.land_jump.local_anim_time matches 33 as @a[distance=..9] run function mhdp_core:player/damage/knockback/wind/1
 
 # 接地

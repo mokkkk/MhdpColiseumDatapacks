@@ -39,3 +39,9 @@
 
 ## ブレス
     execute if entity @s[tag=aj.reus.animation.land_breath] run function reus:manager/5_animation/land_breath/
+
+## 飛行開始
+    execute if entity @s[tag=aj.reus.animation.land_to_fly] run function reus:manager/5_animation/land_to_fly/
+
+## バックジャンプブレス
+    execute if entity @s[tag=aj.reus.animation.land_bjb] run function reus:manager/5_animation/land_bjb/
