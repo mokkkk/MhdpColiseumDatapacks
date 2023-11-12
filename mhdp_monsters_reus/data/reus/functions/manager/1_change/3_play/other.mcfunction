@@ -46,6 +46,15 @@
     execute if entity @s[tag=AnmBjb] run function animated_java:reus/animations/land_bjb/tween_play
     tag @s remove AnmBjb
 
+# 爪攻撃
+    execute if entity @s[tag=AnmFlyAttack] run function animated_java:reus/animations/fly_attack/tween_play
+    tag @s remove AnmFlyAttack
+
+# 尻尾なぎ払い
+    execute if entity @s[tag=AnmFlyTail] run function animated_java:reus/animations/fly_tail/tween_play
+    tag @s remove AnmFlyTail
+
+
 
 # 怒り状態移行
     execute if entity @s[tag=AnmAnger] run function animated_java:reus/animations/anger/tween_play

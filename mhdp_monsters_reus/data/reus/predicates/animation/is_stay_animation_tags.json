@@ -100,6 +100,20 @@
         "predicate": {
           "nbt": "{Tags:[\"AnmBjb\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmFlyAttack\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmFlyTail\"]}"
+        }
       }
     ]
   }

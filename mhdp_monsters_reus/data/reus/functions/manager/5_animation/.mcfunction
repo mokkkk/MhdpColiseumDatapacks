@@ -2,12 +2,18 @@
 #
 # 火竜 アニメーションのイベントハンドラ
 
+# --------------------------------------------------------------
+# 共通
+
 ## 待機
     execute if entity @s[tag=aj.reus.animation.land_idle] run function reus:manager/5_animation/land_idle/
     execute if entity @s[tag=aj.reus.animation.fly_idle] run function reus:manager/5_animation/fly_idle/
 
 ## 咆哮
     execute if entity @s[tag=aj.reus.animation.land_voice] run function reus:manager/5_animation/land_voice/
+
+# --------------------------------------------------------------
+# 地上
 
 ## 突進
     # 開始
@@ -45,3 +51,12 @@
 
 ## バックジャンプブレス
     execute if entity @s[tag=aj.reus.animation.land_bjb] run function reus:manager/5_animation/land_bjb/
+
+# --------------------------------------------------------------
+# 空中
+
+## 爪攻撃
+    execute if entity @s[tag=aj.reus.animation.fly_attack] run function reus:manager/5_animation/fly_attack/
+
+## 尻尾なぎ払い
+    execute if entity @s[tag=aj.reus.animation.fly_tail] run function reus:manager/5_animation/fly_tail/
