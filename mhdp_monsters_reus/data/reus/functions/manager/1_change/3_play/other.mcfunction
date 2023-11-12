@@ -54,6 +54,21 @@
     execute if entity @s[tag=AnmFlyTail] run function animated_java:reus/animations/fly_tail/tween_play
     tag @s remove AnmFlyTail
 
+# 飛行嚙みつき
+    execute if entity @s[tag=AnmFlyBite] run function animated_java:reus/animations/fly_bite/tween_play
+    tag @s remove AnmFlyBite
+
+# 強襲
+    execute if entity @s[tag=AnmFlyAssault] run function animated_java:reus/animations/fly_assault/tween_play
+    tag @s remove AnmFlyAssault
+
+# 強襲
+    execute if entity @s[tag=AnmFlyMoveBreathR] run function animated_java:reus/animations/fly_movebreath_r/tween_play
+    tag @s remove AnmFlyMoveBreathR
+    execute if entity @s[tag=AnmFlyMoveBreathL] run function animated_java:reus/animations/fly_movebreath_l/tween_play
+    tag @s remove AnmFlyMoveBreathL
+
+
 
 
 # 怒り状態移行

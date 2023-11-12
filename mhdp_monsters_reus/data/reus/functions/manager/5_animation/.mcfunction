@@ -60,3 +60,13 @@
 
 ## 尻尾なぎ払い
     execute if entity @s[tag=aj.reus.animation.fly_tail] run function reus:manager/5_animation/fly_tail/
+
+## 飛行嚙みつき
+    execute if entity @s[tag=aj.reus.animation.fly_bite] run function reus:manager/5_animation/fly_bite/
+
+## 強襲
+    execute if entity @s[tag=aj.reus.animation.fly_assault] run function reus:manager/5_animation/fly_assault/
+
+## 回り込みブレス
+    execute if entity @s[tag=aj.reus.animation.fly_movebreath_r] run function reus:manager/5_animation/fly_movebreath_r/
+    execute if entity @s[tag=aj.reus.animation.fly_movebreath_l] run function reus:manager/5_animation/fly_movebreath_l/
