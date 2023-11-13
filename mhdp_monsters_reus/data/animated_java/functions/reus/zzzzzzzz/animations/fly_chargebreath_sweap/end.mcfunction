@@ -1,3 +1,0 @@
-execute if score @s aj.reus.animation.fly_chargebreath_sweap.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:reus/zzzzzzzz/animations/fly_chargebreath_sweap/end_loop
-execute if score @s aj.reus.animation.fly_chargebreath_sweap.loop_mode = $aj.loop_mode.once aj.i run function animated_java:reus/animations/fly_chargebreath_sweap/stop
-execute if score @s aj.reus.animation.fly_chargebreath_sweap.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:reus/animations/fly_chargebreath_sweap/pause

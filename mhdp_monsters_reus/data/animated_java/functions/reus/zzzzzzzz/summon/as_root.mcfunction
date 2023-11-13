@@ -56,14 +56,14 @@ execute if score #animation aj.i = $aj.reus.animation.fly_movebreath_r aj.id run
 execute if score #animation aj.i = $aj.reus.animation.fly_movebreath_r aj.id run scoreboard players operation @s aj.reus.animation.fly_movebreath_r.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.fly_movebreath_l aj.id run function animated_java:reus/zzzzzzzz/animations/fly_movebreath_l/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.fly_movebreath_l aj.id run scoreboard players operation @s aj.reus.animation.fly_movebreath_l.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.reus.animation.fly_chargebreath_sweap aj.id run function animated_java:reus/zzzzzzzz/animations/fly_chargebreath_sweap/apply_frame_as_root
-execute if score #animation aj.i = $aj.reus.animation.fly_chargebreath_sweap aj.id run scoreboard players operation @s aj.reus.animation.fly_chargebreath_sweap.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.reus.animation.fly_flame_sweep aj.id run function animated_java:reus/zzzzzzzz/animations/fly_flame_sweep/apply_frame_as_root
+execute if score #animation aj.i = $aj.reus.animation.fly_flame_sweep aj.id run scoreboard players operation @s aj.reus.animation.fly_flame_sweep.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.fly_breath_triple aj.id run function animated_java:reus/zzzzzzzz/animations/fly_breath_triple/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.fly_breath_triple aj.id run scoreboard players operation @s aj.reus.animation.fly_breath_triple.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.fly_jump aj.id run function animated_java:reus/zzzzzzzz/animations/fly_jump/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.fly_jump aj.id run scoreboard players operation @s aj.reus.animation.fly_jump.local_anim_time = #frame aj.i
-execute if score #animation aj.i = $aj.reus.animation.fly_chargebreath_vertical aj.id run function animated_java:reus/zzzzzzzz/animations/fly_chargebreath_vertical/apply_frame_as_root
-execute if score #animation aj.i = $aj.reus.animation.fly_chargebreath_vertical aj.id run scoreboard players operation @s aj.reus.animation.fly_chargebreath_vertical.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.reus.animation.fly_flame_vertical aj.id run function animated_java:reus/zzzzzzzz/animations/fly_flame_vertical/apply_frame_as_root
+execute if score #animation aj.i = $aj.reus.animation.fly_flame_vertical aj.id run scoreboard players operation @s aj.reus.animation.fly_flame_vertical.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:reus/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i

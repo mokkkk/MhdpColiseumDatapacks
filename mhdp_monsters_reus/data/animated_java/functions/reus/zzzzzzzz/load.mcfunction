@@ -28,10 +28,10 @@ scoreboard objectives add aj.reus.animation.fly_bite.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.fly_assault.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.fly_movebreath_r.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.fly_movebreath_l.local_anim_time dummy
-scoreboard objectives add aj.reus.animation.fly_chargebreath_sweap.local_anim_time dummy
+scoreboard objectives add aj.reus.animation.fly_flame_sweep.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.fly_breath_triple.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.fly_jump.local_anim_time dummy
-scoreboard objectives add aj.reus.animation.fly_chargebreath_vertical.local_anim_time dummy
+scoreboard objectives add aj.reus.animation.fly_flame_vertical.local_anim_time dummy
 scoreboard objectives add aj.reus.animation.land_idle.loop_mode dummy
 scoreboard objectives add aj.reus.animation.land_voice.loop_mode dummy
 scoreboard objectives add aj.reus.animation.land_dash_start.loop_mode dummy
@@ -55,10 +55,10 @@ scoreboard objectives add aj.reus.animation.fly_bite.loop_mode dummy
 scoreboard objectives add aj.reus.animation.fly_assault.loop_mode dummy
 scoreboard objectives add aj.reus.animation.fly_movebreath_r.loop_mode dummy
 scoreboard objectives add aj.reus.animation.fly_movebreath_l.loop_mode dummy
-scoreboard objectives add aj.reus.animation.fly_chargebreath_sweap.loop_mode dummy
+scoreboard objectives add aj.reus.animation.fly_flame_sweep.loop_mode dummy
 scoreboard objectives add aj.reus.animation.fly_breath_triple.loop_mode dummy
 scoreboard objectives add aj.reus.animation.fly_jump.loop_mode dummy
-scoreboard objectives add aj.reus.animation.fly_chargebreath_vertical.loop_mode dummy
+scoreboard objectives add aj.reus.animation.fly_flame_vertical.loop_mode dummy
 scoreboard players set $aj.reus.animation.land_idle aj.id 0
 scoreboard players set $aj.reus.animation.land_voice aj.id 1
 scoreboard players set $aj.reus.animation.land_dash_start aj.id 2
@@ -82,16 +82,16 @@ scoreboard players set $aj.reus.animation.fly_bite aj.id 19
 scoreboard players set $aj.reus.animation.fly_assault aj.id 20
 scoreboard players set $aj.reus.animation.fly_movebreath_r aj.id 21
 scoreboard players set $aj.reus.animation.fly_movebreath_l aj.id 22
-scoreboard players set $aj.reus.animation.fly_chargebreath_sweap aj.id 23
+scoreboard players set $aj.reus.animation.fly_flame_sweep aj.id 23
 scoreboard players set $aj.reus.animation.fly_breath_triple aj.id 24
 scoreboard players set $aj.reus.animation.fly_jump aj.id 25
-scoreboard players set $aj.reus.animation.fly_chargebreath_vertical aj.id 26
+scoreboard players set $aj.reus.animation.fly_flame_vertical aj.id 26
 scoreboard players set $aj.reus.variant.default aj.id 0
 scoreboard players set $aj.reus.variant.new_variant aj.id 1
 scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.reus.export_version aj.i 387611526
+scoreboard players set aj.reus.export_version aj.i -1201345815
 scoreboard players reset * aj.reus.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.reus.root] run function animated_java:reus/zzzzzzzz/on_load

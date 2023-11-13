@@ -1,6 +1,6 @@
 #> reus:manager/5_animation/fly_movebreath_l/
 #
-# 火竜 アニメーションのイベントハンドラ 強襲
+# 火竜 アニメーションのイベントハンドラ 回り込みブレス
 
 # 効果音
     execute if score @s aj.reus.animation.fly_movebreath_l.local_anim_time matches 4 run playsound entity.ender_dragon.flap master @a ~ ~ ~ 2 0.7

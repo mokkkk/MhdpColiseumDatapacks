@@ -28,10 +28,10 @@ scoreboard objectives remove aj.reus.animation.fly_bite.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_assault.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_movebreath_r.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_movebreath_l.local_anim_time
-scoreboard objectives remove aj.reus.animation.fly_chargebreath_sweap.local_anim_time
+scoreboard objectives remove aj.reus.animation.fly_flame_sweep.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_breath_triple.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_jump.local_anim_time
-scoreboard objectives remove aj.reus.animation.fly_chargebreath_vertical.local_anim_time
+scoreboard objectives remove aj.reus.animation.fly_flame_vertical.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_idle.loop_mode
 scoreboard objectives remove aj.reus.animation.land_voice.loop_mode
 scoreboard objectives remove aj.reus.animation.land_dash_start.loop_mode
@@ -55,8 +55,8 @@ scoreboard objectives remove aj.reus.animation.fly_bite.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_assault.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_movebreath_r.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_movebreath_l.loop_mode
-scoreboard objectives remove aj.reus.animation.fly_chargebreath_sweap.loop_mode
+scoreboard objectives remove aj.reus.animation.fly_flame_sweep.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_breath_triple.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_jump.loop_mode
-scoreboard objectives remove aj.reus.animation.fly_chargebreath_vertical.loop_mode
+scoreboard objectives remove aj.reus.animation.fly_flame_vertical.loop_mode
 tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The reus Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]

@@ -10,11 +10,11 @@
     # 回避中のプレイヤーでは起爆しない
         execute as @a[tag=Target] if score @s MhdpTAvoid matches 1.. run function mhdp_core:player/damage/player_avoid
         execute as @a[tag=Target] if score @s MhdpTDamage matches 1.. run tag @s remove Target
-    execute if entity @e[tag=Target] run function reus:manager/5_animation/land_breath/damage
+    execute if entity @e[tag=Target] if entity @s[tag=!ExecutedDamage] run function reus:manager/5_animation/land_breath/damage
     tag @e[tag=Target] remove Target
 
 # 地面の中に埋まったとき，消去
-    execute positioned ~ ~1.45 ~ unless block ^ ^ ^0.8 #mhdp_core:no_collision run function reus:manager/5_animation/land_breath/damage
+    execute positioned ~ ~1.45 ~ unless block ^ ^ ^0.8 #mhdp_core:no_collision if entity @s[tag=!ExecutedDamage] run function reus:manager/5_animation/land_breath/damage
 
 # particle表示
     execute at @s run particle flame ~ ~1.45 ~ 0.3 0.3 0.3 0 5 force

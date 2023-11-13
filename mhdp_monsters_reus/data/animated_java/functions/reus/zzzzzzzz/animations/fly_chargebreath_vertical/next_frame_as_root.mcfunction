@@ -1,1 +1,0 @@
-function animated_java:reus/zzzzzzzz/animations/fly_chargebreath_vertical/tick_animation

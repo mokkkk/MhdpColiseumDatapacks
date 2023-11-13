@@ -1,2 +1,0 @@
-execute if score @s aj.anim_time matches 0..63 run function animated_java:reus/zzzzzzzz/animations/fly_chargebreath_sweap/tree/branch_0_63
-execute if score @s aj.anim_time matches 64..81 run function animated_java:reus/zzzzzzzz/animations/fly_chargebreath_sweap/tree/branch_64_81

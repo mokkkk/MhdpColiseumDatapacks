@@ -12,9 +12,10 @@
     tag @e[tag=Target] remove Target
 
 # 演出
-    execute positioned ~ ~1.45 ~ run function delta:api/explosion_sound
+    execute positioned ~ ~1.45 ~ run playsound minecraft:delta.entity.generic.explode block @a ~ ~ ~ 2.0 0.7
     execute positioned ~ ~1.45 ~ run function delta:api/explosion_emitter_particle
     particle lava ~ ~1.45 ~ 0.6 0.6 0.6 0.5 15
 
 # 終了
+    tag @s add ExecutedDamage
     kill @s

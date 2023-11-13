@@ -9,11 +9,11 @@
     execute if entity @s[tag=aj.reus.animation.land_idle] run function reus:manager/5_animation/land_idle/
     execute if entity @s[tag=aj.reus.animation.fly_idle] run function reus:manager/5_animation/fly_idle/
 
-## 咆哮
-    execute if entity @s[tag=aj.reus.animation.land_voice] run function reus:manager/5_animation/land_voice/
-
 # --------------------------------------------------------------
 # 地上
+
+## 咆哮
+    execute if entity @s[tag=aj.reus.animation.land_voice] run function reus:manager/5_animation/land_voice/
 
 ## 突進
     # 開始
@@ -70,3 +70,9 @@
 ## 回り込みブレス
     execute if entity @s[tag=aj.reus.animation.fly_movebreath_r] run function reus:manager/5_animation/fly_movebreath_r/
     execute if entity @s[tag=aj.reus.animation.fly_movebreath_l] run function reus:manager/5_animation/fly_movebreath_l/
+
+## なぎ払い火炎放射
+    execute if entity @s[tag=aj.reus.animation.fly_flame_sweep] run function reus:manager/5_animation/fly_flame_sweep/
+
+## 3連ブレス
+    execute if entity @s[tag=aj.reus.animation.fly_breath_triple] run function reus:manager/5_animation/fly_breath_triple/

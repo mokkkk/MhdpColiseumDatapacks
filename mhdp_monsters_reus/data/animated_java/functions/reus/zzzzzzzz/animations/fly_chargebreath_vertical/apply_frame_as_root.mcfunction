@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..130 run function animated_java:reus/zzzzzzzz/animations/fly_chargebreath_vertical/tree/branch_0_130

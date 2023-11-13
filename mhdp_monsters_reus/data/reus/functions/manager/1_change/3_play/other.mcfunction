@@ -62,14 +62,19 @@
     execute if entity @s[tag=AnmFlyAssault] run function animated_java:reus/animations/fly_assault/tween_play
     tag @s remove AnmFlyAssault
 
-# 強襲
+# 回り込みブレス
     execute if entity @s[tag=AnmFlyMoveBreathR] run function animated_java:reus/animations/fly_movebreath_r/tween_play
     tag @s remove AnmFlyMoveBreathR
     execute if entity @s[tag=AnmFlyMoveBreathL] run function animated_java:reus/animations/fly_movebreath_l/tween_play
     tag @s remove AnmFlyMoveBreathL
 
+# なぎ払い火炎放射
+    execute if entity @s[tag=AnmFlyFlameSweep] run function animated_java:reus/animations/fly_flame_sweep/tween_play
+    tag @s remove AnmFlyFlameSweep
 
-
+# 3連ブレス
+    execute if entity @s[tag=AnmFlyBreathTriple] run function animated_java:reus/animations/fly_breath_triple/tween_play
+    tag @s remove AnmFlyBreathTriple
 
 # 怒り状態移行
     execute if entity @s[tag=AnmAnger] run function animated_java:reus/animations/anger/tween_play

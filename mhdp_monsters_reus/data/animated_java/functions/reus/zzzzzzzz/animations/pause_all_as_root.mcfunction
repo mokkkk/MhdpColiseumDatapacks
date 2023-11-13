@@ -21,7 +21,7 @@ function animated_java:reus/zzzzzzzz/animations/fly_bite/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_assault/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_movebreath_r/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_movebreath_l/pause_as_root
-function animated_java:reus/zzzzzzzz/animations/fly_chargebreath_sweap/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_flame_sweep/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_breath_triple/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_jump/pause_as_root
-function animated_java:reus/zzzzzzzz/animations/fly_chargebreath_vertical/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_flame_vertical/pause_as_root

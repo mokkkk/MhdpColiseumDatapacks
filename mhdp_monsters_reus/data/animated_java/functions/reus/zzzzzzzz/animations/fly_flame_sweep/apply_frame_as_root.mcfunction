@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..81 run function animated_java:reus/zzzzzzzz/animations/fly_flame_sweep/tree/branch_0_81
