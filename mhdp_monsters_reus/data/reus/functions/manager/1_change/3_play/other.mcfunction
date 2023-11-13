@@ -76,6 +76,15 @@
     execute if entity @s[tag=AnmFlyBreathTriple] run function animated_java:reus/animations/fly_breath_triple/tween_play
     tag @s remove AnmFlyBreathTriple
 
+# 地上強襲
+    execute if entity @s[tag=AnmFlyJump] run function animated_java:reus/animations/fly_jump/tween_play
+    tag @s remove AnmFlyJump
+
+# 地上強襲
+    execute if entity @s[tag=AnmFlyFlameVertical] run function animated_java:reus/animations/fly_flame_vertical/tween_play
+    tag @s remove AnmFlyFlameVertical
+
+
 # 怒り状態移行
     execute if entity @s[tag=AnmAnger] run function animated_java:reus/animations/anger/tween_play
     tag @s remove AnmAnger

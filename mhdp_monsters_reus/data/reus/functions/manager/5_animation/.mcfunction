@@ -76,3 +76,9 @@
 
 ## 3連ブレス
     execute if entity @s[tag=aj.reus.animation.fly_breath_triple] run function reus:manager/5_animation/fly_breath_triple/
+
+## 地上強襲
+    execute if entity @s[tag=aj.reus.animation.fly_jump] run function reus:manager/5_animation/fly_jump/
+
+## 縦火炎放射
+    execute if entity @s[tag=aj.reus.animation.fly_flame_vertical] run function reus:manager/5_animation/fly_flame_vertical/

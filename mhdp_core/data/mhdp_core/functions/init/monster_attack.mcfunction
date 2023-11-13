@@ -25,8 +25,8 @@
         data modify storage mh_dp:monster_data AttackList[1] append value {Damage:6.0f,Knockback:2,Guard:2,Type:0,Blight:0b,Anger:7.2f}
         # 1_尻尾回転：6ダメージ，ノックバック中，ガード可能，無属性，怒り補正1.2倍
         data modify storage mh_dp:monster_data AttackList[1] append value {Damage:6.0f,Knockback:2,Guard:2,Type:0,Blight:0b,Anger:7.2f}
-        # 2_床ドン：8ダメージ，ノックバック大，ガード性能1，無属性，怒り補正1.2倍
-        data modify storage mh_dp:monster_data AttackList[1] append value {Damage:8.0f,Knockback:3,Guard:4,Type:0,Blight:0b,Anger:9.6f}
+        # 2_床ドン：8ダメージ，ノックバック大，ガード性能2，無属性，怒り補正1.2倍
+        data modify storage mh_dp:monster_data AttackList[1] append value {Damage:8.0f,Knockback:3,Guard:5,Type:0,Blight:0b,Anger:9.6f}
         # 3_突進：7ダメージ，ノックバック大，ガード性能1，無属性，怒り補正1.2倍
         data modify storage mh_dp:monster_data AttackList[1] append value {Damage:7.0f,Knockback:3,Guard:4,Type:0,Blight:0b,Anger:8.4f}
         # 4_チャージ嚙みつき：12ダメージ，ノックバック大，ガード不可，火属性，怒り補正1.2倍

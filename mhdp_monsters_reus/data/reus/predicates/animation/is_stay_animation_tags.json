@@ -156,6 +156,20 @@
         "predicate": {
           "nbt": "{Tags:[\"AnmFlyBreathTriple\"]}"
         }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmFlyJump\"]}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "nbt": "{Tags:[\"AnmFlyFlameVertical\"]}"
+        }
       }
     ]
   }
