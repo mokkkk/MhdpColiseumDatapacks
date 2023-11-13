@@ -27,6 +27,7 @@
     execute as @a run function mhdp_core:phase/4_quest_cleared/back_home/setup/consumable_items/
 
 # プレイヤーを移動
+    tag @a remove PlyDeathAnimation
     tp @a 266 63 204
     spawnpoint @a 266 63 204
 
