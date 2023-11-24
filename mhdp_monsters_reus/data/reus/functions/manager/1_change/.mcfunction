@@ -12,7 +12,7 @@
     execute if entity @s[tag=!StateAfterMove] run function reus:manager/1_change/target
 
 # 強制
-    # function reus:manager/1_change/2_animations/breath
+    # function reus:manager/1_change/2_animations/move
     # tag @s add AnmFlyBreathTriple
     # tp @s -71.5 66 100.5 0 0
 

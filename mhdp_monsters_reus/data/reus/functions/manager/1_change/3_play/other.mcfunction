@@ -43,6 +43,10 @@
     execute if entity @s[tag=AnmBreath] run function animated_java:reus/animations/land_breath/tween_play
     tag @s remove AnmBreath
 
+# 移動
+    execute if entity @s[tag=AnmMove] run function animated_java:reus/animations/land_move/tween_play
+    tag @s remove AnmMove
+
 # 飛行開始
     execute if entity @s[tag=AnmFlyStart] run function animated_java:reus/animations/land_to_fly/tween_play
     tag @s remove AnmFlyStart
