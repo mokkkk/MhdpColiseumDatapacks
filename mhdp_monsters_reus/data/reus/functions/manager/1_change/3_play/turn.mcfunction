@@ -2,12 +2,13 @@
 #
 # 青鳥竜 アニメーション遷移処理 再生開始 軸合わせ
 
-# 軸合わせ左
-    execute if entity @s[tag=AnmTurnL] run function animated_java:reus/animations/turn_left/play
-    tag @s remove AnmTurnL 
+# 地上軸合わせ
+    execute if entity @s[tag=AnmTurnL] run function animated_java:reus/animations/land_turn_left/play
+    execute if entity @s[tag=AnmTurnR] run function animated_java:reus/animations/land_turn_right/play
 
-# 軸合わせ右
-    execute if entity @s[tag=AnmTurnR] run function animated_java:reus/animations/turn_right/play
+# 空中軸合わせ
+    execute unless entity @s[tag=!AnmTurnL,tag=!AnmTurnR] run function animated_java:reus/animations/fly_turn/play
+    tag @s remove AnmTurnL 
     tag @s remove AnmTurnR
 
 # 終了

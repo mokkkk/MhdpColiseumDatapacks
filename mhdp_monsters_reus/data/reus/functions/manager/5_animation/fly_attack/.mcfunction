@@ -12,8 +12,8 @@
 
 # 移動
     execute if score @s aj.reus.animation.fly_attack.local_anim_time matches 1..7 unless entity @e[tag=ReusAttackTarget,distance=..2] run function reus:manager/4_general/rotate
-    execute if score @s aj.reus.animation.fly_attack.local_anim_time matches 5..15 positioned ~ ~-2 ~ unless entity @e[tag=ReusAttackTarget,distance=..4] run tp @s ^ ^2 ^0.3
-    execute if score @s aj.reus.animation.fly_attack.local_anim_time matches 16..22 positioned ~ ~-2 ~ unless entity @e[tag=ReusAttackTarget,distance=..4] run tp @s ^ ^2 ^1.2
+    execute if score @s aj.reus.animation.fly_attack.local_anim_time matches 5..15 positioned ~ ~-2 ~ unless entity @e[tag=ReusAttackTarget,distance=..2.5] run tp @s ^ ^2 ^0.3
+    execute if score @s aj.reus.animation.fly_attack.local_anim_time matches 16..22 positioned ~ ~-2 ~ unless entity @e[tag=ReusAttackTarget,distance=..2.5] run tp @s ^ ^2 ^1.2
 
 # 攻撃
     execute if score @s aj.reus.animation.fly_attack.local_anim_time matches 22 run function reus:manager/5_animation/fly_attack/damage

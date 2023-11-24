@@ -1,5 +1,6 @@
 function animated_java:reus/zzzzzzzz/animations/land_idle/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_voice/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_anger/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_dash_start/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_dash/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_dash_bite/pause_as_root
@@ -14,7 +15,21 @@ function animated_java:reus/zzzzzzzz/animations/land_breath/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_jump/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_to_fly/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_bjb/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_move/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_damage_head/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_damage_body/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_damage_tail/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_damage_down_r/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_damage_down_l/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_down_r/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_down_l/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_down_end_r/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_down_end_l/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_idle/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_anger/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_turn/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_move_right/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_move_left/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_attack/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_tail/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_bite/pause_as_root
@@ -25,3 +40,4 @@ function animated_java:reus/zzzzzzzz/animations/fly_flame_sweep/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_breath_triple/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_jump/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_flame_vertical/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_end/pause_as_root

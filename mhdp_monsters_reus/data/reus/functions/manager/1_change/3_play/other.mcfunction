@@ -6,6 +6,11 @@
     execute if entity @s[tag=AnmVoice] run function animated_java:reus/animations/land_voice/tween_play
     tag @s remove AnmVoice
 
+# 怒り開始
+    execute if entity @s[tag=AnmAnger,tag=!StateIsFlying] run function animated_java:reus/animations/land_anger/tween_play
+    execute if entity @s[tag=AnmAnger,tag=StateIsFlying] run function animated_java:reus/animations/fly_anger/tween_play
+    tag @s remove AnmAnger
+
 # 突進
     execute if entity @s[tag=AnmDashStart] run function animated_java:reus/animations/land_dash_start/tween_play
     tag @s remove AnmDashStart
@@ -45,6 +50,12 @@
 # バックジャンプブレス
     execute if entity @s[tag=AnmBjb] run function animated_java:reus/animations/land_bjb/tween_play
     tag @s remove AnmBjb
+
+# 旋回回り込み
+    execute if entity @s[tag=AnmFlyMoveR] run function animated_java:reus/animations/fly_move_right/tween_play
+    tag @s remove AnmFlyMoveR
+    execute if entity @s[tag=AnmFlyMoveL] run function animated_java:reus/animations/fly_move_left/tween_play
+    tag @s remove AnmFlyMoveL
 
 # 爪攻撃
     execute if entity @s[tag=AnmFlyAttack] run function animated_java:reus/animations/fly_attack/tween_play

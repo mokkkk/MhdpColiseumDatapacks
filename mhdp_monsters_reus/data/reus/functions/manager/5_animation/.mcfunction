@@ -9,6 +9,13 @@
     execute if entity @s[tag=aj.reus.animation.land_idle] run function reus:manager/5_animation/land_idle/
     execute if entity @s[tag=aj.reus.animation.fly_idle] run function reus:manager/5_animation/fly_idle/
 
+## 軸合わせ
+    execute if entity @s[tag=aj.reus.animation.fly_turn] run function reus:manager/5_animation/fly_turn/
+
+## 怒り開始
+    execute if entity @s[tag=aj.reus.animation.land_anger] run function reus:manager/5_animation/land_anger/
+    execute if entity @s[tag=aj.reus.animation.fly_anger] run function reus:manager/5_animation/fly_anger/
+
 # --------------------------------------------------------------
 # 地上
 
@@ -52,8 +59,15 @@
 ## バックジャンプブレス
     execute if entity @s[tag=aj.reus.animation.land_bjb] run function reus:manager/5_animation/land_bjb/
 
+## 移動
+    execute if entity @s[tag=aj.reus.animation.land_move] run function reus:manager/5_animation/land_move/
+
 # --------------------------------------------------------------
 # 空中
+
+## 旋回回りこみ
+    execute if entity @s[tag=aj.reus.animation.fly_move_right] run function reus:manager/5_animation/fly_move_right/
+    execute if entity @s[tag=aj.reus.animation.fly_move_left] run function reus:manager/5_animation/fly_move_left/
 
 ## 爪攻撃
     execute if entity @s[tag=aj.reus.animation.fly_attack] run function reus:manager/5_animation/fly_attack/
@@ -82,3 +96,6 @@
 
 ## 縦火炎放射
     execute if entity @s[tag=aj.reus.animation.fly_flame_vertical] run function reus:manager/5_animation/fly_flame_vertical/
+
+## 着地
+    execute if entity @s[tag=aj.reus.animation.fly_end] run function reus:manager/5_animation/fly_end/
