@@ -70,8 +70,19 @@
     execute if entity @s[tag=aj.reus.animation.land_damage_body] run function reus:manager/5_animation/land_damage_body/
 ## 怯み・尻尾
     execute if entity @s[tag=aj.reus.animation.land_damage_tail] run function reus:manager/5_animation/land_damage_tail/
+
 ## 怯み・右脚
     execute if entity @s[tag=aj.reus.animation.land_damage_down_r] run function reus:manager/5_animation/land_damage_down_r/
+## 怯み・左脚
+    execute if entity @s[tag=aj.reus.animation.land_damage_down_l] run function reus:manager/5_animation/land_damage_down_l/
+## ダウン・右脚
+    execute if entity @s[tag=aj.reus.animation.land_down_r] run function reus:manager/5_animation/land_down_r/
+## ダウン・左脚
+    execute if entity @s[tag=aj.reus.animation.land_down_l] run function reus:manager/5_animation/land_down_l/
+## ダウン終了・右脚
+    execute if entity @s[tag=aj.reus.animation.land_down_end_r] run function reus:manager/5_animation/land_down_end_r/
+## ダウン終了・左脚
+    execute if entity @s[tag=aj.reus.animation.land_down_end_l] run function reus:manager/5_animation/land_down_end_l/
 
 # --------------------------------------------------------------
 # 空中
@@ -110,3 +121,6 @@
 
 ## 着地
     execute if entity @s[tag=aj.reus.animation.fly_end] run function reus:manager/5_animation/fly_end/
+
+## 飛行怯み
+    execute if entity @s[tag=aj.reus.animation.fly_damage] run function reus:manager/5_animation/fly_damage/
