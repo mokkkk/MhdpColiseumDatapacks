@@ -8,6 +8,8 @@ scoreboard objectives remove aj.reus.rig_loaded
 scoreboard objectives remove aj.reus.animation.land_idle.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_voice.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_anger.local_anim_time
+scoreboard objectives remove aj.reus.animation.land_turn_r.local_anim_time
+scoreboard objectives remove aj.reus.animation.land_turn_l.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_dash_start.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_dash.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_dash_bite.local_anim_time
@@ -32,6 +34,7 @@ scoreboard objectives remove aj.reus.animation.land_down_r.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_down_l.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_down_end_r.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_down_end_l.local_anim_time
+scoreboard objectives remove aj.reus.animation.land_death.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_idle.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_anger.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_turn.local_anim_time
@@ -48,9 +51,13 @@ scoreboard objectives remove aj.reus.animation.fly_breath_triple.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_jump.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_flame_vertical.local_anim_time
 scoreboard objectives remove aj.reus.animation.fly_end.local_anim_time
+scoreboard objectives remove aj.reus.animation.fly_damage.local_anim_time
+scoreboard objectives remove aj.reus.animation.fly_death.local_anim_time
 scoreboard objectives remove aj.reus.animation.land_idle.loop_mode
 scoreboard objectives remove aj.reus.animation.land_voice.loop_mode
 scoreboard objectives remove aj.reus.animation.land_anger.loop_mode
+scoreboard objectives remove aj.reus.animation.land_turn_r.loop_mode
+scoreboard objectives remove aj.reus.animation.land_turn_l.loop_mode
 scoreboard objectives remove aj.reus.animation.land_dash_start.loop_mode
 scoreboard objectives remove aj.reus.animation.land_dash.loop_mode
 scoreboard objectives remove aj.reus.animation.land_dash_bite.loop_mode
@@ -75,6 +82,7 @@ scoreboard objectives remove aj.reus.animation.land_down_r.loop_mode
 scoreboard objectives remove aj.reus.animation.land_down_l.loop_mode
 scoreboard objectives remove aj.reus.animation.land_down_end_r.loop_mode
 scoreboard objectives remove aj.reus.animation.land_down_end_l.loop_mode
+scoreboard objectives remove aj.reus.animation.land_death.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_idle.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_anger.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_turn.loop_mode
@@ -91,4 +99,6 @@ scoreboard objectives remove aj.reus.animation.fly_breath_triple.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_jump.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_flame_vertical.loop_mode
 scoreboard objectives remove aj.reus.animation.fly_end.loop_mode
+scoreboard objectives remove aj.reus.animation.fly_damage.loop_mode
+scoreboard objectives remove aj.reus.animation.fly_death.loop_mode
 tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},[{"text":"INFO ℹ","color":"green"},{"text":" > ","color":"gray"},{"text":"The reus Rig has been uninstalled successfully.\n"},{"text":"Please remove the Rig's functions from the datapack before reloading.","color":"gray"}]]

@@ -1,6 +1,8 @@
 function animated_java:reus/zzzzzzzz/animations/land_idle/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_voice/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_anger/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_turn_r/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_turn_l/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_dash_start/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_dash/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_dash_bite/pause_as_root
@@ -25,6 +27,7 @@ function animated_java:reus/zzzzzzzz/animations/land_down_r/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_down_l/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_down_end_r/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/land_down_end_l/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/land_death/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_idle/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_anger/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_turn/pause_as_root
@@ -41,3 +44,5 @@ function animated_java:reus/zzzzzzzz/animations/fly_breath_triple/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_jump/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_flame_vertical/pause_as_root
 function animated_java:reus/zzzzzzzz/animations/fly_end/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_damage/pause_as_root
+function animated_java:reus/zzzzzzzz/animations/fly_death/pause_as_root

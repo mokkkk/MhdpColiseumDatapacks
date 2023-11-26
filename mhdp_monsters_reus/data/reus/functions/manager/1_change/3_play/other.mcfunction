@@ -95,38 +95,45 @@
     execute if entity @s[tag=AnmFlyJump] run function animated_java:reus/animations/fly_jump/tween_play
     tag @s remove AnmFlyJump
 
-# 地上強襲
+# 縦なぎ払い火炎放射
     execute if entity @s[tag=AnmFlyFlameVertical] run function animated_java:reus/animations/fly_flame_vertical/tween_play
     tag @s remove AnmFlyFlameVertical
 
-
-# 怒り状態移行
-    execute if entity @s[tag=AnmAnger] run function animated_java:reus/animations/anger/tween_play
-    tag @s remove AnmAnger
-
-# 怯み
-    execute if entity @s[tag=AnmDamage] run function animated_java:reus/animations/damage/tween_play
-    tag @s remove AnmDamage
-    
-# 大怯み（ダウン）
-    execute if entity @s[tag=AnmDamageDown] run function animated_java:reus/animations/damage_down/tween_play
-    tag @s remove AnmDamageDown
-
+# 怯み・頭
+    execute if entity @s[tag=AnmDamageHead] run function animated_java:reus/animations/land_damage_head/tween_play
+    tag @s remove AnmDamageHead
+# 怯み・胴体
+    execute if entity @s[tag=AnmDamageBody] run function animated_java:reus/animations/land_damage_body/tween_play
+    tag @s remove AnmDamageBody
+# 怯み・尻尾
+    execute if entity @s[tag=AnmDamageTail] run function animated_java:reus/animations/land_damage_tail/tween_play
+    tag @s remove AnmDamageTail
+# 怯み・脚
+    execute if entity @s[tag=AnmDamageLegR] run function animated_java:reus/animations/land_damage_down_r/tween_play
+    tag @s remove AnmDamageLegR
+    execute if entity @s[tag=AnmDamageLegL] run function animated_java:reus/animations/land_damage_down_l/tween_play
+    tag @s remove AnmDamageLegL
 # 空中怯み
-    execute if entity @s[tag=AnmDamageFlying] run function animated_java:reus/animations/damage_flying/tween_play
-    tag @s remove AnmDamageFlying
+    execute if entity @s[tag=AnmFlyDamage] run function animated_java:reus/animations/fly_damage/tween_play
+    tag @s remove AnmFlyDamage
 
 # ダウン中もがき
-    execute if entity @s[tag=AnmDown] run function animated_java:reus/animations/down/tween_play
-    tag @s remove AnmDown
+    execute if entity @s[tag=AnmDownR] run function animated_java:reus/animations/land_down_r/tween_play
+    tag @s remove AnmDownR
+    execute if entity @s[tag=AnmDownL] run function animated_java:reus/animations/land_down_l/tween_play
+    tag @s remove AnmDownL
 
 # ダウン終了
-    execute if entity @s[tag=AnmDownEnd] run function animated_java:reus/animations/down_end/tween_play
-    tag @s remove AnmDownEnd
+    execute if entity @s[tag=AnmDownEndR] run function animated_java:reus/animations/land_down_end_r/tween_play
+    tag @s remove AnmDownEndR
+    execute if entity @s[tag=AnmDownEndL] run function animated_java:reus/animations/land_down_end_l/tween_play
+    tag @s remove AnmDownEndL
     
 # 討伐
-    execute if entity @s[tag=AnmDeath] run function animated_java:reus/animations/death/tween_play
+    execute if entity @s[tag=AnmDeath] run function animated_java:reus/animations/land_death/tween_play
     tag @s remove AnmDeath
+    execute if entity @s[tag=AnmFlyDeath] run function animated_java:reus/animations/fly_death/tween_play
+    tag @s remove AnmFlyDeath
 
 # 終了
     tag @s add StateAppliedAnm

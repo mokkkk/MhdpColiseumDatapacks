@@ -1,0 +1,15 @@
+execute if entity @s[tag=aj.reus.locator_origin.body_1] at @s on origin run tp @s ^-0.16094 ^-0.22836 ^-0.24047 ~-53.27908 ~-15.21817
+execute if entity @s[tag=aj.reus.locator_origin.body_0] at @s on origin run tp @s ^1.04701 ^-0.08429 ^0.51967 ~-31.52169 ~3.84963
+execute if entity @s[tag=aj.reus.locator_origin.neck_0] at @s on origin run tp @s ^1.6048 ^-0.15423 ^1.57342 ~-9.4165 ~15.10354
+execute if entity @s[tag=aj.reus.locator_origin.pos_head] at @s on origin run tp @s ^1.35491 ^0.0955 ^3.38402 ~29.98072 ~4.0653
+execute if entity @s[tag=aj.reus.locator_origin.head_0] at @s on origin run tp @s ^1.0327 ^-0.43297 ^2.9158 ~29.98072 ~4.0653
+execute if entity @s[tag=aj.reus.locator_origin.leg_right_0] at @s on origin run tp @s ^-0.8593 ^0.63619 ^0.07069 ~-38.65643 ~14.15869
+execute if entity @s[tag=aj.reus.locator_origin.leg_right_1] at @s on origin run tp @s ^-1.83607 ^0.24155 ^-0.53394 ~-17.36441 ~40.84779
+execute if entity @s[tag=aj.reus.locator_origin.leg_left_0] at @s on origin run tp @s ^0.74569 ^-0.08473 ^-1.80883 ~-41.70502 ~38.54815
+execute if entity @s[tag=aj.reus.locator_origin.leg_left_1] at @s on origin run tp @s ^-0.00283 ^0.34866 ^-2.74498 ~-137.39992 ~82.88522
+execute if entity @s[tag=aj.reus.locator_origin.tail_0] at @s on origin run tp @s ^-1.09614 ^-0.39026 ^-1.43239 ~-45.76243 ~-10.26392
+execute if entity @s[tag=aj.reus.locator_origin.tail_1] at @s on origin run tp @s ^-2.40058 ^-0.67748 ^-2.00955 ~-75.6691 ~-9.19532
+execute if entity @s[tag=aj.reus.locator_origin.pos_tail_2] at @s on origin run tp @s ^-2.70791 ^0.06262 ^-2.00219 ~-112.15917 ~-0.54389
+execute if entity @s[tag=aj.reus.locator_origin.pos_tail_3] at @s on origin run tp @s ^-3.68339 ^0.21458 ^-1.29066 ~-134.40046 ~7.19304
+execute if entity @s[tag=aj.reus.locator_origin.tail_2] at @s on origin run tp @s ^-3.86282 ^-0.56814 ^-1.12077 ~-134.40046 ~7.19304
+execute if entity @s[tag=aj.reus.locator_origin.shadow] at @s on origin run tp @s ^0.18842 ^-0.87187 ^-0.65229 ~-52.5 ~0

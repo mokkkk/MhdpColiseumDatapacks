@@ -10,6 +10,8 @@
     execute if entity @s[tag=aj.reus.animation.fly_idle] run function reus:manager/5_animation/fly_idle/
 
 ## 軸合わせ
+    execute if entity @s[tag=aj.reus.animation.land_turn_r] run function reus:manager/5_animation/land_turn_r/
+    execute if entity @s[tag=aj.reus.animation.land_turn_l] run function reus:manager/5_animation/land_turn_l/
     execute if entity @s[tag=aj.reus.animation.fly_turn] run function reus:manager/5_animation/fly_turn/
 
 ## 怒り開始
@@ -61,6 +63,15 @@
 
 ## 移動
     execute if entity @s[tag=aj.reus.animation.land_move] run function reus:manager/5_animation/land_move/
+
+## 怯み・頭
+    execute if entity @s[tag=aj.reus.animation.land_damage_head] run function reus:manager/5_animation/land_damage_head/
+## 怯み・胴体
+    execute if entity @s[tag=aj.reus.animation.land_damage_body] run function reus:manager/5_animation/land_damage_body/
+## 怯み・尻尾
+    execute if entity @s[tag=aj.reus.animation.land_damage_tail] run function reus:manager/5_animation/land_damage_tail/
+## 怯み・右脚
+    execute if entity @s[tag=aj.reus.animation.land_damage_down_r] run function reus:manager/5_animation/land_damage_down_r/
 
 # --------------------------------------------------------------
 # 空中

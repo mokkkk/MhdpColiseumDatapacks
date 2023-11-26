@@ -16,6 +16,10 @@ execute if score #animation aj.i = $aj.reus.animation.land_voice aj.id run funct
 execute if score #animation aj.i = $aj.reus.animation.land_voice aj.id run scoreboard players operation @s aj.reus.animation.land_voice.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.land_anger aj.id run function animated_java:reus/zzzzzzzz/animations/land_anger/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.land_anger aj.id run scoreboard players operation @s aj.reus.animation.land_anger.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.reus.animation.land_turn_r aj.id run function animated_java:reus/zzzzzzzz/animations/land_turn_r/apply_frame_as_root
+execute if score #animation aj.i = $aj.reus.animation.land_turn_r aj.id run scoreboard players operation @s aj.reus.animation.land_turn_r.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.reus.animation.land_turn_l aj.id run function animated_java:reus/zzzzzzzz/animations/land_turn_l/apply_frame_as_root
+execute if score #animation aj.i = $aj.reus.animation.land_turn_l aj.id run scoreboard players operation @s aj.reus.animation.land_turn_l.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.land_dash_start aj.id run function animated_java:reus/zzzzzzzz/animations/land_dash_start/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.land_dash_start aj.id run scoreboard players operation @s aj.reus.animation.land_dash_start.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.land_dash aj.id run function animated_java:reus/zzzzzzzz/animations/land_dash/apply_frame_as_root
@@ -64,6 +68,8 @@ execute if score #animation aj.i = $aj.reus.animation.land_down_end_r aj.id run 
 execute if score #animation aj.i = $aj.reus.animation.land_down_end_r aj.id run scoreboard players operation @s aj.reus.animation.land_down_end_r.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.land_down_end_l aj.id run function animated_java:reus/zzzzzzzz/animations/land_down_end_l/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.land_down_end_l aj.id run scoreboard players operation @s aj.reus.animation.land_down_end_l.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.reus.animation.land_death aj.id run function animated_java:reus/zzzzzzzz/animations/land_death/apply_frame_as_root
+execute if score #animation aj.i = $aj.reus.animation.land_death aj.id run scoreboard players operation @s aj.reus.animation.land_death.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.fly_idle aj.id run function animated_java:reus/zzzzzzzz/animations/fly_idle/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.fly_idle aj.id run scoreboard players operation @s aj.reus.animation.fly_idle.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.fly_anger aj.id run function animated_java:reus/zzzzzzzz/animations/fly_anger/apply_frame_as_root
@@ -96,6 +102,10 @@ execute if score #animation aj.i = $aj.reus.animation.fly_flame_vertical aj.id r
 execute if score #animation aj.i = $aj.reus.animation.fly_flame_vertical aj.id run scoreboard players operation @s aj.reus.animation.fly_flame_vertical.local_anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.fly_end aj.id run function animated_java:reus/zzzzzzzz/animations/fly_end/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.fly_end aj.id run scoreboard players operation @s aj.reus.animation.fly_end.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.reus.animation.fly_damage aj.id run function animated_java:reus/zzzzzzzz/animations/fly_damage/apply_frame_as_root
+execute if score #animation aj.i = $aj.reus.animation.fly_damage aj.id run scoreboard players operation @s aj.reus.animation.fly_damage.local_anim_time = #frame aj.i
+execute if score #animation aj.i = $aj.reus.animation.fly_death aj.id run function animated_java:reus/zzzzzzzz/animations/fly_death/apply_frame_as_root
+execute if score #animation aj.i = $aj.reus.animation.fly_death aj.id run scoreboard players operation @s aj.reus.animation.fly_death.local_anim_time = #frame aj.i
 execute at @s run function #animated_java:reus/on_summon/as_root
 tag @s remove aj.new
 scoreboard players reset #frame aj.i
