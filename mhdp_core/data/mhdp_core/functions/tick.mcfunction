@@ -19,6 +19,7 @@
 # 攻撃用処理
     execute if entity @e[type=marker,tag=MonsterShot,limit=1] as @e[type=marker,tag=MonsterShot] at @s run function mhdp_core:monster/shot_marker
     execute if entity @e[type=armor_stand,tag=MonsterShot,limit=1] as @e[type=armor_stand,tag=MonsterShot] at @s run function mhdp_core:monster/shot_as
+    execute if entity @e[type=item_display,tag=MonsterShot,limit=1] as @e[type=item_display,tag=MonsterShot] at @s run function mhdp_core:monster/shot_item_display
 
 # ダメージログに対するtick処理
     execute as @e[type=armor_stand,tag=LogAEC] at @s run function lib:status_log/tick

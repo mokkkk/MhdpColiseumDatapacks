@@ -1,6 +1,6 @@
 #> reus:manager/3_damage/check
 #
-# 青鳥竜 ダメージ量確認
+# 火竜 ダメージ量確認
 
 # 受けたダメージ計算
 data modify storage mhdp: Temp.Health set from entity @s Health

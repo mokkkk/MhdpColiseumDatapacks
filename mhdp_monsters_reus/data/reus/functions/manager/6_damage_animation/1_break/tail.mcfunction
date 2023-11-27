@@ -1,16 +1,14 @@
-#> asa_animator:reus/manager/3_damage/1_destroy/tail
+#> reus:manager/6_damage_animation/1_break/tail
 #
 # 火竜 部位破壊処理 尻尾
 
 # モデル変更
-    data modify entity @e[type=armor_stand,tag=ReusParts,tag=Tail1,limit=1] ArmorItems[3].tag.CustomModelData set value 10123
-    data modify entity @e[type=armor_stand,tag=ReusParts,tag=Tail2,limit=1] ArmorItems[3].tag.CustomModelData set value 10084
-
+    function reus:manager/7_model/tail_break
 # タグ付与
-    tag @s add DestroyTail
+    tag @s add StateBreakTail
 
 # 演出
-    execute as @e[type=armor_stand,tag=ReusParts,tag=Tail1,limit=1] at @s run particle block bone_block ~ ~1.4 ~ 0.2 0.2 0.2 0 10
+    execute as @e[type=armor_stand,tag=ReusParts,tag=Tail2,limit=1] at @s run particle block bone_block ~ ~1.4 ~ 0.2 0.2 0.2 0 10
     playsound entity.player.attack.knockback master @a ~ ~ ~ 2 1
     playsound entity.player.attack.crit master @a ~ ~ ~ 2 0.8
 
@@ -18,19 +16,13 @@
     advancement grant @a[tag=PlyQuest] only mhdp_core:toasts/reus
     schedule function asa_animator:reus/manager/3_damage/1_destroy/revoke 5t append
 
-# 尻尾当たり判定消去
-    execute as @e[type=slime,tag=ReusParts,tag=Tail3] run data modify entity @s Size set value 0
-    execute as @e[type=slime,tag=ReusParts,tag=Tail3] run tp @s ~ 0 ~
-    execute as @e[type=slime,tag=ReusParts,tag=Tail3] run tag @s add Death
-    kill @e[type=slime,tag=ReusParts,tag=Tail3]
-
 # 尻尾設置
-    summon armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["MonsterShot","MonsterTail","ReusTail"],ArmorItems:[{},{},{},{id:"minecraft:barrier",Count:1b,tag:{CustomModelData:10013,Rotate:[0f,0f,0f]}}],Pose:{Head:[15f,0f,0f]}}
-    execute as @e[type=armor_stand,tag=MonsterTail,tag=ReusTail,limit=1] at @e[type=armor_stand,tag=ReusParts,tag=Tail3,limit=1] run tp @s ~ ~3 ~ ~ ~
-    execute as @e[type=armor_stand,tag=MonsterTail,tag=ReusTail,limit=1] at @s run function asa_animator:general/check_ground
-    execute as @e[type=armor_stand,tag=MonsterTail,tag=ReusTail,limit=1] at @s run tp @s ~ ~-1.1 ~
-    execute as @e[type=armor_stand,tag=MonsterTail,tag=ReusTail,limit=1] run data modify entity @s Pose.Head[0] set value 0.0f
+    summon item_display ~ ~ ~ {item_display:"head",Tags:["MonsterShot","MonsterTail","ReusTail"],item:{id:"minecraft:black_dye",Count:1b,tag:{CustomModelData:57}}}
+    execute as @e[type=item_display,tag=MonsterTail,tag=ReusTail,limit=1] run data modify entity @s transformation.scale set value [3.8f,3.8f,3.8f]
+    execute as @e[type=item_display,tag=MonsterTail,tag=ReusTail,limit=1] run tp @s ~ ~ ~ ~180 0
+    execute as @e[type=item_display,tag=MonsterTail,tag=ReusTail,limit=1] at @s run function asa_animator:general/check_ground
+    execute as @e[type=item_display,tag=MonsterTail,tag=ReusTail,limit=1] at @s run tp @s ~ ~0.5 ~ ~ ~
 
 # トースト表示
     advancement grant @a[tag=PlyQuest] only mhdp_core:toasts/reus
-    schedule function asa_animator:reus/manager/3_damage/1_destroy/revoke 5t append
+    schedule function reus:manager/6_damage_animation/1_break/revoke 5t append

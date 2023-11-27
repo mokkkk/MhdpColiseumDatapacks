@@ -45,15 +45,15 @@
     execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_0] on origin run tag @s add MonsterParts
     execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_0] on origin run tag @s add ReusHealth
     execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_0] on origin run tag @s add Tail0
-    execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_0] on origin run tag @s add BodyParts
+    execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_0] on origin run tag @s add TailParts
     execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_1] on origin run tag @s add MonsterParts 
     execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_1] on origin run tag @s add ReusHealth
     execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_1] on origin run tag @s add Tail1
-    execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_1] on origin run tag @s add BodyParts
+    execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_1] on origin run tag @s add TailParts
     execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_2] on origin run tag @s add MonsterParts 
     execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_2] on origin run tag @s add ReusHealth
     execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_2] on origin run tag @s add Tail2
-    execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_2] on origin run tag @s add BodyParts
+    execute on passengers if entity @s[tag=aj.reus.locator_origin.tail_2] on origin run tag @s add TailParts
 
 # tsb用init
     execute as @e[type=slime,tag=ReusHealth] run function mob_manager:init/

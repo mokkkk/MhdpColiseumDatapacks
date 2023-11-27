@@ -13,7 +13,7 @@
 
 # 強制
     # function reus:manager/1_change/2_animations/turn
-    tag @s add AnmFlyDamage
+    # tag @s add AnmFlyDeath
     # tp @s -71.5 66 100.5 0 0
 
 # 行動

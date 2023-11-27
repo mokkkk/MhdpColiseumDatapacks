@@ -18,6 +18,10 @@
     execute if entity @s[tag=aj.reus.animation.land_anger] run function reus:manager/5_animation/land_anger/
     execute if entity @s[tag=aj.reus.animation.fly_anger] run function reus:manager/5_animation/fly_anger/
 
+## 討伐
+    execute if entity @s[tag=aj.reus.animation.land_death] run function reus:manager/5_animation/land_death/
+    execute if entity @s[tag=aj.reus.animation.fly_death] run function reus:manager/5_animation/fly_death/
+
 # --------------------------------------------------------------
 # 地上
 

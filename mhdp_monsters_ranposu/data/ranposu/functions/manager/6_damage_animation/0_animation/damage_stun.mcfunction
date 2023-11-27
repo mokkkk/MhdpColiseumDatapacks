@@ -18,8 +18,8 @@
 
 # スタン耐性増加
     scoreboard players set #mhdp_const_temp AsaMatrix 150
-    scoreboard players operation #mhdp_reus_stun_damage_max AsaMatrix *= #mhdp_const_temp AsaMatrix
-    scoreboard players operation #mhdp_reus_stun_damage_max AsaMatrix /= #asam_const_100 AsaMatrix
+    scoreboard players operation #mhdp_ranposu_stun_damage_max AsaMatrix *= #mhdp_const_temp AsaMatrix
+    scoreboard players operation #mhdp_ranposu_stun_damage_max AsaMatrix /= #asam_const_100 AsaMatrix
     scoreboard players reset #mhdp_const_temp AsaMatrix
 
 # スコアリセット
