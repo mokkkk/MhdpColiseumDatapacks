@@ -5,9 +5,9 @@
     execute if entity @s[tag=StateIsAnger] run data modify storage mhdp_core:temp Temp.Damage.Damage set from storage mhdp_core:temp Temp.Damage.Anger
 
 # ターゲット設定
-    execute positioned ^ ^-2.5 ^ run tag @e[type=!#asa_animator:not_target,tag=!ReusHealth,tag=!Target,distance=0..2.5] add Target
-    execute positioned ^ ^ ^ run tag @e[type=!#asa_animator:not_target,tag=!ReusHealth,tag=!Target,distance=0..2.5] add Target
-    execute positioned ^ ^2.5 ^ run tag @e[type=!#asa_animator:not_target,tag=!ReusHealth,tag=!Target,distance=0..2.5] add Target
+    execute positioned ^ ^-2.5 ^ run tag @e[type=!#asa_animator:not_target,tag=!ReusHealth,tag=!Target,distance=0..3] add Target
+    execute positioned ^ ^ ^ run tag @e[type=!#asa_animator:not_target,tag=!ReusHealth,tag=!Target,distance=0..3] add Target
+    execute positioned ^ ^2.5 ^ run tag @e[type=!#asa_animator:not_target,tag=!ReusHealth,tag=!Target,distance=0..3] add Target
 
 # 攻撃処理
     execute as @e[tag=Target] run function reus:manager/5_animation/fly_attack/damage_sub
