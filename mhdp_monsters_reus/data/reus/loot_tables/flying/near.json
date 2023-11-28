@@ -7,7 +7,7 @@
           "type": "minecraft:group",
           "children": [
             {
-              "##comment":"突進",
+              "##comment":"回り込み",
               "type": "minecraft:item",
               "name": "minecraft:paper",
               "weight": 4,
@@ -19,28 +19,7 @@
               ]
             },
             {
-              "##comment":"チャージ嚙みつき（通常）",
-              "type": "minecraft:item",
-              "name": "minecraft:paper",
-              "weight": 3,
-              "functions": [
-                {
-                "function": "minecraft:set_nbt",
-                "tag": "{ActPaper:1,Act:2}"
-                }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "minecraft:reference",
-                    "name": "reus:change_state/is_anger"
-                  }
-                }
-              ]
-            },
-            {
-              "##comment":"チャージ嚙みつき（怒り）",
+              "##comment":"移動噛みつき",
               "type": "minecraft:item",
               "name": "minecraft:paper",
               "weight": 5,
@@ -49,19 +28,13 @@
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:2}"
                 }
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:reference",
-                  "name": "reus:change_state/is_anger"
-                }
               ]
             },
             {
-              "##comment":"ブレス",
+              "##comment":"尻尾なぎ払い",
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 4,
+              "weight": 3,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -70,14 +43,38 @@
               ]
             },
             {
-              "##comment":"移動",
+              "##comment":"爪攻撃",
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 4,
+              "weight": 5,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
                 "tag": "{ActPaper:1,Act:4}"
+                }
+              ]
+            },
+            {
+              "##comment":"強襲",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 3,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:5}"
+                }
+              ]
+            },
+            {
+              "##comment":"なぎ払い火炎放射",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 5,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:6}"
                 }
               ]
             }

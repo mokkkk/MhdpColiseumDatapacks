@@ -1,6 +1,6 @@
 #> reus:manager/7_model/tail_break
 #
-# 青鳥竜モデル変更処理 尻尾破壊
+# 火竜モデル変更処理 尻尾破壊
 
 # 通常
     execute on passengers if entity @s[tag=aj.reus.bone.tail_2] run data modify entity @s item.tag.CustomModelData set value 100008

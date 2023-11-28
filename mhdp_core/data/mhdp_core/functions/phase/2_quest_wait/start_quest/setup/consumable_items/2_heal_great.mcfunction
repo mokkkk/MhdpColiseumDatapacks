@@ -12,8 +12,9 @@
 
 # アイテム変換
     execute if entity @s[tag=TmpLimitItemCount] run scoreboard players set #mhdp_temp_item_count MhdpCore 10
-    loot give @s loot mhdp_core:consumable_items/reset/2_heal_great
+    loot give @s loot mhdp_core:consumable_items/replace/2_heal_great
     
 # 終了
     tag @s remove TmpLimitItemCount
+    scoreboard players set #mhdp_temp_item_count_stack MhdpCore 0
     scoreboard players set #mhdp_temp_item_count MhdpCore 0

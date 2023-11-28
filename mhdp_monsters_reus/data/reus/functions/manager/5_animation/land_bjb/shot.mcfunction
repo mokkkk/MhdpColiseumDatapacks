@@ -9,7 +9,7 @@
     execute if entity @s[tag=IsAnger] run tag @e[type=armor_stand,tag=ReusBreath,tag=Start] add IsAnger
 
 # 移動方向決定
-    execute as @e[type=armor_stand,tag=ReusBreath,tag=Start] at @s positioned ~ ~1.4 ~ run tp @s ~ ~-1.4 ~ ~ 45
+    execute as @e[type=armor_stand,tag=ReusBreath,tag=Start] positioned as @s positioned ~ ~1.4 ~ run tp @s ~ ~-1.4 ~ ~ 45
     tag @e[type=armor_stand,tag=ReusBreath,tag=Start] remove Start
 
 # 演出

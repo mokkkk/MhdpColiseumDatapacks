@@ -27,7 +27,7 @@
         execute if entity @s[tag=HeadParts] if entity @e[type=item_display,tag=ReusRoot,tag=!StateIsStun] if data storage mhdp_core:temp Temp.WeaponDamage{Type:2} run scoreboard players operation #mhdp_reus_stun_damage AsaMatrix += #mhdp_reus_damage AsaMatrix
 
 # 怯み適用
-    execute as @e[type=item_display,tag=ReusRoot] run function reus:manager/3_damage/damage_parts
+    execute if score #mhdp_reus_health AsaMatrix matches 1.. as @e[type=item_display,tag=ReusRoot] run function reus:manager/3_damage/damage_parts
 
 # 死亡時，アニメーション設定
     execute if score #mhdp_reus_health AsaMatrix matches ..0 as @e[type=item_display,tag=ReusRoot] run function reus:manager/6_damage_animation/0_animation/death

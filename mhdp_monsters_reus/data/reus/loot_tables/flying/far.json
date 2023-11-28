@@ -7,10 +7,10 @@
           "type": "minecraft:group",
           "children": [
             {
-              "##comment":"ブレス",
+              "##comment":"回り込み",
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 5,
+              "weight": 3,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -19,10 +19,10 @@
               ]
             },
             {
-              "##comment":"移動",
+              "##comment":"強襲",
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 4,
+              "weight": 5,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",
@@ -31,10 +31,10 @@
               ]
             },
             {
-              "##comment":"飛行開始",
+              "##comment":"滑空ブレス",
               "type": "minecraft:item",
               "name": "minecraft:paper",
-              "weight": 6,
+              "weight": 5,
               "functions": [
                 {
                 "function": "minecraft:set_nbt",

@@ -1,6 +1,6 @@
 #> reus:manager/4_general/reset_scoreholder
 #
-# 青鳥竜 スコアホルダー解放
+# 火竜 スコアホルダー解放
 
 # 共通
     scoreboard players reset #mhdp_reus_health
@@ -25,6 +25,7 @@
     scoreboard players reset #mhdp_reus_anger_count
     scoreboard players reset #mhdp_reus_targetcount
     scoreboard players reset #mhdp_reus_act_count
+    scoreboard players reset #mhdp_reus_phase_count
 
 # 特定アニメーション管理
     scoreboard players reset #mhdp_reus_down_count

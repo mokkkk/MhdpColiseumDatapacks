@@ -2,6 +2,11 @@
 #
 # 火竜 アニメーション遷移処理 再生開始 その他
 
+# 待機
+    execute if entity @s[tag=AnmIdle,tag=!StateIsFlying] run function animated_java:reus/animations/land_idle/play
+    execute if entity @s[tag=AnmIdle,tag=StateIsFlying] run function animated_java:reus/animations/fly_idle/play
+    tag @s remove AnmIdle
+
 # 咆哮
     execute if entity @s[tag=AnmVoice] run function animated_java:reus/animations/land_voice/tween_play
     tag @s remove AnmVoice

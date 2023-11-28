@@ -1,6 +1,6 @@
 #> reus:manager/0_init/1_intrusion/summon
 #
-# 青鳥竜 乱入処理
+# 火竜 乱入処理
 
 # パーツ召喚(animated_java)
     execute positioned ~ ~ ~ run function animated_java:reus/summon

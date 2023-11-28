@@ -1,6 +1,6 @@
 #> reus:manager/6_damage_animation/0_animation/damage_tail
 #
-# 青鳥竜 怯み処理 尻尾
+# 火竜 怯み処理 尻尾
 
 # 回数カウント
     scoreboard players add #mhdp_reus_damage_count MhdpCore 1
