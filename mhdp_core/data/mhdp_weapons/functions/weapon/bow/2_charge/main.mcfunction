@@ -3,7 +3,7 @@
 # 弓：溜め
 
 # 武器アニメーション
-    execute if entity @s[scores={MhdpWeaponTimer=..4}] run function mhdp_weapons:weapon/bow/2_charge/animation
+    execute if entity @s[scores={MhdpWeaponTimer=..8}] run function mhdp_weapons:weapon/bow/2_charge/animation
 
 # 溜めスコア増加
     execute if entity @s[tag=!SklBowChargePlus,scores={MhdpWeaponCharge=..600}] run function mhdp_weapons:weapon/bow/2_charge/main_charge

@@ -10,7 +10,9 @@
     # Cmd計算
         execute store result score #mhdp_temp_cmd MhdpCore run data get storage mhdp_core:temp Temp.Status.CmdOffset
         scoreboard players add #mhdp_temp_cmd MhdpCore 1
-        scoreboard players operation #mhdp_temp_cmd MhdpCore += @s MhdpWeaponTimer
+        execute if score @s MhdpWeaponTimer matches 2..4 run scoreboard players add #mhdp_temp_cmd MhdpCore 1
+        execute if score @s MhdpWeaponTimer matches 5..6 run scoreboard players add #mhdp_temp_cmd MhdpCore 2
+        execute if score @s MhdpWeaponTimer matches 7.. run scoreboard players add #mhdp_temp_cmd MhdpCore 3
         execute store result storage mhdp_core:temp Temp.CustomModelData int 1 run scoreboard players get #mhdp_temp_cmd MhdpCore
     # Attribute削除
         data modify storage mhdp_core:temp Temp.AttributeModifiers set value []

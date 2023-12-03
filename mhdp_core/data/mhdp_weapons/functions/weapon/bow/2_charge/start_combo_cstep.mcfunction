@@ -3,7 +3,7 @@
 # 弓：溜め開始(コンボ用，チャージステップ)
 
 # アニメーションタイマーリセット
-    scoreboard players set @s MhdpWeaponTimer 5
+    scoreboard players set @s MhdpWeaponTimer 8
 
 # タグ更新
     tag @s add WpnBowCharge
