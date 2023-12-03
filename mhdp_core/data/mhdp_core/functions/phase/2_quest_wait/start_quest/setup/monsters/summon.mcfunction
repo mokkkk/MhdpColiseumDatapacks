@@ -7,7 +7,8 @@
     execute if data storage mhdp_core:temp Temp{Name:"Ranposu"} run function ranposu:manager/0_init/0_summon/
 
 # 火竜
-    # execute if data storage mhdp_core:temp Temp{Name:"Reus"} run function asa_animator:reus/manager/0_init/0_summon/
+    execute if data storage mhdp_core:temp Temp{Name:"Reus"} run datapack enable "file/mhdp_monsters_reus"
+    execute if data storage mhdp_core:temp Temp{Name:"Reus"} run function reus:manager/0_init/0_summon/
 
 # 雷狼竜
     # execute if data storage mhdp_core:temp Temp{Name:"Zinogre"} run function asa_animator:zinogre/manager/0_init/0_summon/

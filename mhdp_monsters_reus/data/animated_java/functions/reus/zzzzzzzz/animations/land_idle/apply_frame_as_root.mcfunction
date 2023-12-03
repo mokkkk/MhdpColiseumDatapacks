@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..87 run function animated_java:reus/zzzzzzzz/animations/land_idle/tree/branch_0_87

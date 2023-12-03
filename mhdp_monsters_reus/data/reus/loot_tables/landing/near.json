@@ -1,0 +1,140 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "##comment":"突進（通常）",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 4,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:1}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:reference",
+                    "name": "reus:change_state/is_forward"
+                  }
+                }
+              ]
+            },
+            {
+              "##comment":"突進（正面）",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 7,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:1}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "reus:change_state/is_forward"
+                }
+              ]
+            },
+            {
+              "##comment":"噛みつき",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 4,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:2}"
+                }
+              ]
+            },
+            {
+              "##comment":"チャージ嚙みつき（通常）",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 3,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:3}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:reference",
+                    "name": "reus:change_state/is_anger"
+                  }
+                }
+              ]
+            },
+            {
+              "##comment":"チャージ嚙みつき（怒り）",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 6,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:3}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "reus:change_state/is_anger"
+                }
+              ]
+            },
+            {
+              "##comment":"尻尾回転",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 4,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:4}"
+                }
+              ]
+            },
+            {
+              "##comment":"ブレス",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 4,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:5}"
+                }
+              ]
+            },
+            {
+              "##comment":"床ドン",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 5,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:6}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

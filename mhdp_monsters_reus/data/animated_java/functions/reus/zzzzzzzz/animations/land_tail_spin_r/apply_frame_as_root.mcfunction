@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..118 run function animated_java:reus/zzzzzzzz/animations/land_tail_spin_r/tree/branch_0_118

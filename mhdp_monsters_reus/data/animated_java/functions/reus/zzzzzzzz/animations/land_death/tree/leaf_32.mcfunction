@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:reus/zzzzzzzz/animations/land_death/tree/leaf_32_as_bone

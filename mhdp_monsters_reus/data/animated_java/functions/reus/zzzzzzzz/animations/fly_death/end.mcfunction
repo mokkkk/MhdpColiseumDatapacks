@@ -1,0 +1,3 @@
+execute if score @s aj.reus.animation.fly_death.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:reus/zzzzzzzz/animations/fly_death/end_loop
+execute if score @s aj.reus.animation.fly_death.loop_mode = $aj.loop_mode.once aj.i run function animated_java:reus/animations/fly_death/stop
+execute if score @s aj.reus.animation.fly_death.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:reus/animations/fly_death/pause

@@ -1,0 +1,1 @@
+function animated_java:reus/zzzzzzzz/animations/land_bite_r/tick_animation

@@ -1,0 +1,1 @@
+function animated_java:reus/zzzzzzzz/animations/fly_attack/tick_animation

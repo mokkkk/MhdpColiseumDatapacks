@@ -1,4 +1,4 @@
-#> mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/1
+#> mhdp_core:phase/2_quest_wait/start_quest/setup/monsters/5
 #
 # Phase1_クエスト受注 クエスト開始処理 モンスター召喚 2匹目
 

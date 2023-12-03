@@ -1,0 +1,1 @@
+tag @s remove aj.reus.animation.land_tail_spin_l

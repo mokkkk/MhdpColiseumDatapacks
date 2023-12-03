@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..80 run function animated_java:reus/zzzzzzzz/animations/fly_movebreath_l/tree/branch_0_80

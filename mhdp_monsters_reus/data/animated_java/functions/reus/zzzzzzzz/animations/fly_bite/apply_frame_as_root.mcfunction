@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..53 run function animated_java:reus/zzzzzzzz/animations/fly_bite/tree/branch_0_53

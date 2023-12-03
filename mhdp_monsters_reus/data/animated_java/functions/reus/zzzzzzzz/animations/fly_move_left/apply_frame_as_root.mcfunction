@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..25 run function animated_java:reus/zzzzzzzz/animations/fly_move_left/tree/branch_0_25

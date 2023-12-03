@@ -1,0 +1,3 @@
+execute if score @s aj.reus.animation.land_voice.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:reus/zzzzzzzz/animations/land_voice/end_loop
+execute if score @s aj.reus.animation.land_voice.loop_mode = $aj.loop_mode.once aj.i run function animated_java:reus/animations/land_voice/stop
+execute if score @s aj.reus.animation.land_voice.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:reus/animations/land_voice/pause

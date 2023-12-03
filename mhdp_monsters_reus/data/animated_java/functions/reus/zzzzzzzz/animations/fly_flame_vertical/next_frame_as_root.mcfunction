@@ -1,0 +1,1 @@
+function animated_java:reus/zzzzzzzz/animations/fly_flame_vertical/tick_animation

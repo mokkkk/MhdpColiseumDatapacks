@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..115 run function animated_java:reus/zzzzzzzz/animations/fly_jump/tree/branch_0_115

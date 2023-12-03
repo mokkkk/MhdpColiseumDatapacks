@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:reus/zzzzzzzz/animations/land_dash_bite/tree/leaf_22_as_bone

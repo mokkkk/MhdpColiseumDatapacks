@@ -7,4 +7,4 @@
     execute if entity @s[tag=RanposuHealth] run function ranposu:manager/3_damage/check
 
 # 火竜
-    # execute if entity @s[tag=ReusHealth] run function asa_animator:reus/manager/3_damage/check
+    execute if entity @s[tag=ReusHealth] run function reus:manager/3_damage/check

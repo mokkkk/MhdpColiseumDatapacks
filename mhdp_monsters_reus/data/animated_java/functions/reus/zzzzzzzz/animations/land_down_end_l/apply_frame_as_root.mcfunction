@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..36 run function animated_java:reus/zzzzzzzz/animations/land_down_end_l/tree/branch_0_36
