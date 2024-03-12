@@ -76,6 +76,6 @@ scoreboard players add .aj.last_id aj.id 0
 scoreboard players set $aj.loop_mode.loop aj.i 0
 scoreboard players set $aj.loop_mode.once aj.i 1
 scoreboard players set $aj.loop_mode.hold aj.i 2
-scoreboard players set aj.ranposu.export_version aj.i -37955274
+scoreboard players set aj.ranposu.export_version aj.i -749422791
 scoreboard players reset * aj.ranposu.rig_loaded
 execute as @e[type=minecraft:item_display,tag=aj.ranposu.root] run function animated_java:ranposu/zzzzzzzz/on_load
