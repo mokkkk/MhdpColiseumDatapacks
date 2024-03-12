@@ -8,7 +8,6 @@ execute store result score @s aj.id run scoreboard players add .aj.last_id aj.id
 tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run function animated_java:reus/zzzzzzzz/summon/as_rig_entities
 execute if score #variant aj.i = $aj.reus.variant.default aj.id run function animated_java:reus/zzzzzzzz/apply_variant/default/as_root
-execute if score #variant aj.i = $aj.reus.variant.new_variant aj.id run function animated_java:reus/zzzzzzzz/apply_variant/new_variant/as_root
 execute if score #animation aj.i matches 0.. run scoreboard players operation @s aj.anim_time = #frame aj.i
 execute if score #animation aj.i = $aj.reus.animation.land_idle aj.id run function animated_java:reus/zzzzzzzz/animations/land_idle/apply_frame_as_root
 execute if score #animation aj.i = $aj.reus.animation.land_idle aj.id run scoreboard players operation @s aj.reus.animation.land_idle.local_anim_time = #frame aj.i
