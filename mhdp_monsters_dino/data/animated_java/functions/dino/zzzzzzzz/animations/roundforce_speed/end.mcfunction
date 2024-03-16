@@ -1,0 +1,3 @@
+execute if score @s aj.dino.animation.roundforce_speed.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:dino/zzzzzzzz/animations/roundforce_speed/end_loop
+execute if score @s aj.dino.animation.roundforce_speed.loop_mode = $aj.loop_mode.once aj.i run function animated_java:dino/animations/roundforce_speed/stop
+execute if score @s aj.dino.animation.roundforce_speed.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:dino/animations/roundforce_speed/pause

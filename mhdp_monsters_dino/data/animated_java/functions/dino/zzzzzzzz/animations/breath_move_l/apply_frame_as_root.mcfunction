@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..86 run function animated_java:dino/zzzzzzzz/animations/breath_move_l/tree/branch_0_86

@@ -63,12 +63,6 @@
         scoreboard objectives add MhdpTItmWirebug dummy
         scoreboard objectives add MhdpTItmWirebugCooltime dummy
 
-    # モンスター処理用
-        scoreboard objectives add AsaMatrix dummy
-        scoreboard objectives add MhdpMonsterIndex dummy
-        scoreboard objectives add MhdpPartsIndex dummy
-        scoreboard objectives add MhdpPartsUid dummy
-
     # TSBライブラリ用
         scoreboard objectives add Global dummy
         scoreboard objectives add Temporary dummy
@@ -102,6 +96,8 @@
     # function mhdp_core:init/quest_data
 
 # TODO:以下のinitはいずれloadから削除する
+# モンスターデータ初期化
+    function mhdp_core:init/monster_data
 # モンスター肉質初期化
     function mhdp_core:init/monster_defence
 # モンスター攻撃力初期化

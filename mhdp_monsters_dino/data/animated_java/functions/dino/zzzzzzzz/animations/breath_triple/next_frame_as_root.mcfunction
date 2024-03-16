@@ -1,0 +1,1 @@
+function animated_java:dino/zzzzzzzz/animations/breath_triple/tick_animation

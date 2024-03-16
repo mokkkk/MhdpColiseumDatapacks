@@ -1,0 +1,5 @@
+execute if score @s aj.anim_time matches 88 run function animated_java:dino/zzzzzzzz/animations/tail_side_r/tree/leaf_88
+execute if score @s aj.anim_time matches 89 run function animated_java:dino/zzzzzzzz/animations/tail_side_r/tree/leaf_89
+execute if score @s aj.anim_time matches 90 run function animated_java:dino/zzzzzzzz/animations/tail_side_r/tree/leaf_90
+execute if score @s aj.anim_time matches 91 run function animated_java:dino/zzzzzzzz/animations/tail_side_r/tree/leaf_91
+execute if score @s aj.anim_time matches 92 run function animated_java:dino/zzzzzzzz/animations/tail_side_r/tree/leaf_92

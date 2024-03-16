@@ -1,0 +1,1 @@
+function animated_java:dino/zzzzzzzz/animations/roundforce3/tick_animation

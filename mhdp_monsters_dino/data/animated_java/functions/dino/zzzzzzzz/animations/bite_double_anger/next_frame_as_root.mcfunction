@@ -1,0 +1,1 @@
+function animated_java:dino/zzzzzzzz/animations/bite_double_anger/tick_animation

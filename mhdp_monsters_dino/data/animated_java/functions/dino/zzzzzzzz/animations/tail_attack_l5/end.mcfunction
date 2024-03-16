@@ -1,0 +1,3 @@
+execute if score @s aj.dino.animation.tail_attack_l5.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:dino/zzzzzzzz/animations/tail_attack_l5/end_loop
+execute if score @s aj.dino.animation.tail_attack_l5.loop_mode = $aj.loop_mode.once aj.i run function animated_java:dino/animations/tail_attack_l5/stop
+execute if score @s aj.dino.animation.tail_attack_l5.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:dino/animations/tail_attack_l5/pause

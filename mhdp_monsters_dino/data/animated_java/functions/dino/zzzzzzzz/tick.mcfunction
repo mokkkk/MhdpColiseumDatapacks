@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.dino.root] run function animated_java:dino/zzzzzzzz/tick_as_root

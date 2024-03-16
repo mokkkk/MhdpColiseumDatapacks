@@ -1,0 +1,1 @@
+function animated_java:dino/zzzzzzzz/animations/turn_l/tick_animation

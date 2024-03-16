@@ -1,0 +1,50 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "##comment":"回り込み",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 3,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:1}"
+                }
+              ]
+            },
+            {
+              "##comment":"強襲",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 5,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:2}"
+                }
+              ]
+            },
+            {
+              "##comment":"滑空ブレス",
+              "type": "minecraft:item",
+              "name": "minecraft:paper",
+              "weight": 5,
+              "functions": [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{ActPaper:1,Act:3}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

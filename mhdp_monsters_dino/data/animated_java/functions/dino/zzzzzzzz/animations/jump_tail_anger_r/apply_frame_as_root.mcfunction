@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..145 run function animated_java:dino/zzzzzzzz/animations/jump_tail_anger_r/tree/branch_0_145

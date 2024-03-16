@@ -1,0 +1,3 @@
+execute if score @s aj.dino.animation.polish.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:dino/zzzzzzzz/animations/polish/end_loop
+execute if score @s aj.dino.animation.polish.loop_mode = $aj.loop_mode.once aj.i run function animated_java:dino/animations/polish/stop
+execute if score @s aj.dino.animation.polish.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:dino/animations/polish/pause

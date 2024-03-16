@@ -1,0 +1,1 @@
+tag @s remove aj.dino.animation.tail_attack_anger_l3

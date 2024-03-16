@@ -10,6 +10,9 @@
     execute as @a[sort=arbitrary] run function mhdp_core:phase/2_quest_wait/start_quest/setup/uid
     scoreboard players reset #mhdp_temp_uid
 
+# MhdpWeapons処理用タグ付与
+    tag @a add PlyQuest
+
 # クエスト開始時刻保存
     data modify storage mh_dp:status GameStatus.Quest.StartTime set from storage mh_dp:status Time
     execute as @a run function mhdp_core:phase/2_quest_wait/start_quest/setup/player_time
@@ -33,11 +36,9 @@
     # 大闘技場
         execute if data storage mh_dp:status GameStatus.Quest{Field:1} run function mhdp_core:phase/2_quest_wait/start_quest/setup/map/coliseum
 
-# 訓練開始時処理
-    execute if score #mhdp_quest_id MhdpCore matches 0 run function mhdp_core:phase/2_quest_wait/start_quest/quests/tutorial
-
-# MhdpWeapons処理用タグ付与
-    tag @a add PlyQuest
+# クエストごとの独自処理
+    # 訓練開始時処理
+        execute if score #mhdp_quest_id MhdpCore matches 0 run function mhdp_core:phase/2_quest_wait/start_quest/quests/tutorial
 
 # 開始前にadvancementを除去
     execute if entity @s[tag=AdvInventoryChangedMain] run tag @s remove AdvInventoryChangedMain

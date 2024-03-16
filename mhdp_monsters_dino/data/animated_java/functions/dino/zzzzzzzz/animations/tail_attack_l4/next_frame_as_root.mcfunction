@@ -1,0 +1,1 @@
+function animated_java:dino/zzzzzzzz/animations/tail_attack_l4/tick_animation

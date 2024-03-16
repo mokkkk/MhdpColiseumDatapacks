@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:dino/zzzzzzzz/animations/bite_double_anger/tree/leaf_22_as_bone

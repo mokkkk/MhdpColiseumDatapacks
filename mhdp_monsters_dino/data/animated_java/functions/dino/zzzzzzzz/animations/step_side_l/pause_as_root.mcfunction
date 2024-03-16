@@ -1,0 +1,1 @@
+tag @s remove aj.dino.animation.step_side_l

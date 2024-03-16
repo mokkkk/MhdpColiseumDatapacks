@@ -1,0 +1,1 @@
+function animated_java:dino/zzzzzzzz/animations/tail_flame_l2/tick_animation
